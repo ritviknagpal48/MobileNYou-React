@@ -10,7 +10,7 @@ export const OrderSummary = () => {
           <div class='container x-container'>
             <Navbar></Navbar>
             <section className="bodypanelmian aboutseller text-left" style={{marginBottom: '20%', paddingBottom: '10px'}}>
-              <div className="container-for-progress" style={{marginTop:"16px", padding:"4px", boxShadow: "0px 0px 4px 1px gainsboro", margin: "auto 6px auto 0px"}}>
+              <div className="container-for-progress" style={{ padding:"4px", boxShadow: "0px 0px 4px 1px gainsboro", margin: "10px 14px auto 14px"}}>
                   <ul className="progressbar-progress" style={{display:"flex !important",justifyContent:"center",flexDirection:"row"}}>
                     <li className="Progress-Active" style={{fontSize:"12px"}}>Add Address</li>
                     <li className="Progress-Active" style={{fontSize:"12px"}}>Order Summary</li>
