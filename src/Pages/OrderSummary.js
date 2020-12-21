@@ -131,6 +131,10 @@ export const OrderSummary = () => {
             </div>
 
                 <div className='sellerlocation'>
+                  <p style={{color:'lightgrey'}}>
+                    Price Details
+                  </p>
+                  <hr style={{margin:'1% 0'}} /> 
                   <p>
                     Price (9 Items)
                     <span className='text-right' style={{float:'right'}}>&#8377; 5000</span>
@@ -150,12 +154,12 @@ export const OrderSummary = () => {
                     Discount
                     <span className='text-right' style={{float:'right'}}>- &#8377; 500</span>
                   </p>
-                  <hr />
+                  <hr style={{margin:'2% 0'}} />
                   <p>
                     Total
                     <span className='text-right' style={{float:'right'}}> &#8377; 4500</span>
                   </p>
-                  <hr />        
+                  <hr style={{margin:'2% 0'}} />      
                   <p>
                     You will save<span className='text-right'style={{color:'#C32D2F'}}>  &#8377; 4500 </span> in this order
                   </p>
