@@ -10,11 +10,19 @@ export const OrderSummary = () => {
           <div class='container x-container'>
             <Navbar></Navbar>
             <section className="bodypanelmian aboutseller text-left" style={{marginBottom: '20%', paddingBottom: '10px'}}>
+              <div className="container-for-progress" style={{MarginTop:"15px !important"}}>
+                  <ul className="progressbar-progress">
+                    <li className="Progress-Active">Add Address</li>
+                    <li className="Progress-Active">Order Summary</li>
+                    <li>Payment</li>
+                  </ul>
+                </div>
+                <br></br><br></br><br></br>
             <div className='sellerlocation'>
                   <div className="container">
                     <div className="row">
                         <div className="col-3">
-                        <img src="/image/RealmeX50Pro.jpg"></img>
+                        <img src="/image/RealmeX50Pro.jpg" alt="Product Image"></img>
                         </div>
                         <div className="col-7" style={{
                           marginTop: "3%",
