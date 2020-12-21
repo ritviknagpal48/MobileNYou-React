@@ -9,13 +9,13 @@ export const PaymentDetails = () => {
                 <div class="universalDiv" style={{backgroundColor: "transparent"}}>
                     <div class="container" style={{backgroundColor: "transparent"}}>
                         <Navbar></Navbar>
-                        <div class="container" style={{backgroundColor: "transparent"}}>
+                        <div class="container" style={{backgroundColor: "transparent", padding: "12px"}}>
                         <div class="row" style={{padding: "10px;"}}>
                         <div class="col-6">
                             <button type="button" class="btn btn-light" style={{backgroundColor:"white", fontSize:"16px",width:"10rem",display: "flex",alignItems: "center",justifyContent:"center",flexDirection: "row"}}><i style={{float: "left", color: "blue", fontSize:"24px"}} class='bx bxl-facebook-circle' ></i>Facebook</button>
                         </div>
                         <div class="col-6">
-                            <button type="button" class="btn btn-light" style={{backgroundColor:"white", fontSize:"16px",width:"10rem",display: "flex",alignItems:"center",justifyContent:"center",flexDirection: "row"}}><i style={{float: "left", color: "blue", fontSize:"24px"}} class='bx bxl-google'></i>Google</button>
+                            <button type="button" class="btn btn-light" style={{backgroundColor:"white", fontSize:"16px",width:"10rem",display: "flex",alignItems:"center",justifyContent:"center",flexDirection: "row"}}><i style={{float: "left", color: "red", fontSize:"24px"}} class='bx bxl-google'></i>Google</button>
                         </div>
                         </div>
                     </div>
