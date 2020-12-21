@@ -1,0 +1,162 @@
+/* 01 GLOBAL */
+
+ul, li, ul li, table, lable, p, span, dl, dt, dd, table, tr, td {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a:hover, a:focus {
+    text-decoration: none !important;
+}
+
+img {
+    border: none;
+}
+
+.mt5 {
+    margin-top: 5px !important;
+}
+
+.mt7 {
+    margin-top: 7px !important;
+}
+
+.mt10 {
+    margin-top: 10px !important;
+}
+
+.mt15 {
+    margin-top: 15px !important;
+}
+
+.mt20 {
+    margin-top: 20px !important;
+}
+
+.mt30 {
+    margin-top: 30px !important;
+}
+
+.mt40 {
+    margin-top: 40px !important;
+}
+
+.mt50 {
+    margin-top: 50px !important;
+}
+
+.mt60 {
+    margin-top: 60px !important;
+}
+
+.mb5 {
+    margin-bottom: 5px !important;
+}
+
+.mb10 {
+    margin-bottom: 10px !important;
+}
+
+.mb15 {
+    margin-bottom: 15px !important;
+}
+
+.mb20 {
+    margin-bottom: 20px !important;
+}
+
+.mb30 {
+    margin-bottom: 30px !important;
+}
+
+.mb40 {
+    margin-bottom: 40px !important;
+}
+
+.mb50 {
+    margin-bottom: 50px !important;
+}
+
+.mb60 {
+    margin-bottom: 60px !important;
+}
+
+.ml5 {
+    margin-left: 5px !important;
+}
+
+.ml10 {
+    margin-left: 10px !important;
+}
+
+.ml15 {
+    margin-left: 15px !important;
+}
+
+.ml20 {
+    margin-left: 20px !important;
+}
+
+.ml30 {
+    margin-left: 30px !important;
+}
+
+.ml40 {
+    margin-left: 40px !important;
+}
+
+.ml50 {
+    margin-left: 50px !important;
+}
+
+.ml60 {
+    margin-left: 60px !important;
+}
+
+.pdr {
+    padding-right: 0px !important;
+}
+
+.pdl0 {
+    padding-left: 0 !important;
+}
+
+.mr-3 {
+    margin-left: 2px !important;
+}
+
+.img-fullwidth img {
+    width: 100%;
+    height: auto;
+}
+
+.mb-2 {
+    margin-bottom: 2em !important;
+}
+
+.custom_pd0 {
+    margin-left: -0em !important;
+    margin-right: -0em !important;
+}
+
+.custom_pd0>div {
+    padding-left: .0em !important;
+    padding-right: .0em !important;
+}
+
+.custom_pd {
+    margin-left: -.3em !important;
+    margin-right: -.3em !important;
+}
+
+.custom_pd>div {
+    padding-left: .3em !important;
+    padding-right: .3em !important;
+}
+
+/*============== Menu Css==========  */

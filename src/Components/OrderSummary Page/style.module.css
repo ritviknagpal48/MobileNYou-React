@@ -1,0 +1,387 @@
+/* .universal_Div {
+    width: 600px;
+} */
+
+.x_container {
+    width: 100%;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(240, 234, 234);
+}
+
+.where_cont {
+    border-radius: 4px;
+    margin-top: 20px;
+    background-color: #fff;
+    width: 87%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.where-cont .hr {
+    height: 3px;
+}
+
+.hr1 {
+    width: 130px;
+    position: absolute;
+    top: 20px;
+    left: 134px;
+    background-color: red;
+}
+
+.hr2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 110px;
+    position: absolute;
+    top: 20px;
+    right: 120px;
+}
+
+.where-cont .where {
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.where-cont .where .c {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.where-cont .where .c1 {
+    border: 1px solid crimson
+}
+
+.where-cont .where .c2 {
+    border: 2px solid #fff;
+    background-color: crimson;
+    color: white;
+    z-index: 100;
+}
+
+.where-cont .where .c3 {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.address-section {
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    width: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.address-section .user-name p {
+    display: inline-block;
+}
+
+.address-section .user-name p:last-of-type {
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.205);
+    border-radius: 3px;
+    color: black;
+}
+
+.address-section .user-name {
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+.address-section .address {
+    color: rgba(0, 0, 0, 0.651);
+    margin-bottom: 10px;
+}
+
+.address-section button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    border: 2px solid crimson;
+    color: crimson;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.address-section button:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.product-container {
+    margin-top: 20px;
+    padding: 20px 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 87%;
+}
+
+.product-container .product-img-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 500px;
+    /* box-shadow:0 0 0px 0 rgba(0,0,0,0.3); */
+}
+
+.product-container .product-img-name img {
+    width: 100px;
+}
+
+.product-container .product-img-name p {
+    text-align: left;
+    width: 300px;
+}
+
+.product-container .product-img-name .name-spec {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-container .product-img-name .name-spec p:last-of-type {
+    margin-top: 5px;
+    color: rgba(0, 0, 0, .7);
+    font-size: 0.8rem;
+}
+
+.product-container .quantity {
+    float: left;
+    margin: 10px 0 0 30px;
+    font-size: small;
+}
+
+.product-container .quantity select {
+    border-color: palevioletred;
+    border-radius: 3px
+}
+
+.condition {
+    float: left;
+    margin: 10px 0 0 30px;
+    font-size: small
+}
+
+.condition p {
+    display: inline-block;
+}
+
+.condition span {
+    padding: 3px 8px;
+    background-color: rgb(2, 83, 2);
+    color: white;
+    border-radius: 3px;
+}
+
+.price1 {
+    float: left;
+    margin: 20px 0 0 30px;
+    font-size: small;
+}
+
+.price1 p {
+    display: inline-block
+}
+
+.price1 s {
+    color: rgb(141, 132, 132);
+}
+
+.price1 p:first-of-type {
+    font-size: 1.3rem;
+    color: black;
+}
+
+.price1 p:last-of-type {
+    font-size: 1.1rem;
+    color: crimson;
+}
+
+.del-time {
+    margin: 20px 0 0 30px;
+    float: left;
+    color: rgb(77, 75, 75);
+}
+
+.buying-details {
+    float: left;
+    margin: 20px 0 0 30px;
+    position: relative;
+}
+
+.buying-details .option {
+    display: flex;
+    margin: 3px 0;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.buying-details span {
+    position: absolute;
+    left: 0px;
+    top: -10px;
+    font-size: 0.8rem
+}
+
+.option #not {
+    background-color: crimson;
+}
+
+.buying-details .option p:first-of-type {
+    width: 20px;
+    height: 20px;
+    background-color: #009737;
+    border-radius: 100%;
+    color: white;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.gst-details {
+    box-sizing: border-box;
+    width: 87%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 5px;
+}
+
+.gst-details .add-GST {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-GST div input:checked {
+    background-color: crimson;
+    color: crimson
+}
+
+.gst-details p {
+    color: rgba(29, 29, 29, 0.842);
+}
+
+.gst-details p:first-of-type {
+    margin-top: 5px;
+}
+
+.gst-details p:last-of-type {
+    margin-top: 10px;
+}
+
+.price-details {
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 20px;
+    width: 87%;
+    background-color: #fff;
+}
+
+.price-detail-tag {
+    opacity: 0.7;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.534);
+}
+
+.price-details .prices {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-details .prices .pr {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-details .prices .pr .free-ship {
+    color: crimson
+}
+
+.price-details .total-price {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-details .money {
+    float: left;
+    padding: 10px 20px;
+    opacity: 0.9;
+}
+
+.price-details p .money-save {
+    color: crimson;
+}
+
+.footer {
+    margin: 20px 0 80px 0;
+}
+
+.footer .company img {
+    width: 200px;
+}
+
+.footer .company p {
+    font-size: 0.7rem;
+}
+
+.proceed-div {
+    border-top: 1px solid rgba(0, 0, 0, 0.137);
+    position: fixed;
+    bottom: 0;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    width: 576px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.proceed-div div p:last-of-type {
+    color: crimson;
+}
+
+.proceed-div button {
+    padding: 12px 10px;
+    background-color: crimson;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
