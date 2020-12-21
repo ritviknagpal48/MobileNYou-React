@@ -23,7 +23,7 @@ export const PaymentDetails = () => {
                     <div class="container" style={{backgroundColor: "white",backgroundColor: "white",width:"93%",height:"2.5rem",borderRadius: "2%"}}>
                         <span style={{float:"left",margin:"0 1rem",padding:"0.5rem 0",fontSize: "15px"}}>View items in cart</span>
                         <i style={{float: "left" ,fontSize: "23px",padding:"0.5rem 0",marginLeft:"-0.7rem"}} class='bx bx-chevron-down'></i>
-                        <span style={{float:"right",margin:"0 1rem",padding:"0.5rem 0",color:"red",fontSize: "15px"}}>5899</span>
+                        <span style={{float:"right",margin:"0 1rem",padding:"0.5rem 0",color:"red",fontSize: "15px"}}>₹5899</span>
                     </div>  
                     <div style={{backgroundColor: "rgba(255, 0, 0, 0.05)", border: "dotted red 1px", borderRadius: "5px", fontSize: "16px", margin: "4%",height:"2.5rem",padding:"0.3rem 0"}}>
                         Get <b style={{color: "rgba(167, 13, 13, 0.8)"}}>100Rs</b> Off on Prepaid Order
@@ -99,7 +99,7 @@ export const PaymentDetails = () => {
                               margin: '0 1rem'
                             }}>
                                 <p style={{margin:'0 -0.3rem'}}>Total</p>
-                                <p style={{color: 'red'}}>Rupees</p>
+                                <p style={{color: 'red'}}>₹5899</p>
                             </div>
                             </div>
                             <div class="col-6">
@@ -107,7 +107,7 @@ export const PaymentDetails = () => {
                               float:'right', 
                               margin:'0 2rem'
                             }}>
-                              Danger
+                              Continue
                             </button>
                             </div>
                         </div>
