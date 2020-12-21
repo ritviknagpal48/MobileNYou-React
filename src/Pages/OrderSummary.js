@@ -118,14 +118,14 @@ export const OrderSummary = () => {
                 <div class="container" style={{height:"5.7rem",width:"93%",margin:"1rem auto",border:"1px solid gainsboro"}}>
                 <div style={{float:"left",margin:"0.5rem 0"}}>
 
-                    <input type="checkbox" style={{margin:"0.2rem 0.5rem",height:"1rem",backgroundColor:"#c2172e",float:"left"}}></input>
-                    <span style={{float:"left"}}>Add GST details</span>
+                    <input type="checkbox" style={{margin:"0.12rem 0.5rem",height:"1rem",backgroundColor:"#c2172e",float:"left"}}></input>
+                    <span style={{float:"left",fontSize:"14px"}}>Add GST details</span>
                     <br></br>
-                    <p style={{color:"#ACA7A6",fontSize:"15px",float:"left",margin:"0 0.5rem"}}>06BPX123H84928</p>
+                    <p style={{color:"#ACA7A6",fontSize:"12px",float:"left",margin:"0 0.5rem"}}>06BPX123H84928</p>
                     <br></br>
-                    <p style={{color:"#ACA7A6",fontSize:"16px",float:"left",margin:"0.5rem 0.5rem"}}>Cartnyou Retail Private Limited</p>
+                    <p style={{color:"#ACA7A6",fontSize:"12px",float:"left",margin:"0.5rem 0.5rem"}}>Cartnyou Retail Private Limited</p>
                 </div>
-                <div style={{float:"right",color:"red",margin:"0.5rem 0.5rem",fontSize:"18px"}}>
+                <div style={{float:"right",color:"red",margin:"0.5rem 0.5rem",fontSize:"15px"}}>
                     Edit
                 </div>
             </div>
