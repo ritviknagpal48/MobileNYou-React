@@ -3,7 +3,6 @@ import { Navbar } from '../Components/Navbar';
 import { EmiTable } from '../Components/EmiOptions Page/EmiTable';
 
 export const EmiOptions = () => {
-  
   return (
     <Fragment>
       <div class='badydiv' style={{ background: 'white' }}>
@@ -26,7 +25,8 @@ export const EmiOptions = () => {
                   borderRadius: '2px',
                   marginBottom: '2%',
                   fontSize: '15px',
-                  transition: '0.4s'
+                  transition: '0.4s',
+                  boxShadow: '4px 5px 6px rgba(207, 207, 207, 0.5)'
                 }}
               >
                 <center>EMI Details</center>

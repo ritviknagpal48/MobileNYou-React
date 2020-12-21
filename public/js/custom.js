@@ -82,22 +82,8 @@ $(document).ready(function() {
     $(this).addClass('active'); // adds the highlight to this row
   });
   var acc = document.getElementsByClassName('accordion');
-  var i;
-  var count = 0;
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener('click', function() {
-      this.classList.toggle('active');
-      var panel = this.nextElementSibling;
-      if (panel.style.display === 'block') {
-        panel.style.display = 'none';
-      } else {
-        panel.style.display = 'block';
-      }
-    });
-  }
 
   var j;
-  var bx = document.getElementsByClassName('bx');
   for (var j = 0; j < acc.length; j++) {
     acc[j].addEventListener('click', function(e) {
       var node = e.target.childNodes[3];
