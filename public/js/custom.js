@@ -100,13 +100,18 @@ $(document).ready(function() {
   var bx = document.getElementsByClassName('bx');
   for (var j = 0; j < acc.length; j++) {
     acc[j].addEventListener('click', function(e) {
-      var node = e.target.childNodes[2];
-      if (count % 2 == 0) {
-        node.className = 'bx bx-chevron-up';
-      } else {
-        node.className = 'bx bx-chevron-down';
+      var node = e.target.childNodes[3];
+      var arr = e.target.parentElement.childNodes
+      for(var k=1;k<arr.length;k+=2){
+        arr[k].childNodes[3].className = 'bx bx-chevron-down';
       }
-      count++;
+      if(node.className=='bx bx-chevron-up'){
+        node.className = 'bx bx-chevron-down'
+      }
+      else if(node.className=='bx bx-chevron-down'){
+        node.className = 'bx bx-chevron-up'
+      }
     });
   }
+
 });
