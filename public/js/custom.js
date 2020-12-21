@@ -105,12 +105,15 @@ $(document).ready(function() {
       var arr = e.target.parentElement.childNodes
       for(var k=1;k<arr.length;k+=2){
         arr[k].childNodes[3].className = 'bx bx-chevron-down';
+        arr[k].nextSibling.style.display = "none"
       }
       if(temp=='bx bx-chevron-up'){
         node.className = 'bx bx-chevron-down'
+        e.target.nextSibling.style.display = 'none'
       }
       else if(temp=='bx bx-chevron-down'){
         node.className = 'bx bx-chevron-up'
+        e.target.nextSibling.style.display = 'block';
       }
     });
   }
