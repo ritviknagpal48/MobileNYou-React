@@ -11,10 +11,10 @@ export const OrderSummary = () => {
             <Navbar></Navbar>
             <section className="bodypanelmian aboutseller text-left" style={{marginBottom: '20%', paddingBottom: '10px'}}>
               <div className="container-for-progress" style={{MarginTop:"15px !important"}}>
-                  <ul className="progressbar-progress">
-                    <li className="Progress-Active">Add Address</li>
-                    <li className="Progress-Active">Order Summary</li>
-                    <li>Payment</li>
+                  <ul className="progressbar-progress" style={{display:"felx !important",justifyContent:"center",flexDirection:"row"}}>
+                    <li className="Progress-Active" style={{fontSize:"12px"}}>Add Address</li>
+                    <li className="Progress-Active" style={{fontSize:"12px"}}>Order Summary</li>
+                    <li style={{fontSize:"12px"}}>Payment</li>
                   </ul>
                 </div>
                 <br></br><br></br><br></br>
@@ -123,7 +123,7 @@ export const OrderSummary = () => {
                   </div>
                 </div>
 
-                <div class="container" style={{height:"5.7rem",width:"93%",margin:"1rem auto",border:"1px solid gainsboro"}}>
+                <div class="container" style={{height:"5.7rem",width:"93%",margin:"1rem auto",border:"1px solid gainsboro",boxShadow: "0px 0px 4px 1px gainsboro"}}>
                 <div style={{float:"left",margin:"0.5rem 0"}}>
 
                     <input type="checkbox" style={{margin:"0.12rem 0.5rem",height:"1rem",backgroundColor:"#c2172e",float:"left"}}></input>

@@ -521,6 +521,7 @@ z-index: 1;
   width: 100%;
   position: absolute;
   z-index: 1;
+
 }
 .progressbar-progress li{
   float: left;
@@ -528,9 +529,11 @@ z-index: 1;
   position: relative;
   text-align: center;
   list-style-type:none;
+
 }
 .progressbar-progress{
   counter-reset: step;
+  display:flex;
 }
 .progressbar-progress li:before{
   content:counter(step);
