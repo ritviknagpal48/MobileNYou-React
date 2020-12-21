@@ -9,7 +9,7 @@ export const OrderSummary = () => {
         <div class='universalDiv universal-Div'>
           <div class='container x-container'>
             <Navbar></Navbar>
-            <section className="bodypanelmian aboutseller text-left">
+            <section className="bodypanelmian aboutseller text-left" style={{marginBottom: '20%', paddingBottom: '10px'}}>
             <div className='sellerlocation'>
                   <div className="container">
                     <div className="row">
@@ -114,11 +114,11 @@ export const OrderSummary = () => {
                     </div>
                   </div>
                 </div>
-            </section>
-            <div class="container" style={{height:"5.7rem",width:"93%",margin:"1rem auto",border:"1px solid gainsboro"}}>
+
+                <div class="container" style={{height:"5.7rem",width:"93%",margin:"1rem auto",border:"1px solid gainsboro"}}>
                 <div style={{float:"left",margin:"0.5rem 0"}}>
 
-                    <input type="checkbox" style={{margin:"0.3rem 0.5rem",height:"1rem",backgroundColor:"#c2172e",float:"left"}}></input>
+                    <input type="checkbox" style={{margin:"0.2rem 0.5rem",height:"1rem",backgroundColor:"#c2172e",float:"left"}}></input>
                     <span style={{float:"left"}}>Add GST details</span>
                     <br></br>
                     <p style={{color:"#ACA7A6",fontSize:"15px",float:"left",margin:"0 0.5rem"}}>06BPX123H84928</p>
@@ -129,6 +129,71 @@ export const OrderSummary = () => {
                     Edit
                 </div>
             </div>
+
+                <div className='sellerlocation'>
+                  <p>
+                    Price (9 Items)
+                    <span className='text-right' style={{float:'right'}}>&#8377; 5000</span>
+                  </p>
+                    
+                  <p>
+                    Shipping Cost 
+                    <span className='text-right' style={{float:'right', color:'#C32D2F'}}> Free Shipping </span>
+                  </p>
+
+                  <p>
+                    Discount
+                    <span className='text-right' style={{float:'right'}}>- &#8377; 5000</span>
+                  </p>
+
+                  <p>
+                    Discount
+                    <span className='text-right' style={{float:'right'}}>- &#8377; 500</span>
+                  </p>
+                  <hr />
+                  <p>
+                    Total
+                    <span className='text-right' style={{float:'right'}}> &#8377; 4500</span>
+                  </p>
+                  <hr />        
+                  <p>
+                    You will save<span className='text-right'style={{color:'#C32D2F'}}>  &#8377; 4500 </span> in this order
+                  </p>
+                </div>
+            </section>
+            <div class="footer" style={{
+              position: 'fixed',
+              bottom: '0',
+              width: '100%',
+              backgroundColor: '#ffffff',
+              height:'4.5rem',
+              display:'flex',
+              justifyContent: 'center',
+              flexDirection: 'column',
+              boxShadow: '4px -5px 6px rgba(207, 207, 207, 0.5)'
+          }}>
+              <div class="container">
+              <div class="row">
+                  <div class="col-6">
+                  <div style={{
+                    float:'left', 
+                    margin: '0 1rem'
+                  }}>
+                      <p style={{margin:'0 -0.3rem'}}>Total</p>
+                      <p style={{color: 'red'}}>₹5899</p>
+                  </div>
+                  </div>
+                  <div class="col-6">
+                  <button type="button" class="btn btn-danger" style={{
+                    float:'right', 
+                    margin:'0 2rem'
+                  }}>
+                    Continue
+                  </button>
+                  </div>
+              </div>
+              </div>
+          </div>
           </div>
         </div>
       </div>
