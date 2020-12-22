@@ -112,7 +112,7 @@ export const PaymentDetails = () => {
                         <div style={{ backgroundColor: "rgba(255, 0, 0, 0.05)", border: "dotted red 1px", borderRadius: "5px", fontSize: "16px", margin: "4%", height: "2.5rem", padding: "0.3rem 0" }}>
                             Get <b style={{ color: "rgba(167, 13, 13, 0.8)" }}>100Rs</b> Off on Prepaid Order
                     </div>
-                        <section class="bodypanelmian" style={{ margin: "1%", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", backgroundColor: "white", marginBottom: "2%", paddingBtom: "10px" }}>
+                        <section class="bodypanelmian" style={{display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", backgroundColor: "white"}}>
                             <section className="aboutseller">
                                     <div className="sellerlocation">
                                     <p style={{
@@ -200,7 +200,7 @@ export const PaymentDetails = () => {
                             </div>
                         </div>
                         </section>
-                        <section className="bodypanelmian aboutseller text-left" style={{ marginBottom: '2%', paddingBottom: '10px'}}>
+                        <section className="bodypanelmian aboutseller text-left">
                             <div className="sellerlocation">
                                 <h5 style={{textAlign:"center"}}>Payment Option</h5>
                                 <hr></hr>
@@ -246,6 +246,27 @@ export const PaymentDetails = () => {
                                 </div>
                                 <div>
                                     <h6 style={{color:"#c2172e", fontSize:"9px"}}>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</h6>
+                                </div>
+                            </div>
+                        </section>
+                        <section className="bodypanelmian aboutseller text-left">
+                            <div className="sellerlocation">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <input style={{ border: "0.5px solid gainsboro", borderRadius: '2%',margin: "4% 2%", padding: "10px", width: "110%" }} type="text" name="State" placeholder="Enter Coupon Code" />
+                                        </div>
+                                        <div class="col-4">
+                                            <button class="btn btn-outline-danger" style={{
+                                                margin: "8% 2%",
+                                                float:'right', 
+                                                padding: "10px",
+                                                width:'80%'
+                                            }}>
+                                                Apply
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </section>
