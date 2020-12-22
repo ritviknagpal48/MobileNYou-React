@@ -7,7 +7,7 @@ export const PaymentDetails = () => {
         <Fragment>
             <div class="badydiv">
                 <div class="universalDiv">
-                    <div class="container" style={{backgroundColor: "#F5F5F5" }}>
+                    <div class="container" style={{backgroundColor: "white" }}>
                         <Navbar></Navbar>
                         <div class="container" style={{ padding: "12px"}}>
                             <div class="row" style={{ padding: "10px;" }}>
@@ -80,7 +80,6 @@ export const PaymentDetails = () => {
                                 width: '80%'
                             }}
                                 type="text" name="Password" placeholder="Password*" />
-                        
                         <div class="footer" style={{
                             position: 'fixed',
                             bottom: '0',
@@ -113,6 +112,47 @@ export const PaymentDetails = () => {
                                 </div>
                             </div>
                         </div>
+                        </section>
+                        <section className="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px'}}>
+                            <div className="sellerlocation">
+                                <h5 style={{textAlign:"center"}}>Payment Option</h5>
+                            </div>
+                        </section>
+<section className="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px'}}>
+                        <div className='sellerlocation'>
+                <p style={{ color: 'lightgrey' }}>
+                  Price Details
+                  </p>
+                <hr style={{ margin: '1% 0' }} />
+                <p>
+                  Price (9 Items)
+                    <span className='text-right' style={{ float: 'right' }}>&#8377; 5000</span>
+                </p>
+
+                <p>
+                  Shipping Cost
+                    <span className='text-right' style={{ float: 'right', color: '#C32D2F' }}> Free Shipping </span>
+                </p>
+
+                <p>
+                  Discount
+                    <span className='text-right' style={{ float: 'right' }}>- &#8377; 5000</span>
+                </p>
+
+                <p>
+                  Discount
+                    <span className='text-right' style={{ float: 'right' }}>- &#8377; 500</span>
+                </p>
+                <hr style={{ margin: '2% 0' }} />
+                <p>
+                  Total
+                    <span className='text-right' style={{ float: 'right' }}> &#8377; 4500</span>
+                </p>
+                <hr style={{ margin: '2% 0' }} />
+                <p>
+                  You will save<span className='text-right' style={{ color: '#C32D2F' }}>  &#8377; 4500 </span> in this order
+                  </p>
+              </div>
                         </section>
                     </div>
                 </div>
