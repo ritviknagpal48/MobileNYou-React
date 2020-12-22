@@ -58,7 +58,7 @@ height: auto;
 
 body {font-family: 'Poppins', sans-serif;background:#ffffff;  overflow-x:hidden;}
 body.menuOpened{overflow:hidden}
-.universalDiv{ max-width: 576px; height: auto;  text-align: center; margin: 0 auto; background: #fff; height: calc( 100vh - 50px )}
+.universalDiv{ max-width: 576px; height: auto;  text-align: center; margin: 0 auto; background: #fff; height: calc( 100vh -25px )}
 .universalDiv .container{max-width: 576px; margin: 0 auto;}
 .badydiv{background: #c5c5c5; width: 100%; float: left; height: auto;}
 header .humburgermenu .head{background:#fff;height:65px;box-shadow:0 3px 7px 0 rgba(0,0,0,0.10);padding:10px;text-align:center;font-size:24px;font-weight:600;color:#fff; font-family: 'Open Sans', sans-serif;}

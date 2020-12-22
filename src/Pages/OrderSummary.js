@@ -6,8 +6,8 @@ export const OrderSummary = () => {
   return (
     <Fragment>
       <div class='badydiv'>
-        <div class='universalDiv universal-Div'>
-          <div class='container x-container'>
+        <div class='universalDiv'>
+          <div class='container'>
             <Navbar></Navbar>
             <section className="bodypanelmian aboutseller text-left" style={{marginBottom: '20%', paddingBottom: '10px'}}>
               <div className="container-for-progress" style={{ padding:"4px", boxShadow: "0px 0px 4px 1px gainsboro", margin: "10px 14px auto 14px"}}>
