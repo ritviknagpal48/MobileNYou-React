@@ -111,5 +111,18 @@ $(document).ready(function() {
       x.type = "password";
     }
   }
+
+  document.getElementById("cart-items-dropdown-menu").onclick = (e) =>{
+    var content = document.getElementById("cart-items-dropdown-content")
+    if(e.target.nextSibling.className=="bx bx-chevron-down"){
+      e.target.nextSibling.className = "bx bx-chevron-up"
+      content.style.display="block"
+    }
+    else{
+      e.target.nextSibling.className = "bx bx-chevron-down"
+      content.style.display="none"
+    }
+  }
+
   document.getElementById("eye-password").addEventListener("click", toggleVisibility);
 });
