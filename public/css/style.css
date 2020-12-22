@@ -577,17 +577,18 @@ z-index: 1;
     z-index: 1;
     overflow: hidden;
     text-align: center;
+    color:#c2172e;
 }
 .strike-through-text:before, .strike-through-text:after {
   position: absolute;
   top: 51%;
   overflow: hidden;
-  width: 50%;
-  height: 1px;
+  width: 20%;
+  height: 0.5px;
   content: '\a0';
-  background-color: red;
+  background-color: #c2172e;
 }
 .strike-through-text:before {
-  margin-left: -50%;
+  margin-left: -20%;
   text-align: right;
 }
