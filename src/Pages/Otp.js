@@ -47,7 +47,7 @@ export const Otp = () => {
             </div>
             <div style={{ marginLeft: "10px", marginRight: "10px" }}>
                 <div style={{ marginTop: '15px' }}>
-                    <button className="btn" style={{ padding: "4% 3%", borderRadius: "5px", border: "#c2172e solid 2px", borderRadius:"5px", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%", backgroundColor: "white", color: "#c2172e" }}><b>Sign In With Password</b></button>
+                    <button className="btn" style={{ padding: "4% 3%", border: "#c2172e solid 2px", borderRadius:"5px", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%", backgroundColor: "white", color: "#c2172e" }}><b>Sign In With Password</b></button>
                 </div>
             </div>
         </Fragment>
