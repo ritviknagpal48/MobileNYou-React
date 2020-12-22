@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
 
@@ -20,7 +21,7 @@ export const PaymentDetails = () => {
                             </div>
                         </div>
 
-                        <div class="container" id="cart-items-dropdown-menu" style={{ backgroundColor: "white", backgroundColor: "white", width: "93%", height: "2.5rem", borderRadius: "2%" }}>
+                        <div class="container" id="cart-items-dropdown-menu" style={{ backgroundColor: "white", width: "93%", height: "2.5rem", borderRadius: "2%" }}>
                             <span style={{ float: "left", margin: "0 1rem", padding: "0.5rem 0", fontSize: "15px" }}>View items in cart</span>
                             <i style={{ float: "left", fontSize: "23px", padding: "0.5rem 0", marginLeft: "-0.7rem" }} class='bx bx-chevron-down'></i>
                             <span style={{ float: "right", margin: "0 1rem", padding: "0.5rem 0", color: "red", fontSize: "15px" }}>₹5899</span>
@@ -142,8 +143,6 @@ export const PaymentDetails = () => {
                                             margin: '4% 2%',
                                             padding: '10px',
                                             width: '100%',
-                                            margin: '2%',
-                                            padding: '10px'
                                         }}
                                             type="text" name="Landmark" placeholder="Landmark" />
                                     </div>
@@ -162,7 +161,7 @@ export const PaymentDetails = () => {
                                 padding: '10px',
                                 width: '80%'
                             }}
-                                type="text" name="Password" placeholder="Password*" />
+                             name="Password" placeholder="Password*" />
                         <div class="footer" style={{
                             position: 'fixed',
                             bottom: '0',
