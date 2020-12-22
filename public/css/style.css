@@ -627,3 +627,22 @@ z-index: 1;
     margin: 0 0.5rem;
   }
 }
+::-webkit-scrollbar {
+  width: 1px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c2172e; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #941c2c; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: blue; 
+}
