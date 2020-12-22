@@ -523,6 +523,20 @@ z-index: 1;
   z-index: 1;
 
 }
+@media only screen and (min-width: 600px) {
+  .container-for-progress{
+    width: 53.5%;
+    position: absolute;
+    z-index: 1;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .container-for-progress{
+    width: 36%;
+    position: absolute;
+    z-index: 1;
+  }
+}
 .progressbar-progress li{
   float: left;
   width: 40%;
