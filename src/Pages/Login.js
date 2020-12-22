@@ -27,8 +27,11 @@ export const Login = () => {
           </div>
         </div>
       </div>
-      <div className="strike-color" style={{textAlign:"center"}}>
+      <div className="strike-color" style={{ textAlign: "center" }}>
         <h6 className="strike-through-text">or</h6>
+      </div>
+      <div style={{marginLeft:"10px", marginRight:"10px"}}>
+        <input className="form-control" style={{ backgroundColor: "#F5F5F5", padding: "3%", borderRadius: "5px", border: "none", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%" }} placeholder="Email/Contact No."></input>
       </div>
     </Fragment>
   );
