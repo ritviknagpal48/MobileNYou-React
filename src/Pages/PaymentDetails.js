@@ -218,19 +218,47 @@ export const PaymentDetails = () => {
                                     Get <b style={{ color: "rgba(167, 13, 13, 0.8)" }}>100Rs</b> Off on Prepaid Order
                                 </div>
                                 <div className="container">
-                                    <div className="row">
-                                        <div className="col"><i class='bx bx-credit-card' style={{color:"#c2172e", fontSize:"24px"}}></i></div>
-                                        <div className="col"><i class='bx bxs-bank' style={{color:"#c2172e", fontSize:"24px"}}></i></div>
-                                        <div className="col"><i class='bx bxs-calculator' style={{color:"#c2172e", fontSize:"24px"}}></i></div>
-                                        <div className="col"><i class='bx bxs-right-arrow' style={{color:"#c2172e", fontSize:"24px"}}></i></div>
-                                        <div className="col"><i class='bx bxs-wallet' style={{color:"#c2172e", fontSize:"24px"}}></i></div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col" style={{fontSize:"11px"}}>Card</div>
-                                        <div className="col" style={{fontSize:"11px"}}>Netbanking</div>
-                                        <div className="col" style={{fontSize:"11px"}}>EMI</div>
-                                        <div className="col" style={{fontSize:"11px"}}>BHIM UPI</div>
-                                        <div className="col" style={{fontSize:"11px"}}>Wallets</div>
+                                    <div className="row" style={{marginLeft:"5px"}}>
+                                        <div className="col">
+                                            <div className="row">
+                                                <i class='bx bx-credit-card' style={{color:"#c2172e", fontSize:"24px"}}></i>
+                                            </div>
+                                            <div className="row">
+                                                <h6 style={{fontSize:"11px"}}>Card</h6>
+                                            </div>
+                                        </div>
+                                        <div className="col">
+                                            <div className="row">
+                                                <i class='bx bxs-bank' style={{color:"#c2172e", fontSize:"24px"}}></i>
+                                            </div>
+                                            <div className="row">
+                                                <h6 style={{fontSize:"11px"}}>Net<br></br>Banking</h6>
+                                            </div>
+                                        </div>
+                                        <div className="col">
+                                            <div className="row">
+                                                <i class='bx bxs-calculator' style={{color:"#c2172e", fontSize:"24px"}}></i>
+                                            </div>
+                                            <div className="row">
+                                                <h6 style={{fontSize:"11px"}}>EMI</h6>
+                                            </div>
+                                        </div>
+                                        <div className="col">
+                                            <div className="row">
+                                                <i class='bx bxs-right-arrow' style={{color:"#c2172e", fontSize:"24px"}}></i>
+                                            </div>
+                                            <div className="row">
+                                                <h6 style={{fontSize:"11px"}}>BHIM<br></br>UPI</h6>
+                                            </div>
+                                        </div>
+                                        <div className="col">
+                                            <div className="row">
+                                                <i class='bx bxs-wallet' style={{color:"#c2172e", fontSize:"24px"}}></i>
+                                            </div>
+                                            <div className="row">
+                                                <h6 style={{fontSize:"11px"}}>Wallet</h6>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <hr></hr>
