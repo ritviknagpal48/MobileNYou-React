@@ -113,7 +113,9 @@ export const PaymentDetails = () => {
                             Get <b style={{ color: "rgba(167, 13, 13, 0.8)" }}>100Rs</b> Off on Prepaid Order
                     </div>
                         <section class="bodypanelmian" style={{ margin: "1%", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", backgroundColor: "white", marginBottom: "2%", paddingBtom: "10px" }}>
-                            <p style={{
+                            <section className="aboutseller">
+                                    <div className="sellerlocation">
+                                    <p style={{
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
@@ -162,7 +164,10 @@ export const PaymentDetails = () => {
                                 width: '80%'
                             }}
                              name="Password" placeholder="Password*" />
+                                    </div>
+                            </section>
                         <div class="footer" style={{
+                            zIndex:"100",
                             position: 'fixed',
                             bottom: '0',
                             width: '576px',
