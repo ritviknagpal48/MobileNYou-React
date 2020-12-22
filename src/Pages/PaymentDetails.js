@@ -28,7 +28,7 @@ export const PaymentDetails = () => {
                         <div style={{ backgroundColor: "rgba(255, 0, 0, 0.05)", border: "dotted red 1px", borderRadius: "5px", fontSize: "16px", margin: "4%", height: "2.5rem", padding: "0.3rem 0" }}>
                             Get <b style={{ color: "rgba(167, 13, 13, 0.8)" }}>100Rs</b> Off on Prepaid Order
                     </div>
-                        <section class="bodypanelmian" style={{ margin: "1%", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", backgroundColor: "white", marginBottom: "20%", paddingBtom: "10px" }}>
+                        <section class="bodypanelmian" style={{ margin: "1%", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", backgroundColor: "white", marginBottom: "2%", paddingBtom: "10px" }}>
                             <p style={{
                                 display: 'flex',
                                 alignItems: 'center',
@@ -113,46 +113,90 @@ export const PaymentDetails = () => {
                             </div>
                         </div>
                         </section>
-                        <section className="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px'}}>
+                        <section className="bodypanelmian aboutseller text-left" style={{ marginBottom: '2%', paddingBottom: '10px'}}>
                             <div className="sellerlocation">
                                 <h5 style={{textAlign:"center"}}>Payment Option</h5>
+                                <hr></hr>
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-1">
+                                            <input class="" type="radio" name="exampleRadios" value="Online"/>
+                                        </div>
+                                        <div className="col-10">
+                                            <h5 style={{fontSize:"12px", color:"gray"}}>Pay via With Credit or Debit Card, Netbanking, Wallet, UPI, EMI</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style={{ backgroundColor: "rgba(255, 0, 0, 0.05)", border: "dotted red 1px", borderRadius: "5px", fontSize: "16px", margin: "4%", height: "2.5rem", padding: "0.3rem 0", textAlign:"center" }}>
+                                    Get <b style={{ color: "rgba(167, 13, 13, 0.8)" }}>100Rs</b> Off on Prepaid Order
+                                </div>
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col"><i class='bx bx-credit-card' style={{color:"#c2172e", fontSize:"24px"}}></i></div>
+                                        <div className="col"><i class='bx bxs-bank' style={{color:"#c2172e", fontSize:"24px"}}></i></div>
+                                        <div className="col"><i class='bx bxs-calculator' style={{color:"#c2172e", fontSize:"24px"}}></i></div>
+                                        <div className="col"><i class='bx bxs-right-arrow' style={{color:"#c2172e", fontSize:"24px"}}></i></div>
+                                        <div className="col"><i class='bx bxs-wallet' style={{color:"#c2172e", fontSize:"24px"}}></i></div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col" style={{fontSize:"11px"}}>Card</div>
+                                        <div className="col" style={{fontSize:"11px"}}>Netbanking</div>
+                                        <div className="col" style={{fontSize:"11px"}}>EMI</div>
+                                        <div className="col" style={{fontSize:"11px"}}>BHIM UPI</div>
+                                        <div className="col" style={{fontSize:"11px"}}>Wallets</div>
+                                    </div>
+                                </div>
+                                <hr></hr>
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-1">
+                                            <input class="" type="radio" name="exampleRadios" value="Online"/>
+                                        </div>
+                                        <div className="col-10">
+                                            <h5 style={{fontSize:"12px", color:"gray"}}>Cash On Delivery</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 style={{color:"#c2172e", fontSize:"9px"}}>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</h6>
+                                </div>
                             </div>
                         </section>
-<section className="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px'}}>
-                        <div className='sellerlocation'>
-                <p style={{ color: 'lightgrey' }}>
-                  Price Details
-                  </p>
-                <hr style={{ margin: '1% 0' }} />
-                <p>
-                  Price (9 Items)
-                    <span className='text-right' style={{ float: 'right' }}>&#8377; 5000</span>
-                </p>
+                        <section className="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px'}}>
+                                <div className='sellerlocation'>
+                        <p style={{ color: 'lightgrey' }}>
+                        Price Details
+                        </p>
+                        <hr style={{ margin: '1% 0' }} />
+                        <p>
+                        Price (9 Items)
+                            <span className='text-right' style={{ float: 'right' }}>&#8377; 5000</span>
+                        </p>
 
-                <p>
-                  Shipping Cost
-                    <span className='text-right' style={{ float: 'right', color: '#C32D2F' }}> Free Shipping </span>
-                </p>
+                        <p>
+                        Shipping Cost
+                            <span className='text-right' style={{ float: 'right', color: '#C32D2F' }}> Free Shipping </span>
+                        </p>
 
-                <p>
-                  Discount
-                    <span className='text-right' style={{ float: 'right' }}>- &#8377; 5000</span>
-                </p>
+                        <p>
+                        Discount
+                            <span className='text-right' style={{ float: 'right' }}>- &#8377; 5000</span>
+                        </p>
 
-                <p>
-                  Discount
-                    <span className='text-right' style={{ float: 'right' }}>- &#8377; 500</span>
-                </p>
-                <hr style={{ margin: '2% 0' }} />
-                <p>
-                  Total
-                    <span className='text-right' style={{ float: 'right' }}> &#8377; 4500</span>
-                </p>
-                <hr style={{ margin: '2% 0' }} />
-                <p>
-                  You will save<span className='text-right' style={{ color: '#C32D2F' }}>  &#8377; 4500 </span> in this order
-                  </p>
-              </div>
+                        <p>
+                        Discount
+                            <span className='text-right' style={{ float: 'right' }}>- &#8377; 500</span>
+                        </p>
+                        <hr style={{ margin: '2% 0' }} />
+                        <p>
+                        Total
+                            <span className='text-right' style={{ float: 'right' }}> &#8377; 4500</span>
+                        </p>
+                        <hr style={{ margin: '2% 0' }} />
+                        <p>
+                        You will save<span className='text-right' style={{ color: '#C32D2F' }}>  &#8377; 4500 </span> in this order
+                        </p>
+                    </div>
                         </section>
                     </div>
                 </div>
