@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
 import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
 
