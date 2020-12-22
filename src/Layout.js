@@ -12,8 +12,9 @@ import { EmiOptions } from './Pages/EmiOptions';
 import { PaymentDetails } from './Pages/PaymentDetails';
 import {Login} from './Pages/Login';
 import {Otp} from './Pages/Otp';
-import {SignIn} from './Pages/SignIn'
-import { SignUp } from './Pages/SignUp'
+import {SignIn} from './Pages/SignIn';
+import { SignUp } from './Pages/SignUp';
+import {Review} from './Pages/Review';
 
 export const Layout = () => {
   return (
@@ -41,6 +42,8 @@ export const Layout = () => {
         <Route exact path='/Otp' component={Otp}></Route>
         <Route exact path='/SignIn' component={SignIn}></Route>
         <Route exact path='/signup' component={SignUp}></Route>
+        <Route exact path='/review' component={Review}></Route>
+
       </Switch>
     </Router>
   );
