@@ -571,3 +571,23 @@ z-index: 1;
    background: #c2172e;
    color: white;
 }
+.strike-through-text{
+    position: relative;
+    font-size: 18px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+.strike-through-text:before, .strike-through-text:after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 50%;
+  height: 1px;
+  content: '\a0';
+  background-color: red;
+}
+.strike-through-text:before {
+  margin-left: -50%;
+  text-align: right;
+}
