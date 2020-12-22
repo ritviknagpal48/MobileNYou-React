@@ -114,12 +114,13 @@ $(document).ready(function() {
 
   document.getElementById("cart-items-dropdown-menu").onclick = (e) =>{
     var content = document.getElementById("cart-items-dropdown-content")
-    if(e.target.nextSibling.className=="bx bx-chevron-down"){
-      e.target.nextSibling.className = "bx bx-chevron-up"
+    var icon = document.getElementById("cart-items-dropdown-icon")
+    if(icon.className=="bx bx-chevron-down"){
+      icon.className = "bx bx-chevron-up"
       content.style.display="block"
     }
     else{
-      e.target.nextSibling.className = "bx bx-chevron-down"
+      icon.className = "bx bx-chevron-down"
       content.style.display="none"
     }
   }

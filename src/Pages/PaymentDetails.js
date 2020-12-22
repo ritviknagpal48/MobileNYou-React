@@ -23,7 +23,7 @@ export const PaymentDetails = () => {
 
                         <div class="container" id="cart-items-dropdown-menu" style={{ backgroundColor: "white", width: "93%", height: "2.5rem", borderRadius: "2%" }}>
                             <span style={{ float: "left", margin: "0 1rem", padding: "0.5rem 0", fontSize: "15px" }}>View items in cart</span>
-                            <i style={{ float: "left", fontSize: "23px", padding: "0.5rem 0", marginLeft: "-0.7rem" }} class='bx bx-chevron-down'></i>
+                            <i id="cart-items-dropdown-icon" style={{ float: "left", fontSize: "23px", padding: "0.5rem 0", marginLeft: "-0.7rem" }} class='bx bx-chevron-down'></i>
                             <span style={{ float: "right", margin: "0 1rem", padding: "0.5rem 0", color: "red", fontSize: "15px" }}>₹5899</span>
                         </div>
                         <div className="bodypanelmian aboutseller text-left" id="cart-items-dropdown-content" style={{backgroundColor:"white",width: "93%",margin:"-1rem auto 0 auto",display:"none" }}>
