@@ -610,3 +610,20 @@ z-index: 1;
 .input-tag-for-focus:focus{
   box-shadow: 0px 0px 4px #c2172e;
 }
+
+@media (max-width: 500px){
+  .left-foot {
+    margin: 0 6rem;
+  }
+  .right-foot {
+    margin: 0 7rem;
+  }
+}
+@media (min-width: 1000px){
+  .left-foot {
+    margin: 0 -0.3rem;
+  }
+  .right-foot {
+    margin: 0 0.5rem;
+  }
+}

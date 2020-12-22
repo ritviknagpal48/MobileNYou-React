@@ -21,10 +21,10 @@ export const Otp = () => {
                 </div>
                 <div class="container" style={{ backgroundColor: "transparent", padding: "12px" }}>
                     <div class="row" style={{ padding: "10px;" }}>
-                        <div class="col-6">
+                        <div class="col-6" style={{ display: "flex", justifyContent: "center" }}>
                             <button type="button" class="btn btn-light" style={{ backgroundColor: "white", fontSize: "16px", width: "10rem", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "row", border: "solid lightgray 0.5px" }}><i style={{ float: "left", color: "blue", fontSize: "24px" }} class='bx bxl-facebook-circle' ></i>Facebook</button>
                         </div>
-                        <div class="col-6">
+                        <div class="col-6" style={{ display: "flex", justifyContent: "center" }}>
                             <button type="button" class="btn btn-light" style={{ backgroundColor: "white", fontSize: "16px", width: "10rem", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "row", border: "solid lightgray 0.5px" }}><i style={{ float: "left", color: "red", fontSize: "24px" }} class='bx bxl-google'></i>Google</button>
                         </div>
                     </div>

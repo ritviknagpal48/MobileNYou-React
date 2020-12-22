@@ -184,40 +184,39 @@ export const OrderSummary = () => {
                   You will save<span className='text-right' style={{ color: '#C32D2F' }}>  &#8377; 4500 </span> in this order
                   </p>
               </div>
-            </section>
-            <div class="footer" style={{
-              position: 'fixed',
-              bottom: '0',
-              width: '100%',
-              backgroundColor: '#ffffff',
-              height: '4.5rem',
-              display: 'flex',
-              justifyContent: 'center',
-              flexDirection: 'column',
-              boxShadow: '4px -5px 6px rgba(207, 207, 207, 0.5)'
-            }}>
-              <div class="container">
-                <div class="row">
-                  <div class="col-6">
-                    <div style={{
-                      float: 'left',
-                      margin: '0 1rem'
-                    }}>
-                      <p style={{ margin: '0 -0.3rem' }}>Total</p>
-                      <p style={{ color: 'red' }}>₹5899</p>
+              <div class="footer" style={{
+                position: 'fixed',
+                bottom: '0',
+                width: '576px',
+                backgroundColor: '#ffffff',
+                height: '4.5rem',
+                display: 'flex',
+                justifyContent: 'center',
+                flexDirection: 'column',
+                boxShadow: '4px -5px 6px rgba(207, 207, 207, 0.5)'
+              }}>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <div style={{
+                        float: 'left',
+                        margin: '0 1rem'
+                      }}>
+                        <p class="left-foot">Total</p>
+                        <p style={{ color: 'red' }}>₹5899</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-6">
-                    <button type="button" class="btn btn-danger" style={{
-                      float: 'right',
-                      margin: '0 2rem'
-                    }}>
-                      Continue
-                  </button>
+                    <div class="col-6">
+                      <button type="button" class="btn btn-danger right-foot" style={{
+                        float: 'right'
+                      }}>
+                        Continue
+                    </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
           </div>
         </div>
       </div>

@@ -80,11 +80,11 @@ export const PaymentDetails = () => {
                                 width: '80%'
                             }}
                                 type="text" name="Password" placeholder="Password*" />
-                        </section>
+                        
                         <div class="footer" style={{
                             position: 'fixed',
                             bottom: '0',
-                            width: '100%',
+                            width: '576px',
                             backgroundColor: '#ffffff',
                             height: '4.5rem',
                             display: 'flex',
@@ -99,14 +99,13 @@ export const PaymentDetails = () => {
                                             float: 'left',
                                             margin: '0 1rem'
                                         }}>
-                                            <p style={{ margin: '0 -0.3rem' }}>Total</p>
+                                            <p className='left-foot'>Total</p>
                                             <p style={{ color: 'red' }}>₹5899</p>
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                        <button type="button" class="btn btn-danger" style={{
-                                            float: 'right',
-                                            margin: '0 2rem'
+                                        <button type="button" class="btn btn-danger right-foot" style={{
+                                            float: 'right'
                                         }}>
                                             Continue
                             </button>
@@ -114,6 +113,7 @@ export const PaymentDetails = () => {
                                 </div>
                             </div>
                         </div>
+                        </section>
                     </div>
                 </div>
             </div>
