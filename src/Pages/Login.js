@@ -27,7 +27,7 @@ export const Login = () => {
           </div>
         </div>
       </div>
-      <div className="strike-color" style={{ textAlign: "center" }}>
+      <div className="strike-color" style={{ textAlign: "center", marginTop:"10px", marginBottom:"24px" }}>
         <h6 className="strike-through-text">or</h6>
       </div>
       <div style={{marginLeft:"10px", marginRight:"10px"}}>
