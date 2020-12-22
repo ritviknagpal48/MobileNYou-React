@@ -27,7 +27,6 @@ export const Layout = () => {
           path='/productdescription'
           component={ProductDescription}
         ></Route>
-        <Route exact path='/ordersummary' component={OrderSummary}></Route>
         <Route exact path='/aboutseller' component={AboutSeller}></Route>
         <Route exact path='/productvariants' component={Variants}></Route>
         <Route
@@ -35,6 +34,7 @@ export const Layout = () => {
           path='/productspecifications'
           component={Specifications}
         ></Route>
+        <Route exact path='/ordersummary' component={OrderSummary}></Route>
         <Route exact path='/emioptions' component={EmiOptions}></Route>
         <Route exact path='/paymentdetails' component={PaymentDetails}></Route>
         <Route exact path='/login' component={Login}></Route>

@@ -5,7 +5,7 @@ export const PaymentDetails = () => {
     return (
 
         <Fragment>
-            <div class="badydiv" style={{backgroundColor: "rgb(245, 245, 245)"}}>
+            <div class="badydiv">
                 <div class="universalDiv" style={{backgroundColor: "transparent"}}>
                     <div class="container" style={{backgroundColor: "transparent"}}>
                         <Navbar></Navbar>

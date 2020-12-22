@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 export const Login = () => {
   return (
     <Fragment>
-    <div class="badydiv" style={{backgroundColor: "rgb(245, 245, 245)"}}>
+    <div class="badydiv">
         <div class="universalDiv" >
         <i class='bx bx-arrow-back' style={{ fontSize: "27px", margin: "5%" }}></i>
         <div class="container" style={{

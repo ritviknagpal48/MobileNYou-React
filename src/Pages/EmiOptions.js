@@ -5,7 +5,7 @@ import { EmiTable } from '../Components/EmiOptions Page/EmiTable';
 export const EmiOptions = () => {
   return (
     <Fragment>
-      <div class='badydiv' style={{ background: 'white' }}>
+      <div class='badydiv'>
         <div class='universalDiv'>
           <div class='container'>
             <Navbar></Navbar>
