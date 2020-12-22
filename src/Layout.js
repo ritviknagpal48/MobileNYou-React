@@ -10,6 +10,7 @@ import { Variants } from './Pages/Variants';
 import { Specifications } from './Pages/Specifications';
 import { EmiOptions } from './Pages/EmiOptions';
 import { PaymentDetails } from './Pages/PaymentDetails';
+import {Login} from './Pages/Login';
 
 export const Layout = () => {
   return (
@@ -33,6 +34,8 @@ export const Layout = () => {
         ></Route>
         <Route exact path='/emioptions' component={EmiOptions}></Route>
         <Route exact path='/paymentdetails' component={PaymentDetails}></Route>
+        <Route exact path='/login' component={Login}></Route>
+
       </Switch>
     </Router>
   );
