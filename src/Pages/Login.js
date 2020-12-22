@@ -14,7 +14,7 @@ export const Login = () => {
         <img src="image/header/logo.gif" alt="Logo" classname="img-fluid"></img>
       </div>
       <div style={{ textAlign: "center" }}>
-        <h6 style={{ color: "gray", fontSize: "12px", margin: "3%" }}>SIGN IN WITH OTP</h6>
+        <h6 style={{ color: "gray", fontSize: "12px", margin: "3%" }}>LOGIN</h6>
         <h6 style={{ fontSize: "12px", margin: "3%" }}>You're Just One Step Away From Signing Up</h6>
       </div>
       <div class="container" style={{ backgroundColor: "transparent", padding: "12px" }}>
@@ -31,7 +31,10 @@ export const Login = () => {
         <h6 className="strike-through-text">or</h6>
       </div>
       <div style={{marginLeft:"10px", marginRight:"10px"}}>
-        <input className="form-control" style={{ backgroundColor: "#F5F5F5", padding: "3%", borderRadius: "5px", border: "none", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%" }} placeholder="Email/Contact No."></input>
+        <input className="form-control input-tag-for-focus" style={{ backgroundColor: "#F5F5F5", padding: "7% 3%", borderRadius: "5px", border: "none", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%" }} placeholder="Email / Contact No."></input>
+        <div style={{marginTop: '15px'}}>
+          <button className="btn btn-danger" style={{padding: "4% 3%", borderRadius: "5px", border: "none", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%"}}>Continue</button>
+        </div>
       </div>
     </Fragment>
   );
