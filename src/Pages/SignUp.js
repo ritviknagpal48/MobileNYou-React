@@ -35,7 +35,10 @@ export const SignUp = () => {
         <input className="form-control input-tag-for-focus" style={{ backgroundColor: "#F5F5F5", padding: "7% 3%", borderRadius: "5px", border: "1px solid gainsboro", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%", marginTop: '15px' }} type="number" id="phnumber" placeholder="Phone Number"></input>
         <input className="form-control input-tag-for-focus" style={{ backgroundColor: "#F5F5F5", padding: "7% 3%", borderRadius: "5px", border: "1px solid gainsboro", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%", marginTop: '15px' }} placeholder="Email Id"></input>
         <input className="form-control input-tag-for-focus" style={{ backgroundColor: "#F5F5F5", padding: "7% 3%", borderRadius: "5px", border: "1px solid gainsboro", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%", marginTop: '15px' }} type="password" id="input-pwd" placeholder="Password"></input>
-        <span class="fa fa-fw fa-eye field-icon" id="eye-password"></span>
+        <div class="form-check" style={{marginTop: '5px', fontSize: '14px'}}>
+        <input class="form-check-input" type="checkbox" id="eye-password" value="" />
+        <label> Show Password</label>
+        </div>
         <div style={{marginTop: '15px'}}>
           <button className="btn" style={{padding: "4% 3%", borderRadius: "5px", border: "none", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%",backgroundColor:"#c2172e",color:"white"}}>Verify Your Phone Number</button>
           <div class="form-check" style={{marginTop: '5px', fontSize: '12px'}}>
