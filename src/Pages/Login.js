@@ -31,10 +31,13 @@ export const Login = () => {
         <h6 className="strike-through-text">or</h6>
       </div>
       <div style={{marginLeft:"10px", marginRight:"10px"}}>
-        <input className="form-control input-tag-for-focus" style={{ backgroundColor: "#F5F5F5", padding: "7% 3%", borderRadius: "5px", border: "none", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%" }} placeholder="Email / Contact No."></input>
+        <input className="form-control input-tag-for-focus" style={{ backgroundColor: "#F5F5F5", padding: "7% 3%", borderRadius: "5px", border: "1px solid gainsboro", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%" }} placeholder="Email / Contact No."></input>
         <div style={{marginTop: '15px'}}>
-          <button className="btn btn-danger" style={{padding: "4% 3%", borderRadius: "5px", border: "none", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%"}}>Continue</button>
+          <button className="btn" style={{padding: "4% 3%", borderRadius: "5px", border: "none", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%",backgroundColor:"#c2172e",color:"white"}}><b>Continue</b></button>
         </div>
+      </div>
+      <div style={{margin:"0.8rem 6rem"}}>
+          <p style={{fontSize:"15px"}}>New here? <span style={{color:"red",marginLeft:"0.3rem",fontSize:"14px"}}>Create Account</span></p>
       </div>
     </Fragment>
   );
