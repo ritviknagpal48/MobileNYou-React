@@ -7,9 +7,9 @@ export const PaymentDetails = () => {
         <Fragment>
             <div class="badydiv">
                 <div class="universalDiv">
-                    <div class="container">
+                    <div class="container" style={{backgroundColor: "#F5F5F5" }}>
                         <Navbar></Navbar>
-                        <div class="container" style={{ padding: "12px", backgroundColor: "#F5F5F5" }}>
+                        <div class="container" style={{ padding: "12px"}}>
                             <div class="row" style={{ padding: "10px;" }}>
                                 <div class="col-6" style={{ display: "flex", justifyContent: "center" }}>
                                     <button type="button" class="btn btn-light" style={{ backgroundColor: "white", fontSize: "16px", width: "10rem", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "row" }}><i style={{ float: "left", color: "blue", fontSize: "24px" }} class='bx bxl-facebook-circle' ></i>Facebook</button>

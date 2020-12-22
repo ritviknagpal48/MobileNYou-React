@@ -4,7 +4,7 @@ export const SignUp = () => {
   return (
     <Fragment>
       <div class="badydiv">
-        <div class="universalDiv" >
+        <div class="universalDiv" style={{textAlign:"unset"}}>
           <i class='bx bx-arrow-back' style={{ fontSize: "27px", margin: "5%" }}></i>
           <div class="container" style={{
             textAlign: "center",
