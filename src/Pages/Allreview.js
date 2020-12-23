@@ -33,21 +33,30 @@ export const Allreview = () => {
                                                                     </div>
                                                                 </div>
                                                                 <div className="col-7">
-                                                                    <div className="row"><
-                                                                        h6 style={{ fontSize: "10px" }}><b>5</b></h6><i style={{ fontSize: "10px", padding: "1px 1px 1px 2px" }} class='bx bxs-star'></i>
-                                                                        <ProgressBar now={50} />
+                                                                    <div className="row">
+                                                                        <h6 style={{ fontSize: "10px" }}><b>5</b></h6><i style={{ fontSize: "10px", padding: "1px 1px 1px 2px" }} class='bx bxs-star'></i>
+                                                                        <ProgressBar now={100} variant={'success'} style={{width:"75%",margin:"0.2rem" ,height:"5px",}}/>
+                                                                        <span style={{fontSize:"10px", marginTop:"-2px"}}><b>50</b></span>
                                                                     </div>
                                                                     <div className="row">
                                                                         <h6 style={{ fontSize: "10px" }}><b>4</b></h6><i style={{ fontSize: "10px", padding: "1px 1px 1px 2px" }} class='bx bxs-star'></i>
+                                                                        <ProgressBar now={40} variant={'success'} style={{width:"75%",margin:"0.2rem" ,height:"5px",}}/>
+                                                                        <span style={{fontSize:"10px", marginTop:"-2px"}}><b>20</b></span>
                                                                     </div>
                                                                     <div className="row">
                                                                         <h6 style={{ fontSize: "10px" }}><b>3</b></h6><i style={{ fontSize: "10px", padding: "1px 1px 1px 2px" }} class='bx bxs-star'></i>
+                                                                        <ProgressBar now={20} variant={'warning'} style={{width:"75%",margin:"0.2rem" ,height:"5px",}}/>
+                                                                        <span style={{fontSize:"10px", marginTop:"-2px"}}><b>15</b></span>
                                                                     </div>
                                                                     <div className="row">
                                                                         <h6 style={{ fontSize: "10px" }}><b>2</b></h6><i style={{ fontSize: "10px", padding: "1px 1px 1px 2px" }} class='bx bxs-star'></i>
+                                                                        <ProgressBar now={10} variant={'danger'} style={{width:"75%",margin:"0.2rem" ,height:"5px",}}/>
+                                                                        <span style={{fontSize:"10px", marginTop:"-2px"}}><b>8</b></span>
                                                                     </div>
                                                                     <div className="row">
                                                                         <h6 style={{ fontSize: "10px" }}><b>1</b></h6><i style={{ fontSize: "10px", padding: "1px 1px 1px 2px" }} class='bx bxs-star'></i>
+                                                                        <ProgressBar now={5} variant={'danger'} style={{width:"75%",margin:"0.2rem" ,height:"5px",}}/>
+                                                                        <span style={{fontSize:"10px", marginTop:"-2px"}}><b>2</b></span>
                                                                     </div>
                                                                 </div>
                                                             </div>
