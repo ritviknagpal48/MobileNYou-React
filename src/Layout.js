@@ -16,6 +16,9 @@ import {SignIn} from './Pages/SignIn';
 import { SignUp } from './Pages/SignUp';
 import {Review} from './Pages/Review';
 import {Allreview} from "./Pages/Allreview";
+import { Emptycart } from "./Pages/Emptycart";
+import { Transactionerror } from "./Pages/Transactionerror";
+import { Orderplaced } from "./Pages/Orderplaced";
 
 export const Layout = () => {
   return (
@@ -45,6 +48,9 @@ export const Layout = () => {
         <Route exact path='/signup' component={SignUp}></Route>
         <Route exact path='/review' component={Review}></Route>
         <Route exact path='/Allreview' component={Allreview}></Route>
+        <Route exact path='/Emptycart' component={Emptycart}></Route>
+        <Route exact path='/Transactionerror' component={Transactionerror}></Route>
+        <Route exact path='/Orderplaced' component={Orderplaced}></Route>
 
       </Switch>
     </Router>
