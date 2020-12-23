@@ -19,7 +19,7 @@ export const Orderplaced = () => {
                             <p style={{fontSize:"12px",textAlign:"left",margin:"0.2rem 0.7rem", paddingTop:"15px"}}>Delivery by Fri, Dec 4th 20</p>
                             <br></br>
                             <hr style={{ margin: '0% 0.7rem', marginTop:"-4%", paddingBottom:"10px" }} />
-                            <p style={{fontSize:"16px",fontWeight:"bold",float:"left",marginLeft:"0.7rem"}}>Shreyans C Jain</p>
+                            <p style={{fontSize:"16px",fontWeight:"bold",float:"left",marginLeft:"0.7rem"}}>Neeraj Sharma</p>
                             <br></br>
                             <p style={{fontSize:"13px",float:"left",marginLeft:"0.7rem",color:"grey"}}>Rzg-261,Sitapuri-2, Street No. 13,</p>
                             <br></br>
