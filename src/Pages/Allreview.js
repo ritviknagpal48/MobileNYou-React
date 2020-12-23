@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
+import {ProgressBar} from 'react-bootstrap';
 
 export const Allreview = () => {
     return (
@@ -22,10 +23,34 @@ export const Allreview = () => {
                                             <div class="rating_review">
                                                 <section className="aboutseller">
                                                     <div className="sellerlocation">
-                                                        <div style={{borderRight:"1px gainsboro solid"}}>
-                                                            <h4><span style={{ color: "green", fontSize: "32px" }}><b>4.2</b></span><span style={{ fontSize: "18px", color: "gray" }}>/5</span></h4>
-                                                            <img src="image/rating/r4.svg" alt="" />
-                                                            <h6 style={{ fontSize: "10px" }}>85 Rating | 42 Reviews</h6>
+                                                        <div className="container">
+                                                            <div className="row">
+                                                                <div className="col-5">
+                                                                    <div style={{ borderRight: "1px gainsboro solid" }}>
+                                                                        <h4><span style={{ color: "green", fontSize: "32px" }}><b>4.2</b></span><span style={{ fontSize: "18px", color: "gray" }}>/5</span></h4>
+                                                                        <img src="image/rating/r4.svg" alt="" />
+                                                                        <h6 style={{ fontSize: "10px" }}>85 Rating | 42 Reviews</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div className="col-7">
+                                                                    <div className="row"><
+                                                                        h6 style={{ fontSize: "10px" }}><b>5</b></h6><i style={{ fontSize: "10px", padding: "1px 1px 1px 2px" }} class='bx bxs-star'></i>
+                                                                        <ProgressBar now={50} />
+                                                                    </div>
+                                                                    <div className="row">
+                                                                        <h6 style={{ fontSize: "10px" }}><b>4</b></h6><i style={{ fontSize: "10px", padding: "1px 1px 1px 2px" }} class='bx bxs-star'></i>
+                                                                    </div>
+                                                                    <div className="row">
+                                                                        <h6 style={{ fontSize: "10px" }}><b>3</b></h6><i style={{ fontSize: "10px", padding: "1px 1px 1px 2px" }} class='bx bxs-star'></i>
+                                                                    </div>
+                                                                    <div className="row">
+                                                                        <h6 style={{ fontSize: "10px" }}><b>2</b></h6><i style={{ fontSize: "10px", padding: "1px 1px 1px 2px" }} class='bx bxs-star'></i>
+                                                                    </div>
+                                                                    <div className="row">
+                                                                        <h6 style={{ fontSize: "10px" }}><b>1</b></h6><i style={{ fontSize: "10px", padding: "1px 1px 1px 2px" }} class='bx bxs-star'></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         <div>
 
