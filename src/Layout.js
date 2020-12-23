@@ -15,6 +15,7 @@ import {Otp} from './Pages/Otp';
 import {SignIn} from './Pages/SignIn';
 import { SignUp } from './Pages/SignUp';
 import {Review} from './Pages/Review';
+import {Allreview} from "./Pages/Allreview";
 
 export const Layout = () => {
   return (
@@ -43,6 +44,7 @@ export const Layout = () => {
         <Route exact path='/SignIn' component={SignIn}></Route>
         <Route exact path='/signup' component={SignUp}></Route>
         <Route exact path='/review' component={Review}></Route>
+        <Route exact path='/Allreview' component={Allreview}></Route>
 
       </Switch>
     </Router>
