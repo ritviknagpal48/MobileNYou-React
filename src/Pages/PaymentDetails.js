@@ -166,39 +166,6 @@ export const PaymentDetails = () => {
                              name="Password" placeholder="Password*" />
                                     </div>
                             </section>
-                        <div class="footer" style={{
-                            zIndex:"100",
-                            position: 'fixed',
-                            bottom: '0',
-                            width: '576px',
-                            backgroundColor: '#ffffff',
-                            height: '4.5rem',
-                            display: 'flex',
-                            justifyContent: 'center',
-                            flexDirection: 'column',
-                            boxShadow: '4px -5px 6px rgba(207, 207, 207, 0.5)'
-                        }}>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div style={{
-                                            float: 'left',
-                                            margin: '0 1rem'
-                                        }}>
-                                            <p className='left-foot'>Total</p>
-                                            <p style={{ color: 'red' }}>₹5899</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <button type="button" class="btn btn-danger right-foot" style={{
-                                            float: 'right'
-                                        }}>
-                                            Continue
-                            </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         </section>
                         <section className="bodypanelmian aboutseller text-left">
                             <div className="sellerlocation" style={{backgroundColor:"white"}}>
@@ -334,6 +301,39 @@ export const PaymentDetails = () => {
                         </p>
                     </div>
                         </section>
+                        <div class="footer" style={{
+                            zIndex:"100",
+                            position: 'fixed',
+                            bottom: '0',
+                            width: '576px',
+                            backgroundColor: '#ffffff',
+                            height: '4.5rem',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            flexDirection: 'column',
+                            boxShadow: '4px -5px 6px rgba(207, 207, 207, 0.5)'
+                        }}>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div style={{
+                                            float: 'left',
+                                            margin: '0 1rem'
+                                        }}>
+                                            <p className='left-foot'>Total</p>
+                                            <p style={{ color: 'red' }}>₹5899</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn btn-danger right-foot" style={{
+                                            float: 'right'
+                                        }}>
+                                            Continue
+                            </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

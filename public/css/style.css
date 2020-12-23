@@ -613,10 +613,10 @@ z-index: 1;
 
 @media (max-width: 500px){
   .left-foot {
-    margin: 0 6rem;
+    margin: 0 0rem;
   }
   .right-foot {
-    margin: 0 7rem;
+    margin: 0 13rem;
   }
 }
 @media (min-width: 1000px){
