@@ -112,9 +112,9 @@ export const PaymentDetails = () => {
                         <div style={{ backgroundColor: "rgba(255, 0, 0, 0.05)", border: "dotted red 1px", borderRadius: "5px", fontSize: "16px", margin: "4%", height: "2.5rem", padding: "0.3rem 0" }}>
                             Get <b style={{ color: "rgba(167, 13, 13, 0.8)" }}>100Rs</b> Off on Prepaid Order
                     </div>
-                        <section class="bodypanelmian" style={{display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", backgroundColor: "white"}}>
+                        <section class="bodypanelmian" style={{display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
                             <section className="aboutseller">
-                                    <div className="sellerlocation">
+                                    <div className="sellerlocation" style={{backgroundColor: "white"}}>
                                     <p style={{
                                 display: 'flex',
                                 alignItems: 'center',
