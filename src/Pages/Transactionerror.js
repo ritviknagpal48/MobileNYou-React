@@ -6,7 +6,7 @@ export const Transactionerror = () => {
         <Fragment>
             <div class="badydiv">
                 <div class="universalDiv">
-                    <div class="container" style={{ backgroundColor: "#f5f5f5", height: '100vh' }}>
+                    <div class="container graybg" style={{ backgroundColor: "#f5f5f5"}}>
                     <Navbar />
                     <section class="bodypanelmian">
                         <img src="/icons/fail.png" style={{width:"50%",height:"auto", marginTop:'50%'}}></img>

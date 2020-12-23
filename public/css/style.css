@@ -618,6 +618,9 @@ z-index: 1;
   .right-foot {
     margin: 0 13rem;
   }
+  .graybg {
+    height: 100vh;
+  }
 }
 @media (min-width: 1000px){
   .left-foot {
@@ -625,6 +628,9 @@ z-index: 1;
   }
   .right-foot {
     margin: 0 0.5rem;
+  }
+  .graybg {
+    height: 150vh;
   }
 }
 ::-webkit-scrollbar {

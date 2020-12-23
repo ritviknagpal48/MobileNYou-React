@@ -4,9 +4,8 @@ import { Navbar } from '../Components/Navbar';
 export const Orderplaced = () => {
     return (
         <Fragment>
-            <div class="badydiv" style={{height:"100vh"}}>
-                <div class="universalDiv" style={{ backgroundColor: "#F5F5F5",height:"100vh" }}>
-                    <div class="container" style={{ backgroundColor: "#F5F5F5" }}></div>
+            <div class="badydiv">
+                <div class="universalDiv graybg" style={{ backgroundColor: "#F5F5F5" }}>
                     <Navbar />
                     <section class="bodypanelmian">
                         <div style={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column",marginTop:"1rem",backgroundColor:"white",boxShadow: "0px 0px 4px 1px gainsboro"}}>
