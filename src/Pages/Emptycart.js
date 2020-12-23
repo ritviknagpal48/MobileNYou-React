@@ -14,7 +14,7 @@ export const Emptycart = () => {
                             <img style={{width:"50%"}} src="/icons/Group 4357.png"></img>
                             <h3 style={{color:"#c2172e", fontSize:"18px", marginTop:"10%"}}><b>YOUR CART IS EMPTY</b></h3>
                             <h6 style={{color:"gray",fontSize:"12px",marginTop:"2%"}}><b>Looks like you haven't Added any product to Your Cart</b></h6>
-                            <button className="btn" style={{marginTop:"8%", padding: "2% 3%", border: "#c2172e solid 2px", borderRadius:"5px", backgroundColor: "white", color: "#c2172e",height:"3rem" }}><b><span style={{float:"left"}}>Continue Shopping</span> <i style={{fontSize:"24px",float:"left"}} class='bx bx-right-arrow-alt'></i></b></button>
+                            <button className="btn" style={{marginTop:"8%", padding: "2% 9%", border: "#c2172e solid 2px", borderRadius:"2px", backgroundColor: "white", color: "#c2172e",height:"3rem" }}><b><span style={{float:"left"}}>Continue Shopping</span> <i style={{fontSize:"24px",float:"left"}} class='bx bx-right-arrow-alt'></i></b></button>
                         </div>
                     </section>
                 </div>
