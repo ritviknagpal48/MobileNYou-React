@@ -8,7 +8,7 @@ export const PaymentDetails = () => {
         <Fragment>
             <div class="badydiv">
                 <div class="universalDiv">
-                    <div class="container" style={{backgroundColor: "white" }}>
+                    <div class="container" style={{backgroundColor: "#F5F5F5" }}>
                         <Navbar></Navbar>
                         <div class="container" style={{ padding: "12px"}}>
                             <div class="row" style={{ padding: "10px;" }}>
