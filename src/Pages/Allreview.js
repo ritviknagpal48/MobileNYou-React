@@ -71,7 +71,7 @@ export const Allreview = () => {
                                                 <div class="row no-gutters">
                                                     <div class="col">
                                                         <div class="user-review">
-                                                            <div class="userimg d-flex">
+                                                            <div class="userimg d-flex" style={{overflowX:"hidden"}}>
                                                                 <div class="imgbox">
                                                                     <div class="blank_user">
                                                                         <span class="username">N</span>
