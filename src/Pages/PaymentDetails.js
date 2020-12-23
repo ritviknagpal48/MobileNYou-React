@@ -201,7 +201,7 @@ export const PaymentDetails = () => {
                         </div>
                         </section>
                         <section className="bodypanelmian aboutseller text-left">
-                            <div className="sellerlocation">
+                            <div className="sellerlocation" style={{backgroundColor:"white"}}>
                                 <h5 style={{textAlign:"center"}}>Payment Option</h5>
                                 <hr></hr>
                                 <div className="container">
@@ -278,7 +278,7 @@ export const PaymentDetails = () => {
                             </div>
                         </section>
                         <section className="bodypanelmian aboutseller text-left">
-                            <div className="sellerlocation">
+                            <div className="sellerlocation" style={{backgroundColor:"white"}}>
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-8">
@@ -299,7 +299,7 @@ export const PaymentDetails = () => {
                             </div>
                         </section>
                         <section className="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px'}}>
-                                <div className='sellerlocation'>
+                                <div className='sellerlocation' style={{backgroundColor:"white"}}>
                         <p style={{ color: 'lightgrey' }}>
                         Price Details
                         </p>
