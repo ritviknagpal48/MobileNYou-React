@@ -35,7 +35,7 @@ import {
 const useStyles = makeStyles((theme) => ({
     root: {
         '& > *': {
-            margin: theme.spacing(1),
+            margin: theme.spacing(1.5),
             width: '34ch',
         },
     },
@@ -165,54 +165,61 @@ export const PaymentDetails = () => {
                                     <form className={classes.root} noValidate autoComplete="off">
                                         <CssTextField
                                             className={classes.margin}
+                                            required="true"
                                             label="Phone No"
                                             variant="outlined"
                                             id="custom-css-outlined-input"
                                         />                                        
                                         <CssTextField
                                             className={classes.margin}
+                                            required="true"
                                             label="Email"
                                             variant="outlined"
                                             id="custom-css-outlined-input"
                                         />                                         
                                         <CssTextField
                                             className={classes.margin}
+                                            required="true"
                                             label="Full Name"
                                             variant="outlined"
                                             id="custom-css-outlined-input"
                                         />                                         
                                         <CssTextField
                                             className={classes.margin}
+                                            required="true"
                                             label="Address"
                                             variant="outlined"
                                             id="custom-css-outlined-input"
                                         />                                         
                                         <CssTextField
                                             className={classes.margin}
+                                            required="true"
                                             label="Pin code"
                                             variant="outlined"
                                             id="custom-css-outlined-input"
                                         />         
                                                         
                                     </form>
-                                    <div class="container" style={{ width: '80%' }}>
+                                    <div class="container" style={{ width: '98%' }}>
                                         <div class="row" style={{marginTop:"10px", marginBottom:"10px"}}>
                                             <div class="col-6">
                                                 <CssTextField
                                                 className={classes.margin}
+                                                required="true"
                                                 label="Locality"
                                                 variant="outlined"
                                                 id="custom-css-outlined-input"
-                                                style={{width:"8rem"}}
+                                                style={{marginRight:"-0.5rem"}}
                                             />                                                
                                         </div>
                                             <div class="col-6">
                                                 <CssTextField
                                                 className={classes.margin}
+                                                required="true"
                                                 label="City"
                                                 variant="outlined"
                                                 id="custom-css-outlined-input"
-                                                style={{width:"8rem"}}
+                                                style={{marginLeft:"-0.5rem"}}
                                             />                                               
                                          </div>
                                         </div>
@@ -220,19 +227,21 @@ export const PaymentDetails = () => {
                                             <div class="col-6">
                                                 <CssTextField
                                                     className={classes.margin}
+                                                    required="true"
                                                     label="State"
                                                     variant="outlined"
                                                     id="custom-css-outlined-input"
-                                                    style={{width:"8rem"}}
+                                                    style={{marginRight:"-0.5rem"}}
                                                 />                                                
                                             </div>
                                             <div class="col-6">
                                                 <CssTextField
                                                 className={classes.margin}
+                                                required="true"
                                                 label="Landmark"
                                                 variant="outlined"
                                                 id="custom-css-outlined-input"
-                                                style={{width:"8rem"}}
+                                                style={{marginLeft:"-0.5rem"}}
                                             />    
                                             </div>
                                         </div>
@@ -248,10 +257,11 @@ export const PaymentDetails = () => {
                                     </div>
                                     <CssTextField
                                             className={classes.margin}
+                                            required="true"
                                             label="Password"
                                             variant="outlined"
                                             id="custom-css-outlined-input"
-                                            style={{marginTop:"10px", marginBottom:"10px"}}
+                                            style={{marginTop:"10px", marginBottom:"20px", width:"20rem"}}
                                         />    
                                 </div>
                             </section>
@@ -343,6 +353,7 @@ export const PaymentDetails = () => {
                                             label="Enter Coupen Code"
                                             variant="outlined"
                                             id="custom-css-outlined-input"
+                                            style={{width:"15rem"}}
                                         />                                            
                                         </div>
                                         <div class="col-4">
