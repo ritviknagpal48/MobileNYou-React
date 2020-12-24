@@ -6,7 +6,7 @@ export const Cart = () => {
     return (
         <Fragment>
             <div class="badydiv">
-                <div class="universalDiv page-cart" style={{ backgroundColor: "#f5f5f5", height: "calc(160vh)" }}>
+                <div class="universalDiv page-cart" style={{ backgroundColor: "#f5f5f5", height: "100%", marginBottom:"5rem", paddingBottom:"1rem" }}>
                     <div class="container" style={{ backgroundColor: "white" }}></div>
                     <Navbar />
                     <section className="bodypanelmian aboutseller text-left">
