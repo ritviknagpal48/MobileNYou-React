@@ -54,7 +54,7 @@ export const Layout = () => {
         <Route exact path='/Transactionerror' component={Transactionerror}></Route>
         <Route exact path='/Orderplaced' component={Orderplaced}></Route>
         <Route exact path='/Cart' component={Cart}></Route>
-        <Route exact path='/Cart' component={Address}></Route>
+        <Route exact path='/address' component={Address}></Route>
 
 
       </Switch>
