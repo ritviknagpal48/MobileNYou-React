@@ -11,6 +11,16 @@ export const OrderSummary = () => {
     var company_name = document.getElementById("input-cname").value;
     document.getElementById("company-name").innerHTML = company_name;
   }
+
+    function changeOk() {
+      var check = document.getElementById('switch');
+      if(check.checked){
+          
+      } else {
+         
+        }
+    } 
+
   return (
     <Fragment>
       <div class='badydiv'>
@@ -143,21 +153,18 @@ export const OrderSummary = () => {
                 </div>
               </div>
 
-              <div class="container" style={{ display: "block", overflow:"auto", width: "93%", margin: "1rem auto", border: "1px solid gainsboro", boxShadow: "0px 0px 4px 1px gainsboro" }}>
-                <div style={{ float: "left", margin: "0.5rem 0" }}>
-
-                  <input type="checkbox" style={{ margin: "0.12rem 0.5rem", height: "1rem", backgroundColor: "#c2172e", float: "left" }} data-toggle="modal" data-target="#exampleModal"></input>
+              <div class=" sellerlocation">
+               
+                <div>
+                  <input type="checkbox" id='switch' style={{ margin: "0.12rem 0.5rem", height: "1rem", backgroundColor: "#c2172e", float: "left" }} data-toggle="modal" data-target="#exampleModal" onClick={changeOk}></input>
                   <span style={{ float: "left", fontSize: "14px" }}>Add GST details</span>
-                  <br></br>
-                  <div style={{display:"none"}} id="details-gst">
-                    <p style={{ color: "#ACA7A6", fontSize: "12px", float: "left", margin: "0 0.5rem" }} id="GSTIN"></p>
-                    <br></br>
-                    <p style={{ color: "#ACA7A6", fontSize: "12px", float: "left", margin: "0.5rem 0.5rem" }} id="company-name"></p>
-                  </div>
+                  <span style={{ float: "right", color: "red", fontSize: "15px", display:"none", cursor:'pointer' }}id="edit-gst"  data-toggle="modal" data-target="#exampleModal">Edit</span>
+                  <br />
                 </div>
-                <div style={{ float: "right", color: "red", margin: "0.5rem 0.5rem", fontSize: "15px", display:"none" }}id="edit-gst">
-                  Edit
-                </div>
+                  <p style={{display:"none"}} id="details-gst">
+                    <p style={{ color: "#ACA7A6", fontSize: "12px",  marginLeft: '0.5rem'}} id="GSTIN"></p>
+                    <p style={{ color: "#ACA7A6", fontSize: "12px",  marginLeft: '0.5rem'}} id="company-name"></p>
+                  </p>
               </div>
 
               <div className='sellerlocation'>
