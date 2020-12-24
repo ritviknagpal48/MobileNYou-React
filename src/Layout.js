@@ -19,6 +19,7 @@ import {Allreview} from "./Pages/Allreview";
 import { Emptycart } from "./Pages/Emptycart";
 import { Transactionerror } from "./Pages/Transactionerror";
 import { Orderplaced } from "./Pages/Orderplaced";
+import { Cart } from "./Pages/Cart";
 
 export const Layout = () => {
   return (
@@ -51,6 +52,7 @@ export const Layout = () => {
         <Route exact path='/Emptycart' component={Emptycart}></Route>
         <Route exact path='/Transactionerror' component={Transactionerror}></Route>
         <Route exact path='/Orderplaced' component={Orderplaced}></Route>
+        <Route exact path='/Cart' component={Cart}></Route>
 
       </Switch>
     </Router>
