@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export const Checkout = () => {
+export const CheckoutPage = () => {
     const classes = useStyles();
 
     return (
@@ -71,7 +71,7 @@ export const Checkout = () => {
                             <div className='tc'>
                               <div className='centerdiv d-flex justify-content-between'>
                                 <p>
-                                  <img src='image/Tag.svg' /> No Cost EMI: No
+                                  <img src='image/Tag.svg' style={{width: '13px', marginRight: '8px', marginTop: '10px'}} /> No Cost EMI: No
                                   cost EMI available on select cards.
                                   <br /> Please check'EMI options'{' '}
                                 </p>
@@ -83,7 +83,7 @@ export const Checkout = () => {
                             <div className='tc'>
                               <div className='centerdiv d-flex justify-content-between'>
                                 <p>
-                                  <img src='image/Tag.svg' /> No Cost EMI: No
+                                  <img src='image/Tag.svg' style={{width: '13px', marginRight: '8px', marginTop: '10px'}}/> No Cost EMI: No
                                   cost EMI available on select cards.
                                   <br /> Please check'EMI options'{' '}
                                 </p>
@@ -95,7 +95,7 @@ export const Checkout = () => {
                             <div className='tc'>
                               <div className='centerdiv d-flex justify-content-between'>
                                 <p>
-                                  <img src='image/Tag.svg' /> No Cost EMI: No
+                                  <img src='image/Tag.svg' style={{width: '13px', marginRight: '8px', marginTop: '10px'}}/> No Cost EMI: No
                                   cost EMI available on select cards.
                                   <br /> Please check'EMI options'{' '}
                                 </p>
@@ -107,7 +107,7 @@ export const Checkout = () => {
                             <div className='tc'>
                               <div className='centerdiv d-flex justify-content-between'>
                                 <p>
-                                  <img src='image/Tag.svg' /> No Cost EMI: No
+                                  <img src='image/Tag.svg' style={{width: '13px', marginRight: '8px', marginTop: '10px'}}/> No Cost EMI: No
                                   cost EMI available on select cards.
                                   <br /> Please check'EMI options'{' '}
                                 </p>
@@ -119,7 +119,7 @@ export const Checkout = () => {
                             <div className='tc'>
                               <div className='centerdiv d-flex justify-content-between'>
                                 <p>
-                                  <img src='image/Tag.svg' /> No Cost EMI: No
+                                  <img src='image/Tag.svg'style={{width: '13px', marginRight: '8px', marginTop: '10px'}} /> No Cost EMI: No
                                   cost EMI available on select cards.
                                   <br /> Please check'EMI options'{' '}
                                 </p>
