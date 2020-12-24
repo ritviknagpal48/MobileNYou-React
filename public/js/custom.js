@@ -125,6 +125,22 @@ $(document).ready(function() {
     }
   }
 
+  document.getElementById("home-address-button").onclick = () =>{
+    const home=document.getElementById("home-address-button");
+    if(home.style.color=="grey"){
+      home.style.color="#c2172e";
+      home.style.border="gainsboro solid 2px"
+    }
+  }
+
+  document.getElementById("office-address-button").onclick = () =>{
+    const office=document.getElementById("office-address-button");
+    if(office.style.color=="grey"){
+      office.style.color="#c2172e";
+      office.style.border="gainsboro solid 2px"
+    }
+  }
+
   document.getElementById("eye-password").addEventListener("click", toggleVisibility);
   
 });

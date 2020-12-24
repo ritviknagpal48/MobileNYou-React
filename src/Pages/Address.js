@@ -45,6 +45,31 @@ const useStyles = makeStyles((theme) => ({
 export const Address = () => {
     const classes = useStyles();
 
+     function Home(){
+        const home=document.getElementById("home-address-button");
+        console.log(home)
+        const office=document.getElementById("office-address-button");
+
+        if(home.style.color=="grey"){
+          home.style.color="#c2172e";
+          home.style.border="2px solid #c2172e"
+          office.style.color="grey"
+          office.style.border="gainsboro solid 2px";
+        }
+      }
+    
+      function office(){
+        const home=document.getElementById("home-address-button");
+        const office=document.getElementById("office-address-button");
+        if(office.style.color=="grey"){
+          office.style.color="#c2172e";
+          office.style.border="#c2172e solid 2px"
+          home.style.color="grey"
+          home.style.border="gainsboro solid 2px";
+        }
+      }
+    
+
     return (
         <Fragment>
             <div class="badydiv">
@@ -151,10 +176,10 @@ export const Address = () => {
                                          </div>
                                          <div class="row">
                                              <div class="col-4" style={{marginRight:"0.3rem"}}>
-                                                <button className="btn" style={{ padding: "4% 3%", border: "#c2172e solid 2px", borderRadius:"3px", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%", backgroundColor: "white", color: "#c2172e",width:"120%" }}><b>Home</b></button>
+                                                <button className="btn" id="home-address-button" onClick={Home} style={{ padding: "4% 3%", border: "#c2172e solid 2px", borderRadius:"3px", backgroundColor: "white", color: "#c2172e",width:"115%" }}><b>Home</b></button>
                                              </div>
                                              <div class="col-4">
-                                                <button className="btn" style={{ padding: "4% 3%", border: "gainsboro solid 2px", borderRadius:"3px", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%", backgroundColor: "white", color: "grey",width:"120%" }}><b>Office</b></button>
+                                                <button className="btn" id="office-address-button" onClick={office} style={{ padding: "4% 3%", border: "gainsboro solid 2px", borderRadius:"3px", backgroundColor: "white", color: "grey",width:"115%" }}><b>Office</b></button>
                                              </div>
                                          </div>
                                     </div>
