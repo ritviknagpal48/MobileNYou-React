@@ -126,4 +126,5 @@ $(document).ready(function() {
   }
 
   document.getElementById("eye-password").addEventListener("click", toggleVisibility);
+  
 });

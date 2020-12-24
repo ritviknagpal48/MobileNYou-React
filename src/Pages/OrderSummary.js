@@ -1,8 +1,16 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
-import styles from '../Components/OrderSummary Page/style.module.css';
 
 export const OrderSummary = () => {
+  function gstDetails(){
+    document.getElementById("details-gst").style.display = "block";
+    document.getElementById("edit-gst").style.display = "block";
+    var gstin = document.getElementById("input-gstin").value;
+    document.getElementById("GSTIN").innerHTML = gstin;
+    var company_name = document.getElementById("input-cname").value;
+    document.getElementById("company-name").innerHTML = company_name;
+  }
   return (
     <Fragment>
       <div class='badydiv'>
@@ -135,17 +143,19 @@ export const OrderSummary = () => {
                 </div>
               </div>
 
-              <div class="container" style={{ height: "5.7rem", width: "93%", margin: "1rem auto", border: "1px solid gainsboro", boxShadow: "0px 0px 4px 1px gainsboro" }}>
+              <div class="container" style={{ display: "block", overflow:"auto", width: "93%", margin: "1rem auto", border: "1px solid gainsboro", boxShadow: "0px 0px 4px 1px gainsboro" }}>
                 <div style={{ float: "left", margin: "0.5rem 0" }}>
 
                   <input type="checkbox" style={{ margin: "0.12rem 0.5rem", height: "1rem", backgroundColor: "#c2172e", float: "left" }} data-toggle="modal" data-target="#exampleModal"></input>
                   <span style={{ float: "left", fontSize: "14px" }}>Add GST details</span>
                   <br></br>
-                  <p style={{ color: "#ACA7A6", fontSize: "12px", float: "left", margin: "0 0.5rem" }}>06BPX123H84928</p>
-                  <br></br>
-                  <p style={{ color: "#ACA7A6", fontSize: "12px", float: "left", margin: "0.5rem 0.5rem" }}>Cartnyou Retail Private Limited</p>
+                  <div style={{display:"none"}} id="details-gst">
+                    <p style={{ color: "#ACA7A6", fontSize: "12px", float: "left", margin: "0 0.5rem" }} id="GSTIN"></p>
+                    <br></br>
+                    <p style={{ color: "#ACA7A6", fontSize: "12px", float: "left", margin: "0.5rem 0.5rem" }} id="company-name"></p>
+                  </div>
                 </div>
-                <div style={{ float: "right", color: "red", margin: "0.5rem 0.5rem", fontSize: "15px" }}>
+                <div style={{ float: "right", color: "red", margin: "0.5rem 0.5rem", fontSize: "15px", display:"none" }} id="edit-gst">
                   Edit
                 </div>
               </div>
@@ -220,24 +230,24 @@ export const OrderSummary = () => {
           </div>
         </div>
       </div>
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style={{top:"30%"}}>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style={{ top: "0%" }}>
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel" style={{color:"gray", fontSize:"18px"}}>Add GST Details</h5>
+              <h5 class="modal-title" id="exampleModalLabel" style={{ color: "gray", fontSize: "18px" }}>Add GST Details</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
               <div class="form-group">
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="GSTIN" style={{marginBottom:"10px", border:"none", borderBottom:"1px solid gainsboro", borderRadius:"0px"}} />
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Business Name" style={{marginTop:"10px", border:"none", borderBottom:"1px solid gainsboro", borderRadius:"0px"}} />
+                <input type="text" class="form-control" id="input-gstin" aria-describedby="emailHelp" placeholder="GSTIN" style={{ marginBottom: "10px", border: "none", borderBottom: "1px solid gainsboro", borderRadius: "0px" }} />
+                <input type="text" class="form-control" id="input-cname" aria-describedby="emailHelp" placeholder="Business Name" style={{ marginTop: "10px", border: "none", borderBottom: "1px solid gainsboro", borderRadius: "0px" }} />
                 <small id="emailHelp" class="form-text text-muted"><i class='bx bxs-info-circle'></i>Incorrect GST details will lead to order Cancellation</small>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn" style={{backgroundColor:"#c2172e", color:"white", width:"100%"}}>Confirm and Save</button>
+              <button type="button" class="btn" id="save-modal-btn" style={{ backgroundColor: "#c2172e", color: "white", width: "100%" }} data-dismiss="modal" onClick={gstDetails}>Confirm and Save</button>
             </div>
           </div>
         </div>
