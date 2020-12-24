@@ -63,26 +63,78 @@ export const Checkout = () => {
                         </section>
                         <br/><br/><br/>
                         <section className="bodypanelmian aboutseller text-left">
-                            <div className='sellerlocation' style={{ backgroundColor: "white" }}>
-                                <p style={{ color: 'lightgrey' }}>
-                                    Offers
+                        <div id='profile-description'>
+                        <div className="sellerlocation">
+                        <div className='offer-section text-left text show-more-height'>
+                          <h3 style={{marginBottom: '5px'}}>Offers</h3>
+                          <div className='br'>
+                            <div className='tc'>
+                              <div className='centerdiv d-flex justify-content-between'>
+                                <p>
+                                  <img src='image/Tag.svg' /> No Cost EMI: No
+                                  cost EMI available on select cards.
+                                  <br /> Please check'EMI options'{' '}
                                 </p>
-                                <hr style={{ margin: '1% 0' }} />
-                                <div className='container'>
-                                    <div className='row' style={{backgroundColor: '#f5f5f5', fontSize:'10px', margin: '0.5rem 0.5rem'}}>
-                                        <div className="col-1"><i class='bx bxs-purchase-tag bx-rotate-90' style={{color:'#c2172e', fontSize:'20px', marginTop: '2px'}}></i></div>
-                                        <div className="col-9">No Cost EMI: No cost EMI available on selected cards. Please check 'EMI Options'</div>
-                                        <div className="col-1"><b>T&C</b></div>
-                                    </div>
-                                </div>
-                                <div style={{marginBottom: '6%'}}>
-                                <p id='cart-items-dropdown-menu'  style={{ float: 'right', color: '#c2172e', cursor: 'pointer' }}>
-                                    + 
-                                <span>5 </span>
-                                    More Offer Available >
+                                <p>
+                                  <b>T&amp;C</b>
                                 </p>
-                                </div>
+                              </div>
                             </div>
+                            <div className='tc'>
+                              <div className='centerdiv d-flex justify-content-between'>
+                                <p>
+                                  <img src='image/Tag.svg' /> No Cost EMI: No
+                                  cost EMI available on select cards.
+                                  <br /> Please check'EMI options'{' '}
+                                </p>
+                                <p>
+                                  <b>T&amp;C</b>
+                                </p>
+                              </div>
+                            </div>
+                            <div className='tc'>
+                              <div className='centerdiv d-flex justify-content-between'>
+                                <p>
+                                  <img src='image/Tag.svg' /> No Cost EMI: No
+                                  cost EMI available on select cards.
+                                  <br /> Please check'EMI options'{' '}
+                                </p>
+                                <p>
+                                  <b>T&amp;C</b>
+                                </p>
+                              </div>
+                            </div>
+                            <div className='tc'>
+                              <div className='centerdiv d-flex justify-content-between'>
+                                <p>
+                                  <img src='image/Tag.svg' /> No Cost EMI: No
+                                  cost EMI available on select cards.
+                                  <br /> Please check'EMI options'{' '}
+                                </p>
+                                <p>
+                                  <b>T&amp;C</b>
+                                </p>
+                              </div>
+                            </div>
+                            <div className='tc'>
+                              <div className='centerdiv d-flex justify-content-between'>
+                                <p>
+                                  <img src='image/Tag.svg' /> No Cost EMI: No
+                                  cost EMI available on select cards.
+                                  <br /> Please check'EMI options'{' '}
+                                </p>
+                                <p>
+                                  <b>T&amp;C</b>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p className='moreoffer show-more'>
+                          +5 More Offer Available{' '}
+                        </p>
+                      </div>
+                      </div>
                         
                         <div className="bodypanelmian aboutseller text-left" id="cart-items-dropdown-content" style={{ backgroundColor: "white", width: "93%", margin: "-1rem auto 0 auto", display: "none" }}>
 
