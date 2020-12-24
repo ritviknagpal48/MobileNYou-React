@@ -196,13 +196,14 @@ export const PaymentDetails = () => {
                                                         
                                     </form>
                                     <div class="container" style={{ width: '80%' }}>
-                                        <div class="row">
+                                        <div class="row" style={{marginTop:"10px", marginBottom:"10px"}}>
                                             <div class="col-6">
                                                 <CssTextField
                                                 className={classes.margin}
                                                 label="Locality"
                                                 variant="outlined"
                                                 id="custom-css-outlined-input"
+                                                style={{width:"8rem"}}
                                             />                                                
                                         </div>
                                             <div class="col-6">
@@ -211,16 +212,18 @@ export const PaymentDetails = () => {
                                                 label="City"
                                                 variant="outlined"
                                                 id="custom-css-outlined-input"
+                                                style={{width:"8rem"}}
                                             />                                               
                                          </div>
                                         </div>
-                                        <div class="row">
+                                        <div class="row" style={{marginTop:"10px", marginBottom:"10px"}}>
                                             <div class="col-6">
                                                 <CssTextField
                                                     className={classes.margin}
                                                     label="State"
                                                     variant="outlined"
                                                     id="custom-css-outlined-input"
+                                                    style={{width:"8rem"}}
                                                 />                                                
                                             </div>
                                             <div class="col-6">
@@ -229,13 +232,16 @@ export const PaymentDetails = () => {
                                                 label="Landmark"
                                                 variant="outlined"
                                                 id="custom-css-outlined-input"
+                                                style={{width:"8rem"}}
                                             />    
                                             </div>
                                         </div>
                                     </div>
                                     <div style={{
                                         float: 'left',
-                                        textAlign: 'left'
+                                        textAlign: 'left',
+                                        marginTop:"10px", 
+                                        marginBottom:"10px" 
                                     }} class="form-check">
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1" />
                                         <label class="form-check-label" for="exampleCheck1">New Here? Create Password</label>
@@ -245,6 +251,7 @@ export const PaymentDetails = () => {
                                             label="Password"
                                             variant="outlined"
                                             id="custom-css-outlined-input"
+                                            style={{marginTop:"10px", marginBottom:"10px"}}
                                         />    
                                 </div>
                             </section>
