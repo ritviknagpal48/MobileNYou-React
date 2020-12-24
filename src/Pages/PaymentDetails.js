@@ -200,7 +200,7 @@ export const PaymentDetails = () => {
                                         />         
                                                         
                                     </form>
-                                    <div class="container" style={{ width: '98%' }}>
+                                    <div class="container" style={{ width: '93%' }}>
                                         <div class="row" style={{marginTop:"10px", marginBottom:"10px"}}>
                                             <div class="col-6">
                                                 <CssTextField
