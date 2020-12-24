@@ -3,9 +3,9 @@ import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
 
 export const OrderSummary = () => {
-  function gstDetails(){
-    document.getElementById("details-gst").style.display = "block";
-    document.getElementById("edit-gst").style.display = "block";
+  function gstDetails(dis){
+    document.getElementById("details-gst").style.display = dis;
+    document.getElementById("edit-gst").style.display = dis;
     var gstin = document.getElementById("input-gstin").value;
     document.getElementById("GSTIN").innerHTML = gstin;
     var company_name = document.getElementById("input-cname").value;
@@ -15,9 +15,13 @@ export const OrderSummary = () => {
     function changeOk() {
       var check = document.getElementById('switch');
       if(check.checked){
-          
+        check.setAttribute('data-toggle', 'modal')
+        check.setAttribute('data-target', '#exampleModal')
+        gstDetails('block');
       } else {
-         
+        check.setAttribute('data-toggle', '')
+        check.setAttribute('data-target', '')
+        gstDetails('none')
         }
     } 
 
@@ -156,7 +160,7 @@ export const OrderSummary = () => {
               <div class=" sellerlocation">
                
                 <div>
-                  <input type="checkbox" id='switch' style={{ margin: "0.12rem 0.5rem", height: "1rem", backgroundColor: "#c2172e", float: "left" }} data-toggle="modal" data-target="#exampleModal" onClick={changeOk}></input>
+                  <input type="checkbox" id='switch' style={{ margin: "0.12rem 0.5rem", height: "1rem", backgroundColor: "#c2172e", float: "left" }} onClick={changeOk}></input>
                   <span style={{ float: "left", fontSize: "14px" }}>Add GST details</span>
                   <span style={{ float: "right", color: "red", fontSize: "15px", display:"none", cursor:'pointer' }}id="edit-gst"  data-toggle="modal" data-target="#exampleModal">Edit</span>
                   <br />
