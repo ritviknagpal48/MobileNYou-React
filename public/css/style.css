@@ -663,3 +663,8 @@ z-index: 1;
  ::-ms-input-placeholder { /* Microsoft Edge */
   color: gainsboro;
  }
+ @media only screen and (min-width: 500px) {
+  .page-cart{
+    height: calc(190vh) !important;
+  }
+}

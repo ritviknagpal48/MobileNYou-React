@@ -2,14 +2,36 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
-
 export const Cart = () => {
     return (
         <Fragment>
             <div class="badydiv">
-                <div class="universalDiv" style={{ backgroundColor: "#f5f5f5", height: "calc(150vh)" }}>
+                <div class="universalDiv page-cart" style={{ backgroundColor: "#f5f5f5", height: "calc(160vh)" }}>
                     <div class="container" style={{ backgroundColor: "white" }}></div>
                     <Navbar />
+                    <section className="bodypanelmian aboutseller text-left">
+                            <div className="sellerlocation" style={{ backgroundColor: "white" }}>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-8">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" id="Pincode-User" aria-describedby="Pincode" placeholder="Enter Pincode" style={{height:"3.2rem", width:"115%", border:"none", borderBottom:"solid gray 1px", borderRadius:"0px", fontSize:"15px"}}/>
+                                        </div>                                
+                                        </div>
+                                        <div class="col-4">
+                                            <button class="btn btn-danger" style={{
+                                                margin: "8% 2%",
+                                                float: 'right',
+                                                padding: "10px",
+                                                width: '80%'
+                                            }}>
+                                                Check
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                     <section class="bodypanelmian aboutseller text-left">
                         <div className='sellerlocation' style={{ backgroundColor: "white" }}>
                             <div className="container">
