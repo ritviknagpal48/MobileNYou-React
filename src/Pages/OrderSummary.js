@@ -155,7 +155,7 @@ export const OrderSummary = () => {
                     <p style={{ color: "#ACA7A6", fontSize: "12px", float: "left", margin: "0.5rem 0.5rem" }} id="company-name"></p>
                   </div>
                 </div>
-                <div style={{ float: "right", color: "red", margin: "0.5rem 0.5rem", fontSize: "15px", display:"none" }} id="edit-gst">
+                <div style={{ float: "right", color: "red", margin: "0.5rem 0.5rem", fontSize: "15px", display:"none" }}id="edit-gst">
                   Edit
                 </div>
               </div>
@@ -230,7 +230,7 @@ export const OrderSummary = () => {
           </div>
         </div>
       </div>
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style={{ top: "0%" }}>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style={{ top: "30%" }}>
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
