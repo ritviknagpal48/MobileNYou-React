@@ -3,12 +3,40 @@ import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
 import { makeStyles } from '@material-ui/core/styles';
 import {TextField} from '@material-ui/core';
+import {
+    fade,
+    ThemeProvider,
+    withStyles,
+    createMuiTheme,
+  } from '@material-ui/core/styles';
+
+  const CssTextField = withStyles({
+    root: {
+      '& label.Mui-focused': {
+        color: '#c2172e',
+      },
+      '& .MuiInput-underline:after': {
+        borderBottomColor: 'green',
+      },
+      '& .MuiOutlinedInput-root': {
+        '& fieldset': {
+          borderColor: 'gainsboro',
+        },
+        '&:hover fieldset': {
+          borderColor: 'gainsboro',
+        },
+        '&.Mui-focused fieldset': {
+          borderColor: '#c2172e',
+        },
+      },
+    },
+  })(TextField);
 
 const useStyles = makeStyles((theme) => ({
     root: {
         '& > *': {
             margin: theme.spacing(1),
-            width: '25ch',
+            width: '34ch',
         },
     },
 }));
@@ -135,33 +163,73 @@ export const PaymentDetails = () => {
                                         flexDirection: 'column'
                                     }}>Enter Your Shipping Address</p>
                                     <form className={classes.root} noValidate autoComplete="off">
-                                        <TextField id="outlined-basic" label="Phone No." variant="outlined" />
-                                        <TextField id="outlined-basic" label="Email" variant="outlined" />
-                                        <TextField id="outlined-basic" label="Full Name" variant="outlined" />
-                                        <TextField id="outlined-basic" label="Address" variant="outlined" />
-                                        <TextField id="outlined-basic" label="Pin Code" variant="outlined" />
+                                        <CssTextField
+                                            className={classes.margin}
+                                            label="Phone No"
+                                            variant="outlined"
+                                            id="custom-css-outlined-input"
+                                        />                                        
+                                        <CssTextField
+                                            className={classes.margin}
+                                            label="Email"
+                                            variant="outlined"
+                                            id="custom-css-outlined-input"
+                                        />                                         
+                                        <CssTextField
+                                            className={classes.margin}
+                                            label="Full Name"
+                                            variant="outlined"
+                                            id="custom-css-outlined-input"
+                                        />                                         
+                                        <CssTextField
+                                            className={classes.margin}
+                                            label="Address"
+                                            variant="outlined"
+                                            id="custom-css-outlined-input"
+                                        />                                         
+                                        <CssTextField
+                                            className={classes.margin}
+                                            label="Pin code"
+                                            variant="outlined"
+                                            id="custom-css-outlined-input"
+                                        />         
+                                                        
                                     </form>
                                     <div class="container" style={{ width: '80%' }}>
                                         <div class="row">
                                             <div class="col-6">
-                                                <input style={{ border: "0.5px solid gainsboro", margin: "4% 2%", padding: "10px", width: "110%" }} type="text" name="Locality" placeholder="Locality*" />
-                                            </div>
+                                                <CssTextField
+                                                className={classes.margin}
+                                                label="Locality"
+                                                variant="outlined"
+                                                id="custom-css-outlined-input"
+                                            />                                                
+                                        </div>
                                             <div class="col-6">
-                                                <input style={{ border: "0.5px solid gainsboro", margin: "4% 2%", padding: "10px", width: "100%" }} type="text" name="City" placeholder="City*" />
-                                            </div>
+                                                <CssTextField
+                                                className={classes.margin}
+                                                label="City"
+                                                variant="outlined"
+                                                id="custom-css-outlined-input"
+                                            />                                               
+                                         </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-6">
-                                                <input style={{ border: "0.5px solid gainsboro", margin: "4% 2%", padding: "10px", width: "110%" }} type="text" name="State" placeholder="State*" />
+                                                <CssTextField
+                                                    className={classes.margin}
+                                                    label="State"
+                                                    variant="outlined"
+                                                    id="custom-css-outlined-input"
+                                                />                                                
                                             </div>
                                             <div class="col-6">
-                                                <input style={{
-                                                    border: '0.5px solid gainsboro',
-                                                    margin: '4% 2%',
-                                                    padding: '10px',
-                                                    width: '100%',
-                                                }}
-                                                    type="text" name="Landmark" placeholder="Landmark" />
+                                                <CssTextField
+                                                className={classes.margin}
+                                                label="Landmark"
+                                                variant="outlined"
+                                                id="custom-css-outlined-input"
+                                            />    
                                             </div>
                                         </div>
                                     </div>
@@ -172,13 +240,12 @@ export const PaymentDetails = () => {
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1" />
                                         <label class="form-check-label" for="exampleCheck1">New Here? Create Password</label>
                                     </div>
-                                    <input type="password" style={{
-                                        border: '0.5px solid gainsboro',
-                                        margin: '2%',
-                                        padding: '10px',
-                                        width: '80%'
-                                    }}
-                                        name="Password" placeholder="Password*" />
+                                    <CssTextField
+                                            className={classes.margin}
+                                            label="Password"
+                                            variant="outlined"
+                                            id="custom-css-outlined-input"
+                                        />    
                                 </div>
                             </section>
                         </section>
@@ -264,7 +331,12 @@ export const PaymentDetails = () => {
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-8">
-                                            <input style={{ border: "0.5px solid gainsboro", borderRadius: '2%', margin: "4% 2%", padding: "10px", width: "110%" }} type="text" name="State" placeholder="Enter Coupon Code" />
+                                        <CssTextField
+                                            className={classes.margin}
+                                            label="Enter Coupen Code"
+                                            variant="outlined"
+                                            id="custom-css-outlined-input"
+                                        />                                            
                                         </div>
                                         <div class="col-4">
                                             <button class="btn btn-outline-danger" style={{
