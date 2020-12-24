@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         '& > *': {
             margin: theme.spacing(1.5),
-            width: '34ch',
+            width: '90%',
         },
     },
 }));
@@ -59,11 +59,11 @@ export const Address = () => {
                                         alignItems: 'center',
                                         justifyContent: 'center',
                                         flexDirection: 'column',
-                                        fontSize:"18px"
+                                        fontSize:"18px",
                                     }}>Enter Your Shipping Address</p>
                                     <form className={classes.root} noValidate autoComplete="off">
                                         <CssTextField
-                                            className={`${classes.margin} css-text-field-media-query`}
+                                            className={`${classes.margin}`}
                                             required="true"
                                             label="Phone No"
                                             variant="outlined"
