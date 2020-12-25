@@ -229,9 +229,9 @@ export const OrderSummary = () => {
                     </div>
                     <div class="col-6">
                       <button type="button" class="btn btn-danger right-foot" style={{
-                        float: 'right'
+                        float: 'right', width: '70%'
                       }}>
-                        Continue
+                        Proceed to Payment
                     </button>
                     </div>
                   </div>

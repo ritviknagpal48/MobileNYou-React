@@ -30,7 +30,7 @@ export const Otp = () => {
                     </div>
                 </div>
                 <div className="strike-color" style={{ textAlign: "center", marginTop: "10px", marginBottom: "24px" }}>
-                    <h6 className="strike-through-text">or</h6>
+                    <h6 className="strike-through-text"><span style={{margin:'0 0.2rem'}}>or</span></h6>
                 </div>
                 <div>
                     <h6 style={{ color: "#C2C2C2", fontSize: "12px", margin: "3%" }}>Otp Has Been Sent To +91-9716****70</h6>
@@ -45,7 +45,7 @@ export const Otp = () => {
                     <h5 style={{ color: "#c2172e", fontSize: "18px" }}><b>Resend OTP?</b></h5>
                 </div>
                 <div className="strike-color" style={{ textAlign: "center", marginTop: "10px", marginBottom: "24px" }}>
-                    <h6 className="strike-through-text">or</h6>
+                    <h6 className="strike-through-text"><span style={{margin:'0 0.2rem'}}>or</span></h6>
                 </div>
                 <div style={{ marginLeft: "10px", marginRight: "10px" }}>
                     <div style={{ marginTop: '15px' }}>

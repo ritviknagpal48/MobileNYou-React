@@ -9,7 +9,7 @@ import { AboutSeller } from './Pages/AboutSeller';
 import { Variants } from './Pages/Variants';
 import { Specifications } from './Pages/Specifications';
 import { EmiOptions } from './Pages/EmiOptions';
-import { PaymentDetails } from './Pages/PaymentDetails';
+import { OnePageCheckout } from './Pages/OnePageCheckout';
 import {Login} from './Pages/Login';
 import {Otp} from './Pages/Otp';
 import {SignIn} from './Pages/SignIn';
@@ -47,7 +47,7 @@ export const Layout = () => {
         ></Route>
         <Route exact path='/ordersummary' component={OrderSummary}></Route>
         <Route exact path='/emioptions' component={EmiOptions}></Route>
-        <Route exact path='/onepagecheckout' component={PaymentDetails}></Route>
+        <Route exact path='/onepagecheckout' component={OnePageCheckout}></Route>
         <Route exact path='/login' component={Login}></Route>
         <Route exact path='/Otp' component={Otp}></Route>
         <Route exact path='/SignIn' component={SignIn}></Route>

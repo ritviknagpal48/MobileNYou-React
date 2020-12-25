@@ -30,7 +30,7 @@ export const SignUp = () => {
             </div>
           </div>
           <div className="strike-color" style={{ textAlign: "center", marginTop: "10px", marginBottom: "24px" }}>
-            <h6 className="strike-through-text">or</h6>
+            <h6 className="strike-through-text"><span style={{margin:'0 0.2rem'}}>or</span></h6>
           </div>
           <div style={{ marginLeft: "10px", marginRight: "10px" }}>
             <input className="form-control input-tag-for-focus" style={{ backgroundColor: "#F5F5F5", padding: "7% 3%", borderRadius: "5px", border: "1px solid gainsboro", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%", marginTop: '15px' }} placeholder="Full Name"></input>
@@ -41,7 +41,7 @@ export const SignUp = () => {
               <input class="form-check-input" type="checkbox" id="eye-password" value="" />
               <label> Show Password</label>
             </div>
-            <div style={{ marginTop: '15px' }}>
+            <div style={{ marginTop: '0' }}>
               <button className="btn" style={{ padding: "4% 3%", borderRadius: "5px", border: "none", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%", backgroundColor: "#c2172e", color: "white" }}>Verify Your Phone Number</button>
               <div class="form-check" style={{ marginTop: '5px', fontSize: '12px' }}>
                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
@@ -51,7 +51,7 @@ export const SignUp = () => {
               </div>
             </div>
           </div>
-          <div style={{ margin: "0.8rem 0",textAlign:"center" }}>
+          <div style={{ margin: "1.8rem 0",textAlign:"center" }}>
             <p style={{ fontSize: "15px" }}>Already have an account? <span style={{ color: "red", fontSize: "14px" }}>Sign In</span></p>
           </div>
         </div>

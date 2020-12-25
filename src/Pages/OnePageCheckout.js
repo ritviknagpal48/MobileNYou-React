@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export const PaymentDetails = () => {
+export const OnePageCheckout = () => {
     const classes = useStyles();
 
     return (
