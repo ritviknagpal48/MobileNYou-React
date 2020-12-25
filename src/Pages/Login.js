@@ -4,7 +4,7 @@ export const Login = () => {
   return (
     <Fragment>
     <div class="badydiv">
-        <div class="universalDiv" style={{textAlign:"unset"}}>
+        <div class="universalDiv" style={{textAlign:"unset",height:"100vh"}}>
         <i class='bx bx-arrow-back' style={{ fontSize: "27px", margin: "5%" }}></i>
         <div class="container" style={{
             textAlign: "center",
@@ -38,7 +38,7 @@ export const Login = () => {
             <button className="btn" style={{padding: "4% 3%", borderRadius: "5px", border: "none", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%",backgroundColor:"#c2172e",color:"white"}}><b>Continue</b></button>
             </div>
         </div>
-        <div style={{margin:"0.8rem 6rem"}}>
+        <div style={{margin:"0.8rem 0",textAlign:"center"}}>
             <p style={{fontSize:"15px"}}>New here? <span style={{color:"red",marginLeft:"0.3rem",fontSize:"14px"}}>Create Account</span></p>
         </div>
         </div>

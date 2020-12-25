@@ -499,10 +499,6 @@ export const Review = () => {
                         </div>
                     </div>
                     {/* <!--Category X--> */}
-
-
-
-
                     <footer>
                         <div class="collapsemoreabout">
                             <div class="row no-gutters">

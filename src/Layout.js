@@ -47,7 +47,7 @@ export const Layout = () => {
         ></Route>
         <Route exact path='/ordersummary' component={OrderSummary}></Route>
         <Route exact path='/emioptions' component={EmiOptions}></Route>
-        <Route exact path='/paymentdetails' component={PaymentDetails}></Route>
+        <Route exact path='/onepagecheckout' component={PaymentDetails}></Route>
         <Route exact path='/login' component={Login}></Route>
         <Route exact path='/Otp' component={Otp}></Route>
         <Route exact path='/SignIn' component={SignIn}></Route>
