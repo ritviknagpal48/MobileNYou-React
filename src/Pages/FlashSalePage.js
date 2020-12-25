@@ -45,10 +45,12 @@ export const FlashSalePage = () => {
             </div>
           </div>
 
-          <section className='bodypanelmian' style={{ marginBottom: '50px' }}>
+          <section className='bodypanelmian'>
             <div className='container'>
-              <ProductGrid></ProductGrid>
-              <Footer></Footer>
+              <ProductGrid ></ProductGrid>
+              <div style={{marginTop:"12px"}}>
+                <Footer></Footer>
+              </div>                
             </div>
           </section>
         </div>
