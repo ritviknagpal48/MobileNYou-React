@@ -51,7 +51,7 @@ export const SignUp = () => {
               </div>
             </div>
           </div>
-          <div style={{ margin: "0.8rem 0",textAlign:"center", }}>
+          <div style={{ margin: "0.8rem 0",textAlign:"center" }}>
             <p style={{ fontSize: "15px" }}>Already have an account? <span style={{ color: "red", fontSize: "14px" }}>Sign In</span></p>
           </div>
         </div>
