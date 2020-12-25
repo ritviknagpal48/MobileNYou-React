@@ -22,6 +22,8 @@ import { Orderplaced } from "./Pages/Orderplaced";
 import { Cart } from "./Pages/Cart";
 import { Address } from "./Pages/Address";
 import { CheckoutPage } from "./Pages/CheckoutPage";
+import { FlashSale } from "./Pages/FlashSale";
+
 
 
 export const Layout = () => {
@@ -58,6 +60,7 @@ export const Layout = () => {
         <Route exact path='/Cart' component={Cart}></Route>
         <Route exact path='/address' component={Address}></Route>
         <Route exact path='/checkoutpage' component={CheckoutPage}></Route>
+        <Route exact path='/flashsale' component={FlashSale}></Route>
 
 
       </Switch>
