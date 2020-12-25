@@ -1,9 +1,19 @@
 import React, { Fragment } from 'react';
 
-export const SortFilter = () => {
+export const SortFilter = (props) => {
+  if(props.given){
+    var mystyle = {
+      position:"relative"
+    }
+  }
+  else{
+    var mystyle = {
+      position:"fixed"
+    }
+  }
   return (
     <Fragment>
-      <section class='bodypanelmian multiproductview try'>
+      <section class='bodypanelmian multiproductview try'style={mystyle} >
         <div class='container'>
           <div class='row no-gutters'>
             <div class='col-12'>

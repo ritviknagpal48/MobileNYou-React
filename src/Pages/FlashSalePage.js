@@ -11,7 +11,7 @@ export const FlashSalePage = () => {
       <div class='badydiv'>
         <div class='universalDiv'>
           <Navbar></Navbar>
-          <SortFilter></SortFilter>
+          <SortFilter given="true"></SortFilter>
           <div className='flashsale'>
           <div className='row no-gutters'>
           <div className='col'>
