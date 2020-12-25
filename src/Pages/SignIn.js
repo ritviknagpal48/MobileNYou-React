@@ -31,7 +31,7 @@ export const SignIn = () => {
                 </div>
             </div>
             <div className="strike-color" style={{ textAlign: "center", marginTop:"10px", marginBottom:"24px" }}>
-                <h6 className="strike-through-text">or</h6>
+                <h6 className="strike-through-text"><span style={{margin:'0 0.2rem'}}>or</span></h6>
             </div>
             <div style={{marginLeft:"10px", marginRight:"10px"}}>
                 <label style={{fontSize:"11px",color:"#c2172e",marginLeft:"0.2rem"}} for="email-password-input-box">Email/Contact No.</label> 
@@ -44,7 +44,7 @@ export const SignIn = () => {
                 </div>
             </div>
             <div className="strike-color" style={{ textAlign: "center", marginTop:"20px", marginBottom:"20px" }}>
-                <h6 className="strike-through-text">or</h6>
+                <h6 className="strike-through-text"><span style={{margin:'0 0.2rem'}}>or</span></h6>
             </div>
             <div style={{marginTop: '15px'}}>
                 <button className="btn" style={{padding: "4% 3%", borderRadius: "5px", border: "1px solid #c2172e", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "96%",backgroundColor:"white",color:"#c2172e",marginLeft:"0.5rem"}}><b>Sign In  With Otp</b></button>

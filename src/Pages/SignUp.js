@@ -45,7 +45,7 @@ export const SignUp = () => {
               <button className="btn" style={{ padding: "4% 3%", borderRadius: "5px", border: "none", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", width: "100%", backgroundColor: "#c2172e", color: "white" }}>Verify Your Phone Number</button>
               <div class="form-check" style={{ marginTop: '5px', fontSize: '12px' }}>
                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                <label class="form-check-label" for="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1" style={{margin: '0.2rem 0'}}>
                   By continuing, you agree to <span style={{ color: "red", fontSize: "12px" }}>Terms of Use</span> and <span style={{ color: "red", fontSize: "12px" }}>Privacy Policy</span>
                 </label>
               </div>
