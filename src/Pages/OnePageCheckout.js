@@ -49,25 +49,25 @@ export const OnePageCheckout = () => {
         <Fragment>
             <div class="badydiv">
                 <div class="universalDiv">
-                    <div class="container" style={{ backgroundColor: "#F5F5F5" }}>
+                    <div class="container" style={{ backgroundColor: "white" }}>
                         <Navbar></Navbar>
                         <div class="container" style={{ padding: "12px" }}>
                             <div class="row" style={{ padding: "10px;" }}>
                                 <div class="col-6" style={{ display: "flex", justifyContent: "center" }}>
-                                    <button type="button" class="btn btn-light" style={{ backgroundColor: "white", fontSize: "16px", width: "10rem", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "row" }}><i style={{ float: "left", color: "blue", fontSize: "24px" }} class='bx bxl-facebook-circle' ></i>Facebook</button>
+                                    <button type="button" class="btn btn-light" style={{ backgroundColor: "white", fontSize: "16px", width: "10rem", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "row",boxShadow: "0px 0px 4px 1px gainsboro" }}><i style={{ float: "left", color: "blue", fontSize: "24px" }} class='bx bxl-facebook-circle' ></i>Facebook</button>
                                 </div>
                                 <div class="col-6" style={{ display: "flex", justifyContent: "center" }}>
-                                    <button type="button" class="btn btn-light" style={{ backgroundColor: "white", fontSize: "16px", width: "10rem", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "row" }}><i style={{ float: "left", color: "red", fontSize: "24px" }} class='bx bxl-google'></i>Google</button>
+                                    <button type="button" class="btn btn-light" style={{ backgroundColor: "white", fontSize: "16px", width: "10rem", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "row",boxShadow: "0px 0px 4px 1px gainsboro" }}><i style={{ float: "left", color: "red", fontSize: "24px" }} class='bx bxl-google'></i>Google</button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="container" id="cart-items-dropdown-menu" style={{ backgroundColor: "white", width: "93%", height: "2.5rem", borderRadius: "2%" }}>
+                        <div class="container" id="cart-items-dropdown-menu" style={{ backgroundColor: "white", width: "93%", height: "2.5rem", borderRadius: "2%",boxShadow: "0px 0px 4px 1px gainsboro" }}>
                             <span style={{ float: "left", margin: "0 1rem", padding: "0.5rem 0", fontSize: "15px" }}>View items in cart</span>
                             <i id="cart-items-dropdown-icon" style={{ float: "left", fontSize: "23px", padding: "0.5rem 0", marginLeft: "-0.7rem" }} class='bx bx-chevron-down'></i>
                             <span style={{ float: "right", margin: "0 1rem", padding: "0.5rem 0", color: "red", fontSize: "15px" }}>₹5899</span>
                         </div>
-                        <div className="bodypanelmian aboutseller text-left" id="cart-items-dropdown-content" style={{ backgroundColor: "white", width: "93%", margin: "-1rem auto 0 auto", display: "none" }}>
+                        <div className="bodypanelmian aboutseller text-left" id="cart-items-dropdown-content" style={{ backgroundColor: "white", width: "93%", margin: "-1rem auto 0 auto", display: "none",boxShadow: "0px 5px 4px 1px gainsboro" }}>
 
                             <div className='sellerlocation' style={{ padding: "none", margin: "none", boxShadow: "none" }}>
                                 <div className="container">
@@ -261,7 +261,7 @@ export const OnePageCheckout = () => {
                                             label="Password"
                                             variant="outlined"
                                             id="custom-css-outlined-input"
-                                            style={{marginTop:"10px", marginBottom:"20px", width:"20rem"}}
+                                            style={{marginTop:"10px", marginBottom:"20px", width:"90%"}}
                                         />    
                                 </div>
                             </section>
