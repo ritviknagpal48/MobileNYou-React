@@ -9,11 +9,11 @@ export const FlashSalePage = () => {
   return (
     <Fragment>
       <div class='badydiv'>
-        <div class='universalDiv'>
+        <div class='universalDiv' style={{backgroundColor:"#f5f5f5"}}>
           <Navbar></Navbar>
           <div style={{position:"sticky", top:"0", zIndex:"100"}}>
             <SortFilter given="true"></SortFilter>
-            <div className='flashsale' style={{backgroundColor:"white", borderBottom:"1px gray solid"}}>
+            <div className='flashsale' style={{backgroundColor:"white", boxShadow:"1px 0px 4px"}}>
               <div className='row no-gutters'>
                 <div className='col'>
                   <div className='heing'>
