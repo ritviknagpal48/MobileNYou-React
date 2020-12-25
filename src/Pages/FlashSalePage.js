@@ -5,7 +5,7 @@ import { Footer } from '../Components/Footer';
 import { SortFilter } from '../Components/AllProducts Page/SortFilter';
 
 
-export const FlashSale = () => {
+export const FlashSalePage = () => {
   return (
     <Fragment>
       <div class='badydiv'>
