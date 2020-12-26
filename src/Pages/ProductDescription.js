@@ -30,17 +30,17 @@ export const ProductDescription = () => {
                         Pro
                       </h5>
                       <div className='price d-flex float-left'>
-                        <p className='m-price'>
+                        <p className='m-price' style={{fontSize:"1.3rem",margin:"0"}}>
                           <i className='fas fa-rupee-sign' aria-hidden='true' />{' '}
                           599
                         </p>
-                        <span className='full-p'>
+                        <span className='full-p' style={{fontSize:"1rem",marginTop:"0.3rem"}}>
                           <i className='fas fa-rupee-sign' aria-hidden='true' />{' '}
                           899
                         </span>
-                        <span className='offp'>50% off</span>
+                        <span className='offp' style={{fontSize:"1rem",marginTop:"0.3rem"}}>50% off</span>
                       </div>
-                      <div className='rateing text-right'>
+                      <div className='rateing text-right' style={{height:"1.3rem",marginBottom:"1rem"}}>
                         <p className='rate'>
                           <img src='image/star.svg' className='star' /> 4.2
                         </p>
@@ -51,7 +51,7 @@ export const ProductDescription = () => {
                         <p>
                           <img src='image/Calculator.svg' /> EMI Start at{' '}
                           <img src='image/bx-rupee.svg' className='rup' /> 500{' '}
-                          <img src='image/info.svg' />
+                          <a href="/emioptions" style={{cursor:"pointer"}}><img src='image/info.svg'  /></a>
                         </p>
                       </div>
                     </div>
