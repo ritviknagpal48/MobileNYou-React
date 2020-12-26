@@ -126,16 +126,16 @@ export const ProductDescription = () => {
                           +5 More Offer Available{' '}
                         </p>
                       </div>
-                      <div className='cod-redplace d-flex text-left justify-content-around'>
-                        <p>
-                          <img src='image/Cancel.svg' /> <br /> 10 Days
+                      <div className='cod-redplace d-flex text-left justify-content-around' style={{overflow:"auto", whiteSpace:"nowrap"}}>
+                        <p style={{margin:"1% 3%",}}>
+                          <img src='image/Cancel.svg'style={{margin:"auto 10px", display:"inline-block"}}/>10 Days
                           Replacement
                         </p>
-                        <p>
-                          <img src='image/Check.svg' /> <br /> Cash on Delivery{' '}
+                        <p style={{margin:"1% 3%"}}>
+                          <img src='image/Check.svg' style={{margin:"auto 10px", display:"inline-block"}} />Cash on Delivery{' '}
                         </p>
-                        <p>
-                          <img src='image/Cancel.svg' /> <br /> Free Shipping
+                        <p style={{margin:"1% 3%"}}>
+                          <img src='image/Cancel.svg'style={{margin:"auto 10px", display:"inline-block"}}/>Free Shipping
                         </p>
                       </div>
                     </div>
