@@ -40,7 +40,7 @@ export const SortFilter = (props) => {
                         </div>
                   </footer>
                   <div id="bottom-sheet" class="overlay" style={{zIndex: '2'}}>
-                        <aside class="social" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+                      <aside class="social" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
                         <div className='text-center' style={{marginTop: '2%'}}>
                           <h5 id='exampleModalLabel'>
                             <img
@@ -51,19 +51,18 @@ export const SortFilter = (props) => {
                             Sort By
                           </h5>
                           <hr />
-                          
                         </div>
-                              <ul class="menu">
-                                    <li><label for="Popularity">Popularity</label>
-                                    <input className="sortType" type="radio" name="sortRadio" value="Popularity" /></li>
-                                    <li><label for="HighToLow">Price -- High To Low</label>
-                                    <input className="sortType" type="radio" name="sortRadio" value="HighToLow" /></li>
-                                    <li><label for="LowToHigh">Price -- Low To High</label>
-                                    <input className="sortType" type="radio" name="sortRadio" value="LowToHigh" /></li>
-                                    <li><label for="Newest">Newest First</label>
-                                    <input className="sortType" type="radio" name="sortRadio" value="Newest" /></li>
-                              </ul>
-                        </aside>
+                        <ul class="menu">
+                              <li><label for="Popularity">Popularity</label>
+                              <input className="sortType" type="radio" name="sortRadio" value="Popularity" /></li>
+                              <li><label for="HighToLow">Price -- High To Low</label>
+                              <input className="sortType" type="radio" name="sortRadio" value="HighToLow" /></li>
+                              <li><label for="LowToHigh">Price -- Low To High</label>
+                              <input className="sortType" type="radio" name="sortRadio" value="LowToHigh" /></li>
+                              <li><label for="Newest">Newest First</label>
+                              <input className="sortType" type="radio" name="sortRadio" value="Newest" /></li>
+                        </ul>
+                      </aside>
                     <a href="#close" class="btn-close" aria-hidden="true"><span class="mdi mdi-close"></span><span class="sr-only">Close</span></a>
                   </div>
                   
@@ -73,8 +72,10 @@ export const SortFilter = (props) => {
           <div className="filtertop">
             <div className="backbtn">
               <img src="image/filter/back.svg" />
+              <h4 style={{float:'left'}}>FILTERS</h4>
             </div>
-            <h4><img src="image/filter/fill-inside.svg" /> Filter</h4> </div>
+            <h4 style={{color: '#c2172e'}}>CLEAR ALL</h4> 
+          </div>
           <div className="choosefilter">
             <div className="row no-gutters">
               <div className="col-5">
@@ -215,12 +216,32 @@ export const SortFilter = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="col-12">
-                <div className="applyfilter">
-                  <button type="button" className="btn btn-outline-primary">Clear Filter</button>
-                  <button type="button" className="btn btn-danger">Apply Filter</button>
+              <section class='bodypanelmian multiproductview try'>
+        <div class='container'>
+          <div class='row no-gutters'>
+            <div class='col-12'>
+              <div className='filter_div'>
+                <div
+                  className='filerhead d-flex text-center'
+                  style={{ marginTop: '0px' }}
+                >
+                  <a
+                    href='#'
+                    className='shortbyopen'
+                    >
+                    {' '}
+                    CLOSE
+                  </a>
+                  <a href='#' className='filter' style={{color: '#c2172e'}}>
+                    {' '}
+                    APPLY
+                  </a>{' '}
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
             </div>
           </div>
         </div>

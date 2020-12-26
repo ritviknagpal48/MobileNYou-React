@@ -176,10 +176,10 @@ footer .collapsemoreabout .heading i{position: relative; bottom: .3em;}
 .multiproductview .filter_div .shortby .modal-title{margin: 0 auto; width: 100%;font-size: .9em; font-weight: 600;  font-family: 'Open Sans', sans-serif;}
 .multiproductview .filter_div .filerhead{ border: .1em solid gainsboro; font-family: 'Open Sans', sans-serif; margin-top: -0.4em;}
 .multiproductview .filter_div .filerhead .shortbyopen{width: 50%; float: left; border-right: .1em solid gainsboro; padding: 1em; font-size: 1em; font-weight: 600; color: #aaa;}
-.multiproductview .filter_div .filtertop{text-align: center;}
+.multiproductview .filter_div .filtertop{text-align: right;}
 .multiproductview .filter_div .filtertop h4{font-size: 1em; color: #000; padding: .6em;}
 .multiproductview .filter_div .filtertop h4 img{width: 1.2em;}
-.multiproductview .filter_div .filtertop .backbtn img {width: 1em;float: left;position: relative; top: .7em; left: .4em; cursor: pointer;}
+.multiproductview .filter_div .filtertop .backbtn img {display: none; width: 1em;float: left;position: relative; top: .7em; left: .4em; cursor: pointer;}
 .multiproductview .filter_div .filerhead .filter{width: 50%; float: right; padding: 1em; font-size: 1em; font-weight: 600; color: #aaa;}
 .multiproductview .filter_div .filerhead .iconf{width: 1em; position: relative;bottom: .1em;}
 .multiproductview .filter_div .categheading {background: #eee; padding: 1em 0em; height: 100vh; font-size: .7em; font-family: 'Open Sans', sans-serif; font-weight: 600; position: relative;}
