@@ -12,6 +12,9 @@ import { StickyFooter } from '../Components/ProductDescription Page/StickyFooter
 
 
 export const ProductDescription = () => {
+  function fullImage(){
+    document.getElementById("image-modal-display").style.display="block"
+  }
   return (
     <Fragment>
       <div class='badydiv'>
@@ -20,7 +23,7 @@ export const ProductDescription = () => {
 
           <section className='bodypanelmian'>
             <div className='container'>
-              <ImageCarousel></ImageCarousel>
+              <ImageCarousel fullImage={fullImage}></ImageCarousel>
               <div class='row no-gutters'>
                 <div class='col-12'>
                   <div class='flashsale'>
@@ -337,6 +340,16 @@ export const ProductDescription = () => {
               </div>
             </div>
           </section>
+          <div class="modal"  id="image-modal-display" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <img src="/image/home/flash/img1.png" style={{height:"auto",width:"100wh",margin:"auto"}}></img>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Fragment>

@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { ImageCard } from './ImageCard';
 
-export const ImageCarousel = () => {
+export const ImageCarousel = (props) => {
   let settings = {
     dot: true,
     arrows: false,
@@ -29,10 +29,10 @@ export const ImageCarousel = () => {
                 <div className='productview'>
                   {/* <div className='swiper-wrapper'> */}
                   <Slider {...settings}>
-                    <ImageCard></ImageCard>
-                    <ImageCard></ImageCard>
+                    <ImageCard fullImage={props.fullImage}></ImageCard>
+                    <ImageCard fullImage={props.fullImage}></ImageCard>
 
-                    <ImageCard></ImageCard>
+                    <ImageCard fullImage={props.fullImage}></ImageCard>
                   </Slider>
                   {/* </div> */}
                   {/* Add Pagination */}
