@@ -39,7 +39,7 @@ export const SortFilter = (props) => {
                         <div class="wrap">
                         </div>
                   </footer>
-                  <div id="bottom-sheet" class="overlay" style={{backgroundColor: 'red', zIndex: '2'}}>
+                  <div id="bottom-sheet" class="overlay" style={{zIndex: '2'}}>
                         <aside class="social" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
                         <div className='text-center' style={{marginTop: '2%'}}>
                           <h5 id='exampleModalLabel'>
