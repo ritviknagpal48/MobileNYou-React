@@ -96,6 +96,7 @@ export const OrderSummary = () => {
                       <h5 style={{
                         fontSize: "15px",
                         color: "gray",
+                        paddingTop:"5px"
                       }}>Condition</h5>
                     </div>
                     <div className="col-4">
