@@ -4,7 +4,7 @@ import { ProductCarousel } from './ProductCarousel';
 export const CategoryX = () => {
   return (
     <Fragment>
-      <div className='flashsale'>
+      <div className='flashsale' style={{marginTop:"-1.5rem"}}>
         <div className='row no-gutters'>
           <div className='col'>
             <div className='heing'>
@@ -13,7 +13,7 @@ export const CategoryX = () => {
             <ProductCarousel></ProductCarousel>
           </div>
         </div>
-        <div className='row no-gutters'>
+        <div className='row no-gutters' style={{marginBottom:"1.5rem"}}>
           <div className='col'>
             <div className='viewbtn'>
               <a href='#' className='btn'>

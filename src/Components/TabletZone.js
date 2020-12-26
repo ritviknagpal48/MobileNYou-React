@@ -4,7 +4,7 @@ import { ProductCarousel } from './ProductCarousel';
 export const TabletZone = () => {
   return (
     <Fragment>
-      <div className='flashsale'>
+      <div className='flashsale' style={{marginTop:"-1.5rem"}}>
         <div className='row no-gutters'>
           <div className='col'>
             <div className='heing'>
