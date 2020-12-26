@@ -178,7 +178,7 @@ export const Allreview = () => {
                                                                     <div className="col-6"></div>
                                                                     <div className="col-6">
                                                                         <div id="miniDropdown" class="dropdown-content">
-                                                                            <a href="#report">Report Abuse</a>
+                                                                            <a href="#report"><i class='bx bxs-error' style={{color:"red", marginRight:"5px"}}></i>Report Abuse</a>
                                                                         </div>
                                                                     </div>
                                                                 </div>

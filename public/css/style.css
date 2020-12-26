@@ -646,6 +646,9 @@ z-index: 1;
   .graybg {
     height: 150vh;
   }
+  .dropdown-content{
+    margin-left: 5.2rem;
+  }
 }
 ::-webkit-scrollbar {
   width: 1px;
@@ -696,6 +699,7 @@ z-index: 1;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  margin-top:-1rem;
 }
 
 .dropdown-content a {
