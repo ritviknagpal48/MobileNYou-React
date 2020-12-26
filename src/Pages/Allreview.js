@@ -2,9 +2,25 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
-import {ProgressBar} from 'react-bootstrap';
+import { ProgressBar } from 'react-bootstrap';
 
 export const Allreview = () => {
+
+    function dropDown(params) {
+        document.getElementById("miniDropdown").classList.toggle("show");
+    }
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
     return (
 
         <Fragment>
@@ -35,28 +51,28 @@ export const Allreview = () => {
                                                                 <div className="col-7">
                                                                     <div className="row">
                                                                         <h6 style={{ fontSize: "10px" }}><b>5</b></h6><i style={{ fontSize: "10px", padding: "1px 1px 1px 2px" }} class='bx bxs-star'></i>
-                                                                        <ProgressBar now={100} variant={'success'} style={{width:"75%",margin:"0.2rem" ,height:"5px",}}/>
-                                                                        <span style={{fontSize:"10px", marginTop:"-2px"}}><b>50</b></span>
+                                                                        <ProgressBar now={100} variant={'success'} style={{ width: "75%", margin: "0.2rem", height: "5px", }} />
+                                                                        <span style={{ fontSize: "10px", marginTop: "-2px" }}><b>50</b></span>
                                                                     </div>
                                                                     <div className="row">
                                                                         <h6 style={{ fontSize: "10px" }}><b>4</b></h6><i style={{ fontSize: "10px", padding: "1px 1px 1px 2px" }} class='bx bxs-star'></i>
-                                                                        <ProgressBar now={40} variant={'success'} style={{width:"75%",margin:"0.2rem" ,height:"5px",}}/>
-                                                                        <span style={{fontSize:"10px", marginTop:"-2px"}}><b>20</b></span>
+                                                                        <ProgressBar now={40} variant={'success'} style={{ width: "75%", margin: "0.2rem", height: "5px", }} />
+                                                                        <span style={{ fontSize: "10px", marginTop: "-2px" }}><b>20</b></span>
                                                                     </div>
                                                                     <div className="row">
                                                                         <h6 style={{ fontSize: "10px" }}><b>3</b></h6><i style={{ fontSize: "10px", padding: "1px 1px 1px 2px" }} class='bx bxs-star'></i>
-                                                                        <ProgressBar now={20} variant={'warning'} style={{width:"75%",margin:"0.2rem" ,height:"5px",}}/>
-                                                                        <span style={{fontSize:"10px", marginTop:"-2px"}}><b>15</b></span>
+                                                                        <ProgressBar now={20} variant={'warning'} style={{ width: "75%", margin: "0.2rem", height: "5px", }} />
+                                                                        <span style={{ fontSize: "10px", marginTop: "-2px" }}><b>15</b></span>
                                                                     </div>
                                                                     <div className="row">
                                                                         <h6 style={{ fontSize: "10px" }}><b>2</b></h6><i style={{ fontSize: "10px", padding: "1px 1px 1px 2px" }} class='bx bxs-star'></i>
-                                                                        <ProgressBar now={10} variant={'danger'} style={{width:"75%",margin:"0.2rem" ,height:"5px",}}/>
-                                                                        <span style={{fontSize:"10px", marginTop:"-2px"}}><b>8</b></span>
+                                                                        <ProgressBar now={10} variant={'danger'} style={{ width: "75%", margin: "0.2rem", height: "5px", }} />
+                                                                        <span style={{ fontSize: "10px", marginTop: "-2px" }}><b>8</b></span>
                                                                     </div>
                                                                     <div className="row">
                                                                         <h6 style={{ fontSize: "10px" }}><b>1</b></h6><i style={{ fontSize: "10px", padding: "1px 1px 1px 2px" }} class='bx bxs-star'></i>
-                                                                        <ProgressBar now={5} variant={'danger'} style={{width:"75%",margin:"0.2rem" ,height:"5px",}}/>
-                                                                        <span style={{fontSize:"10px", marginTop:"-2px"}}><b>2</b></span>
+                                                                        <ProgressBar now={5} variant={'danger'} style={{ width: "75%", margin: "0.2rem", height: "5px", }} />
+                                                                        <span style={{ fontSize: "10px", marginTop: "-2px" }}><b>2</b></span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -71,7 +87,7 @@ export const Allreview = () => {
                                                 <div class="row no-gutters">
                                                     <div class="col">
                                                         <div class="user-review">
-                                                            <div class="userimg d-flex" style={{overflowY:"hidden"}}>
+                                                            <div class="userimg d-flex" style={{ overflowY: "hidden" }}>
                                                                 <div class="imgbox">
                                                                     <div class="blank_user">
                                                                         <span class="username">N</span>
@@ -154,7 +170,17 @@ export const Allreview = () => {
                                                                     </div>
                                                                 </div>
                                                                 <div class="ellipsis">
-                                                                    <span><i class="fas fa-ellipsis-v"></i></span>
+                                                                    <span><i class="fas fa-ellipsis-v dropbtn" onClick={dropDown}></i></span>
+                                                                </div>
+                                                            </div>
+                                                            <div className="container">
+                                                                <div className="row">
+                                                                    <div className="col-6"></div>
+                                                                    <div className="col-6">
+                                                                        <div id="miniDropdown" class="dropdown-content">
+                                                                            <a href="#report">Report Abuse</a>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                             <div class="ratingview">

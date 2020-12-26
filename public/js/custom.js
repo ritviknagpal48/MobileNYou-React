@@ -111,7 +111,6 @@ $(document).ready(function() {
       x.type = "password";
     }
   }
-
   document.getElementById("cart-items-dropdown-menu").onclick = (e) =>{
     var content = document.getElementById("cart-items-dropdown-content")
     var icon = document.getElementById("cart-items-dropdown-icon")
