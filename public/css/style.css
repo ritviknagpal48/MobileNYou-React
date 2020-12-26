@@ -649,6 +649,9 @@ z-index: 1;
   .dropdown-content{
     margin-left: 5.2rem;
   }
+  .scroll-bar{
+    padding-left:0px !important;
+  }
 }
 ::-webkit-scrollbar {
   width: 1px;

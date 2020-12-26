@@ -126,8 +126,8 @@ export const ProductDescription = () => {
                           +5 More Offer Available{' '}
                         </p>
                       </div>
-                      <div className='cod-redplace d-flex text-left justify-content-around' style={{overflow:"auto", whiteSpace:"nowrap"}}>
-                        <p style={{margin:"1% 3%",}}>
+                      <div className='cod-redplace d-flex text-left justify-content-around scroll-bar' style={{overflowX:"scroll", whiteSpace:"nowrap", paddingLeft:"90px", overflowY:"hidden"}}>
+                        <p style={{margin:"1% 3%"}}>
                           <img src='image/Cancel.svg'style={{margin:"auto 10px", display:"inline-block"}}/>10 Days
                           Replacement
                         </p>
