@@ -167,7 +167,7 @@ export const ProductDescription = () => {
           <div className="boxvariats">
             <p className="condition">Condition</p>
             <div className="tabv d-flex">
-              <p>Renewed</p>
+              <p style={{paddingTop:"3px"}}>Renewed</p>
               <p className="active">Suberb</p>
             </div>
             <ul className="d-flex justify-content-between">
