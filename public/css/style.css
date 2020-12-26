@@ -491,7 +491,7 @@ footer .collapsemoreabout .heading i{position: relative; bottom: .3em;}
 .reviewrating .user-review .ellipsis .abusedata{margin-left: 36px; color: #666; font-weight: 600;}
 
 .singleproductview{position: relative;}
-.stckyfooter{background: #fff; padding: 10px;position: sticky; bottom: 0; width: 100%; z-index: 9999; box-shadow: 1px 1px 5px 4px gainsboro;}
+.stckyfooter{background: #fff; padding: 10px;position: sticky; bottom: 0; width: 100%; z-index: 10; box-shadow: 1px 1px 5px 4px gainsboro;}
 .stckyfooter ul li{list-style-type: none;}
 .stckyfooter .wp{border: 1px solid #c2172e;color: #c2172e;padding: .32em 1em;font-size: 17px;}
 .stckyfooter .cart{border: 1px solid #c2172e;color: #c2172e;padding: .32em 1em;font-size: 17px;}
@@ -684,10 +684,27 @@ z-index: 1;
   color: gainsboro;
  }
 
+ .full-display-image{
+  position:relative;
+  height:auto;
+  width:245%;
+  z-index:15;
+  top:-3.1rem;
+  left:-17.7rem;
+  margin:auto;
+  overflow:hidden;
+}
+
  @media only screen and (min-width: 500px) {
   .page-cart{
     height: calc(190vh) !important;
   }
+  .full-display-image{
+    width: 170%;
+    top: -2.5rem;
+    left: -11rem;
+  }
+
 }
 .dropdown {
   position: relative;
@@ -714,3 +731,4 @@ z-index: 1;
 
 .dropdown a:hover {background-color: #ddd;}
 .show {display: block;}
+

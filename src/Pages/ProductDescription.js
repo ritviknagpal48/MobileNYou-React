@@ -341,13 +341,10 @@ export const ProductDescription = () => {
             </div>
           </section>
           <div class="modal"  id="image-modal-display" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button"  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  <img src="/image/home/flash/img1.png" style={{height:"auto",width:"100wh",margin:"auto"}}></img>
-                </div>
-              </div>
+            <div class="modal-dialog" style={{backgroundColor:"white"}}>
+
+                  <img src="/image/home/flash/img1.png" class="full-display-image" ></img>
+
             </div>
           </div>
         </div>
