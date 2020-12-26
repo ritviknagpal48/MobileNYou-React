@@ -1,19 +1,9 @@
 import React, { Fragment } from 'react';
 
 export const SortFilter = (props) => {
-  if(props.given){
-    var mystyle = {
-      position:"relative"
-    }
-  }
-  else{
-    var mystyle = {
-      position:"fixed"
-    }
-  }
   return (
     <Fragment>
-      <section class='bodypanelmian multiproductview try'style={mystyle} >
+      <section class='bodypanelmian multiproductview try'>
         <div class='container'>
           <div class='row no-gutters'>
             <div class='col-12'>
@@ -23,11 +13,9 @@ export const SortFilter = (props) => {
                   style={{ marginTop: '0px' }}
                 >
                   <a
-                    href='#'
+                    href='#bottom-sheet'
                     className='shortbyopen'
-                    data-toggle='modal'
-                    data-target='#exampleModal'
-                  >
+                    >
                     {' '}
                     <img src='image/filter/s-main.svg' className='iconf' /> Sort
                     By
@@ -47,110 +35,38 @@ export const SortFilter = (props) => {
           <div class='row no-gutters'>
             <div class='col-12'>
               <div className='filter_div'>
-                <div
-                  className='modal fade'
-                  id='exampleModal'
-                  tabIndex={-1}
-                  aria-labelledby='exampleModalLabel'
-                  aria-hidden='true'
-                >
-                  <div className='modal-dialog modal-dialog-centered shortby'>
-                    <div className='modal-content'>
-                      <div className='modal-header text-center'>
-                        <h5 className='modal-title' id='exampleModalLabel'>
-                          <img
-                            src='image/filter/shor-ins.svg'
-                            className='shrtimg'
-                          />{' '}
-                          Sort By
-                        </h5>
-                        <button
-                          type='button'
-                          className='close'
-                          data-dismiss='modal'
-                          aria-label='Close'
-                        >
-                          <span aria-hidden='true'>×</span>
-                        </button>
-                      </div>
-                      <div className='modal-body selectbox'>
-                        <div className='form-check'>
-                          <input
-                            className='form-check-input'
-                            type='radio'
-                            name='exampleRadios'
-                            id='Polularity'
-                            defaultValue='option1'
-                            defaultChecked
-                          />
-                          <label
-                            className='form-check-label'
-                            htmlFor='Polularity'
-                          >
-                            <span className='labtext'> Popularity</span>
-                          </label>
+                  <footer>
+                        <div class="wrap">
                         </div>
-                      </div>
-                      <div className='modal-body selectbox'>
-                        <div className='form-check'>
-                          <input
-                            className='form-check-input'
-                            type='radio'
-                            name='exampleRadios'
-                            id='Hightolow'
-                            defaultValue='option1'
-                            defaultChecked
-                          />
-                          <label
-                            className='form-check-label'
-                            htmlFor='Hightolow'
-                          >
-                            <span className='labtext'>
-                              {' '}
-                              Price -- High to Low{' '}
-                            </span>
-                          </label>
+                  </footer>
+                  <div id="bottom-sheet" class="overlay" style={{backgroundColor: 'red', zIndex: '2'}}>
+                        <aside class="social" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+                        <div className='text-center' style={{marginTop: '2%'}}>
+                          <h5 id='exampleModalLabel'>
+                            <img
+                              src='image/filter/shor-ins.svg'
+                              className='shrtimg'
+                              style={{height: '1.2rem'}}
+                            />{' '}
+                            Sort By
+                          </h5>
+                          <hr />
+                          
                         </div>
-                      </div>
-                      <div className='modal-body selectbox'>
-                        <div className='form-check'>
-                          <input
-                            className='form-check-input'
-                            type='radio'
-                            name='exampleRadios'
-                            id='LowtoHigh'
-                            defaultValue='option1'
-                            defaultChecked
-                          />
-                          <label
-                            className='form-check-label'
-                            htmlFor='LowtoHigh'
-                          >
-                            <span className='labtext'>
-                              {' '}
-                              Price -- Low to High
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-                      <div className='modal-body selectbox'>
-                        <div className='form-check'>
-                          <input
-                            className='form-check-input'
-                            type='radio'
-                            name='exampleRadios'
-                            id='Newest'
-                            defaultValue='option1'
-                            defaultChecked
-                          />
-                          <label className='form-check-label' htmlFor='Newest'>
-                            <span className='labtext'> Newest First</span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
+                              <ul class="menu">
+                                    <li><label for="Popularity">Popularity</label>
+                                    <input className="sortType" type="radio" name="sortRadio" value="Popularity" /></li>
+                                    <li><label for="HighToLow">Price -- High To Low</label>
+                                    <input className="sortType" type="radio" name="sortRadio" value="HighToLow" /></li>
+                                    <li><label for="LowToHigh">Price -- Low To High</label>
+                                    <input className="sortType" type="radio" name="sortRadio" value="LowToHigh" /></li>
+                                    <li><label for="Newest">Newest First</label>
+                                    <input className="sortType" type="radio" name="sortRadio" value="Newest" /></li>
+                              </ul>
+                        </aside>
+                    <a href="#close" class="btn-close" aria-hidden="true"><span class="mdi mdi-close"></span><span class="sr-only">Close</span></a>
                   </div>
-                </div>
+                  
                 <div className="filer_data">
         <div className="menu_overlay_filter" />
         <div className="filter_panel">
