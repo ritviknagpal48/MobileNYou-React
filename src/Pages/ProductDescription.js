@@ -15,6 +15,12 @@ export const ProductDescription = () => {
   function fullImage(){
     document.getElementById("image-modal-display").style.display="block"
   }
+
+  function imageClose(e){
+    console.log(e)
+    console.log("nik")
+    document.getElementById("image-modal-display").style.display="none";
+  }
   return (
     <Fragment>
       <div class='badydiv'>
@@ -342,7 +348,9 @@ export const ProductDescription = () => {
           </section>
           <div class="modal"  id="image-modal-display" aria-hidden="true">
             <div class="modal-dialog" style={{backgroundColor:"white"}}>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style={{position:"relative",zIndex:"20",backgroundColor:"transparent",color:"white"}}></button>
+                  <button onClick={imageClose} type="button" class="btn" style={{position:"relative",zIndex:"20",backgroundColor:"transparent",color:"white",left:"10rem",border:"none"}}>
+                    <i onClick={imageClose} class='bx bx-x' style={{color:"white",fontSize:"2rem"}}></i>
+                  </button>
                   <img src="/image/home/flash/img1.png" class="full-display-image" ></img>
 
             </div>
