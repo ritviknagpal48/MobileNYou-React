@@ -498,7 +498,10 @@ footer .collapsemoreabout .heading i{position: relative; bottom: .3em;}
 .stckyfooter .btn-default{background: #c2172e;color: #fff;padding: .3em .9em;font-size: .9em;margin-top: -0.2em;width: 200px;border-radius: 0;}
 .stckyfooter ul li{margin: 0em .3em;}
 .paddinghandle {
-  padding-right: 0.3em
+  padding-right: 0rem;
+  margin-left: 0.15rem !important;
+  margin-right: -0.8rem;
+  margin-bottom: 0.5rem;
 }
 
 
