@@ -12,10 +12,9 @@ export const AllProducts = () => {
           <Navbar></Navbar>
           <SortFilter></SortFilter>
 
-          <section className='bodypanelmian' style={{ marginBottom: '50px' }}>
+          <section className='bodypanelmian' style={{ marginBottom: '55px' }}>
             <div className='container'>
               <ProductGrid></ProductGrid>
-              <Footer></Footer>
             </div>
           </section>
         </div>
