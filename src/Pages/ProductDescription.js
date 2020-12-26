@@ -342,7 +342,7 @@ export const ProductDescription = () => {
           </section>
           <div class="modal"  id="image-modal-display" aria-hidden="true">
             <div class="modal-dialog" style={{backgroundColor:"white"}}>
-
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style={{position:"relative",zIndex:"20",backgroundColor:"transparent",color:"white"}}></button>
                   <img src="/image/home/flash/img1.png" class="full-display-image" ></img>
 
             </div>

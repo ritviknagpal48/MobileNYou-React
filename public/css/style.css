@@ -685,7 +685,7 @@ z-index: 1;
  }
 
  .full-display-image{
-  position:relative;
+  position:absolute;
   height:auto;
   width:245%;
   z-index:15;
