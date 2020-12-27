@@ -13,7 +13,7 @@ export const SortFilter = (props) => {
                   style={{ marginTop: '0px' }}
                 >
                   <a
-                    href='#'
+                    href='#bottom-sheet'
                     className='shortbyopen'
                     >
                     {' '}
