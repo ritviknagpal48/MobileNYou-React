@@ -31,7 +31,7 @@ $(document).ready(function() {
   $('.menu_overlay_filter').click(function() {
     $('body').removeClass('filterOpened');
   });
-  $('.filtertop .backbtn img').on('click', function(event) {
+  $('.backbtn').on('click', function(event) {
     $('.filer_data').hide(100);
     $('body').removeClass('filterOpened');
   });
