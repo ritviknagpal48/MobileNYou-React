@@ -29,10 +29,10 @@ export const ImageCarousel = (props) => {
                 <div className='productview'>
                   {/* <div className='swiper-wrapper'> */}
                   <Slider {...settings}>
-                    <ImageCard fullImage={props.fullImage}></ImageCard>
-                    <ImageCard fullImage={props.fullImage}></ImageCard>
+                    <ImageCard handleShow={props.handleShow}></ImageCard>
+                    <ImageCard handleShow={props.handleShow}></ImageCard>
 
-                    <ImageCard fullImage={props.fullImage}></ImageCard>
+                    <ImageCard handleShow={props.handleShow}></ImageCard>
                   </Slider>
                   {/* </div> */}
                   {/* Add Pagination */}

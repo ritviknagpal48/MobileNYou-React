@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import {Link} from 'react-router-dom'
 import { Navbar } from '../Components/Navbar';
 import { ImageCarousel } from '../Components/ProductDescription Page/ImageCarousel';
@@ -9,18 +9,15 @@ import { SingleBanner } from '../Components/Banners/SingleBanner';
 import { RelatedProducts } from '../Components/ProductDescription Page/RelatedProducts';
 import { Footer } from '../Components/Footer';
 import { StickyFooter } from '../Components/ProductDescription Page/StickyFooter';
-
+import {Modal,Button} from 'react-bootstrap'
 
 export const ProductDescription = () => {
-  function fullImage(){
-    document.getElementById("image-modal-display").style.display="block"
-  }
 
-  function imageClose(e){
-    console.log(e)
-    console.log("nik")
-    document.getElementById("image-modal-display").style.display="none";
-  }
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <Fragment>
       <div class='badydiv'>
@@ -29,7 +26,7 @@ export const ProductDescription = () => {
 
           <section className='bodypanelmian'>
             <div className='container'>
-              <ImageCarousel fullImage={fullImage}></ImageCarousel>
+              <ImageCarousel handleShow={handleShow}></ImageCarousel>
               <div class='row no-gutters'>
                 <div class='col-12'>
                   <div class='flashsale'>
@@ -346,15 +343,12 @@ export const ProductDescription = () => {
               </div>
             </div>
           </section>
-          <div class="modal"  id="image-modal-display" aria-hidden="true">
-            <div class="modal-dialog" style={{backgroundColor:"white"}}>
-                  <button onClick={imageClose} type="button" class="btn" style={{position:"relative",zIndex:"20",backgroundColor:"transparent",color:"white",left:"10rem",border:"none"}}>
-                    <i onClick={imageClose} class='bx bx-x' style={{color:"white",fontSize:"2rem"}}></i>
-                  </button>
-                  <img src="/image/home/flash/img1.png" class="full-display-image" ></img>
-
-            </div>
-          </div>
+          <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+            </Modal.Header>
+            <img src='image/home/flash/img1.png' width="100%" height="auto"></img>            
+          </Modal>
+          
         </div>
       </div>
     </Fragment>

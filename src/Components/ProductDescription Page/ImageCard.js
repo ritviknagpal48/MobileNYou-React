@@ -5,7 +5,7 @@ export const ImageCard = (props) => {
     <Fragment>
       <div className='swiper-slide'>
         <div className='brandbox'>
-          <img src='image/home/flash/img1.png' className='img-fluid' onClick={props.fullImage}/>
+          <img src='image/home/flash/img1.png' className='img-fluid' onClick={props.handleShow}/>
         </div>
       </div>
     </Fragment>
