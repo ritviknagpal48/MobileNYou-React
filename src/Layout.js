@@ -23,7 +23,7 @@ import { Cart } from "./Pages/Cart";
 import { Address } from "./Pages/Address";
 import { CheckoutPage } from "./Pages/CheckoutPage";
 import { FlashSalePage } from "./Pages/FlashSalePage";
-
+import {CustomerAddress} from "./Pages/CustomerAddress";
 
 
 export const Layout = () => {
@@ -61,6 +61,7 @@ export const Layout = () => {
         <Route exact path='/address' component={Address}></Route>
         <Route exact path='/checkoutpage' component={CheckoutPage}></Route>
         <Route exact path='/flashsale' component={FlashSalePage}></Route>
+        <Route exact path='/customeraddress' component={CustomerAddress}></Route>
 
 
       </Switch>
