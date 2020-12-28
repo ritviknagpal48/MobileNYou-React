@@ -7,7 +7,11 @@ export const CustomerAddress = () => {
     <Fragment>
         <div class='badydiv'>
             <div class='universalDiv'>
+            <section className="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px' }}>
                 <Navbar></Navbar>
+                <SingleCustomerAddress></SingleCustomerAddress>
+            </section>
+
             </div>
         </div>
     </Fragment>
