@@ -6,7 +6,7 @@ export const CustomerAddress = () => {
   return (
     <Fragment>
         <div class='badydiv'>
-            <div class='universalDiv'>
+            <div class='universalDiv' style={{backgroundColor: '#f5f5f5', height: '100vh'}}>
             <section className="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px' }}>
                 <div style={{width:"100%",height:"3rem",backgroundColor:"#c2172e",color:"white"}}>
                     <i class='bx bx-arrow-back' style={{fontSize: "1.3rem",
