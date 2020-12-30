@@ -27,7 +27,7 @@ export const Profile = () => {
                         <label style={{fontSize:"11px",color:"#x2172",marginLeft:"0.8rem"}} for="email-password-input-box">Phone No</label> 
                         <input className="form-control input-tag-for-focus" style={{ backgroundColor: "white", padding: "7% 3%", borderRadius: "5px", border: "1px solid gainsboro", width: "95%",margin:"0 auto"}} placeholder="9721567341" id="email-password-input-box"></input>
                     </div>
-                    <div style={{position:"relative",top:"10rem",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
+                    <div className="save-changes-button" style={{position:"relative",top:"10rem",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
                         <button type="button" class="btn btn-danger" style={{backgroundColor:" #c2172e",width:"90%"}}>Save Changes</button>
 
                         </div>
