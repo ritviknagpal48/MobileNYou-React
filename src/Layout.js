@@ -25,6 +25,7 @@ import { CheckoutPage } from "./Pages/CheckoutPage";
 import { FlashSalePage } from "./Pages/FlashSalePage";
 import {CustomerAddress} from "./Pages/CustomerAddress";
 import {Account} from "./Pages/Account";
+import {Password} from "./Pages/Password";
 
 
 export const Layout = () => {
@@ -64,6 +65,7 @@ export const Layout = () => {
         <Route exact path='/flashsale' component={FlashSalePage}></Route>
         <Route exact path='/customeraddress' component={CustomerAddress}></Route>
         <Route exact path='/account' component={Account}></Route>
+        <Route exact path='/changepassword' component={Password}></Route>
 
 
       </Switch>
