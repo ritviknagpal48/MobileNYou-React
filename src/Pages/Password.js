@@ -77,7 +77,7 @@ export const Password = () => {
                                         <CssTextField
                                             className={classes.margin}
                                             required="true"
-                                            label="Conferm Password"
+                                            label="Confirm Password"
                                             variant="outlined"
                                             id="custom-css-outlined-input"
                                         />                                                        
