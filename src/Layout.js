@@ -27,7 +27,9 @@ import { CustomerAddress } from "./Pages/CustomerAddress";
 import { Account } from "./Pages/Account";
 import { Password } from "./Pages/Password";
 import { Wallet } from "./Pages/Wallet";
-import {Profile} from "./Pages/Profile"
+import {Profile} from "./Pages/Profile";
+import {Wishlist} from "./Pages/Wishlist"
+
 
 export const Layout = () => {
   return (
@@ -69,6 +71,7 @@ export const Layout = () => {
         <Route exact path='/changepassword' component={Password}></Route>
         <Route exact path='/wallet' component={Wallet}></Route>
         <Route exact path='/profile' component={Profile}></Route>
+        <Route exact path='/wishlist' component={Wishlist}></Route>
 
 
 

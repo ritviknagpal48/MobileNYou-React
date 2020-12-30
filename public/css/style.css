@@ -923,6 +923,15 @@ ul.menu {
     transform: translateX(26px) !important;
   }
 
+  .out-of-stock{
+    width:90% !important;
+    height:98% !important;
+  }
+
+  .out-of-stock-button{
+    left:7% !important
+  }
+
 }
 
 .transparent-btn {
