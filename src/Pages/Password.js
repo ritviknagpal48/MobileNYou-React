@@ -19,10 +19,10 @@ import {
       },
       '& .MuiOutlinedInput-root': {
         '& fieldset': {
-          borderColor: 'gainsboro',
+          borderColor: 'gray',
         },
         '&:hover fieldset': {
-          borderColor: 'gainsboro',
+          borderColor: 'gray',
         },
         '&.Mui-focused fieldset': {
           borderColor: '#c2172e',
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
             margin: theme.spacing(1.5),
             width: '94%',
             backgroundColor:"white",
-            border:"1px solid grey",
+            padding: '-100px'
         },
     },
 }));
@@ -77,7 +77,7 @@ export const Password = () => {
                                         <CssTextField
                                             className={classes.margin}
                                             required="true"
-                                            label="Conferm Password"
+                                            label="Confirm Password"
                                             variant="outlined"
                                             id="custom-css-outlined-input"
                                         />                                                        

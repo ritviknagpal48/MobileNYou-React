@@ -1,0 +1,27 @@
+import React, { Fragment } from 'react';
+import {RedNavbar} from "../Components/RedNavbar";
+
+
+export const Wallet = () => {
+    return (
+        <Fragment>
+            <div class="badydiv">
+                <div class="universalDiv" style={{height: '100vh', backgroundColor: '#f5f5f5'}}>
+                    <RedNavbar navbar="MNU Wallet"></RedNavbar>
+                    <section className="bodypanelmian aboutseller text-left">
+                      <div className='sellerlocation' style={{ backgroundColor: "white" }}>
+                        <p style={{ color: 'lightgrey' }}>
+                            Wallet Summary
+                        </p>
+                        <hr style={{ margin: '1% 0' }} />
+                        <p>
+                            <b>Oct 28, 2020</b>
+                        <span className='text-right' style={{ float: 'right', color: '#c2172e' }}>&minus; &#8377; 599</span>
+                        </p>
+                      </div>
+                    </section>
+                </div>
+            </div>
+        </Fragment>
+    )
+}

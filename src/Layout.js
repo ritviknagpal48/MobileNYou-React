@@ -10,12 +10,12 @@ import { Variants } from './Pages/Variants';
 import { Specifications } from './Pages/Specifications';
 import { EmiOptions } from './Pages/EmiOptions';
 import { OnePageCheckout } from './Pages/OnePageCheckout';
-import {Login} from './Pages/Login';
-import {Otp} from './Pages/Otp';
-import {SignIn} from './Pages/SignIn';
+import { Login } from './Pages/Login';
+import { Otp } from './Pages/Otp';
+import { SignIn } from './Pages/SignIn';
 import { SignUp } from './Pages/SignUp';
-import {Review} from './Pages/Review';
-import {Allreview} from "./Pages/Allreview";
+import { Review } from './Pages/Review';
+import { Allreview } from "./Pages/Allreview";
 import { Emptycart } from "./Pages/Emptycart";
 import { Transactionerror } from "./Pages/Transactionerror";
 import { Orderplaced } from "./Pages/Orderplaced";
@@ -23,9 +23,10 @@ import { Cart } from "./Pages/Cart";
 import { Address } from "./Pages/Address";
 import { CheckoutPage } from "./Pages/CheckoutPage";
 import { FlashSalePage } from "./Pages/FlashSalePage";
-import {CustomerAddress} from "./Pages/CustomerAddress";
-import {Account} from "./Pages/Account";
-import {Password} from "./Pages/Password";
+import { CustomerAddress } from "./Pages/CustomerAddress";
+import { Account } from "./Pages/Account";
+import { Password } from "./Pages/Password";
+import { Wallet } from "./Pages/Wallet";
 
 
 export const Layout = () => {
@@ -66,6 +67,7 @@ export const Layout = () => {
         <Route exact path='/customeraddress' component={CustomerAddress}></Route>
         <Route exact path='/account' component={Account}></Route>
         <Route exact path='/changepassword' component={Password}></Route>
+        <Route exact path='/wallet' component={Wallet}></Route>
 
 
       </Switch>
