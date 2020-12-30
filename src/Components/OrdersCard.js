@@ -12,7 +12,11 @@ export const OrdersCard = (props) => {
               </div>
               <div className="col-8" style={{textAlign: 'left'}}>
                 <p>Realme X50 Pro 5G (Rust Red, 256GB) (12GB RAM)</p>
-                <p style={{color: 'green'}}>{ props.orderStatus }</p>
+                {(props.orderStatus === "Cancelled") ? 
+                  <p style={{color: '#c2172e'}}>{ props.orderStatus }</p>
+                  :
+                  <p style={{color: 'green'}}>{ props.orderStatus }</p>
+                }
               </div>
             </div>
             <div className="row">
