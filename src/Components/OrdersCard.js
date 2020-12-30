@@ -46,9 +46,7 @@ export const OrdersCard = (props) => {
               </div>
               <div className="col-6"></div>
             </div>
-            {props.review && !(props.orderStatus === "Delivered") ? 
-              null
-              :
+            {props.review && props.orderStatus === "Delivered" ? 
               <div className="row">
                 <div className="col-6" style={{textAlign: 'left'}}>
                   <i class='bx bx-star' style={{fontSize: '1.5rem'}}></i>
@@ -61,6 +59,8 @@ export const OrdersCard = (props) => {
                   <span style={{color: '#c2172e', cursor: 'pointer', fontSize: '12px'}}>Write a Review</span>
                 </div>
               </div>
+              :
+              null
             }
           </div>
         </div>
