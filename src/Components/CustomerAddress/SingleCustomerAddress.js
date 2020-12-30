@@ -2,41 +2,27 @@ import React, { Fragment } from 'react';
 
 export const SingleCustomerAddress = () => {
 
-  function dropDown(params) {
-    document.getElementById("miniDropdown").classList.toggle("show");
-  }
-  window.onclick = function (event) {
-      if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                  openDropdown.classList.remove('show');
-              }
-          }
-      }
-  }
   return (
     <Fragment>
               <section className="bodypanelmian aboutseller text-left">
                 <div className='sellerlocation' style={{backgroundColor: '#ffffff'}}>
                     <h3>
                     <b>Neeraj Sharma <span className='text-right' style={{ backgroundColor: 'lightgray', padding: '2px 10px', fontSize: '10px' }}>Office</span></b>
-                    <span style={{float: 'right', cursor: 'pointer'}} onClick={dropDown}><i className="fas fa-ellipsis-v dropbtn"></i></span>
-                    </h3>
-                    <div className="container">
-                      <div className="row">
-                          <div className="col-6"></div>
-                          <div className="col-6">
-                              <div id="miniDropdown" class="dropdown-content">
-                                <a href="#">Edit</a>
-                                <a href="#">Remove</a>
-                                <a href="#">Make as Default</a>
-                              </div>
-                          </div>
+                    
+                    
+                    <span class="dropdown-container" tabindex="-1">
+                      <span class="three-dots" style={{float: 'right', cursor: 'pointer'}}></span>
+                      <div className="container">
+                      
+                      <span class="dropdown" style={{right: '0'}}>
+                        <a href="#"><div>Edit</div></a>
+                        <a href="#"><div>Remove</div></a>
+                        <a href="#"><div>Make as Default</div></a>
+                      </span>
                       </div>
-                    </div>
+                      
+                    </span>
+                    </h3>
                     <p>
                     Rzg-91, Park Street Avenue, Lokhandwala, Delhi <br/>110045
                     </p>
