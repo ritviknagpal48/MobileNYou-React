@@ -47,7 +47,7 @@ export const OrdersCard = (props) => {
               <div className="col-6"></div>
             </div>
             {props.review && props.orderStatus === "Delivered" ? 
-              <div className="row">
+              <div className="row" style={{marginTop: '2%'}}>
                 <div className="col-6" style={{textAlign: 'left'}}>
                   <i class='bx bx-star' style={{fontSize: '1.5rem'}}></i>
                   <i class='bx bx-star' style={{fontSize: '1.5rem'}}></i>
