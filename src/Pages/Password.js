@@ -1,8 +1,51 @@
 import React, { Fragment } from 'react';
 import {RedNavbar} from "../Components/RedNavbar";
+import { makeStyles } from '@material-ui/core/styles';
+import {TextField} from '@material-ui/core';
+import {
+    fade,
+    ThemeProvider,
+    withStyles,
+    createMuiTheme,
+  } from '@material-ui/core/styles';
+
+  const CssTextField = withStyles({
+    root: {
+      '& label.Mui-focused': {
+        color: '#c2172e',
+      },
+      '& .MuiInput-underline:after': {
+        borderBottomColor: 'green',
+      },
+      '& .MuiOutlinedInput-root': {
+        '& fieldset': {
+          borderColor: 'gainsboro',
+        },
+        '&:hover fieldset': {
+          borderColor: 'gainsboro',
+        },
+        '&.Mui-focused fieldset': {
+          borderColor: '#c2172e',
+        },
+      },
+    },
+  })(TextField);
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        '& > *': {
+            margin: theme.spacing(1.5),
+            width: '94%',
+            backgroundColor:"white",
+            border:"1px solid grey",
+        },
+    },
+}));
 
 
 export const Password = () => {
+    const classes = useStyles();
+
     return (
         <Fragment>
             <div class="badydiv">
@@ -23,7 +66,27 @@ export const Password = () => {
                             </div>
                         </div>
                       </div>
-                      
+                      <form className={classes.root} noValidate autoComplete="off">
+                                        <CssTextField
+                                            className={classes.margin}
+                                            required="true"
+                                            label="New Password"
+                                            variant="outlined"
+                                            id="custom-css-outlined-input"
+                                        />                                        
+                                        <CssTextField
+                                            className={classes.margin}
+                                            required="true"
+                                            label="Conferm Password"
+                                            variant="outlined"
+                                            id="custom-css-outlined-input"
+                                        />                                                        
+                                    </form>
+                        <div style={{position:"relative",top:"28rem",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
+                        <button type="button" class="btn btn-danger" style={{backgroundColor:" #c2172e",width:"90%"}}>Save Changes</button>
+
+                        </div>
+
                     </section>
                 </div>
             </div>
