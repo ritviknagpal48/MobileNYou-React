@@ -27,7 +27,7 @@ import { CustomerAddress } from "./Pages/CustomerAddress";
 import { Account } from "./Pages/Account";
 import { Password } from "./Pages/Password";
 import { Wallet } from "./Pages/Wallet";
-
+import {Profile} from "./Pages/Profile"
 
 export const Layout = () => {
   return (
@@ -68,6 +68,8 @@ export const Layout = () => {
         <Route exact path='/account' component={Account}></Route>
         <Route exact path='/changepassword' component={Password}></Route>
         <Route exact path='/wallet' component={Wallet}></Route>
+        <Route exact path='/profile' component={Profile}></Route>
+
 
 
       </Switch>

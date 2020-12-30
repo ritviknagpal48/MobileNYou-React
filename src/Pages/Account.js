@@ -13,7 +13,8 @@ export const Account = () => {
                             <div class="row" style={{height:"100%"}}>
                                 <div class="col-4" style={{display:"flex",padding:"none"}}>
                                     <div class="customer-account-image">N</div>
-                                    <span style={{ borderRadius: "50%",top: "2.8rem",backgroundColor: "white",position: "absolute",zIndex: "10",left: "4.2rem",height: "1.3rem",width: "1.3rem",border: "1px solid gainsboro"}}><i class='bx bx-edit' style={{color:"#c2172e"}}></i></span>                            </div>
+                                    <span style={{ borderRadius: "50%",top: "2.8rem",backgroundColor: "white",position: "absolute",zIndex: "10",left: "4.2rem",height: "1.3rem",width: "1.3rem",border: "1px solid gainsboro"}}><i class='bx bx-edit' style={{color:"#c2172e"}}></i></span>                           
+                                 </div>
                                 <div class="col-5 customer-account-details" style={{marginLeft:"-3.5rem",marginRight:"3.5rem"}}>
                                     <p style={{fontSize:"18px",marginTop:"0.3rem"}}>NEERAJ</p>
                                     <p style={{fontSize:"14px"}}>nesh.28feb@gmail.com</p>
