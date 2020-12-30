@@ -8,7 +8,7 @@ export const CustomerAddress = () => {
         <div class='badydiv'>
             <div class='universalDiv' style={{backgroundColor: '#f5f5f5', height: '100vh'}}>
             <section className="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px' }}>
-                <RedNavbar></RedNavbar>
+                <RedNavbar navbar="Addresses"></RedNavbar>
                 <SingleCustomerAddress></SingleCustomerAddress>
                 <SingleCustomerAddress></SingleCustomerAddress>
                 <SingleCustomerAddress></SingleCustomerAddress>

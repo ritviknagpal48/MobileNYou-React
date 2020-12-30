@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-export const RedNavbar = () => {
+export const RedNavbar = (props) => {
     return (
       <Fragment>
         <section className="bodypanelmian aboutseller text-left">
@@ -9,7 +9,7 @@ export const RedNavbar = () => {
                                                                     margin: "0.7rem 0.3rem",
                                                                     position: "relative",
                                                                     top: "0.1rem"}}></i>                    
-                                <span style={{fontSize:"1.3rem"}}>Addresses</span>
+                                <span style={{fontSize:"1.3rem"}}>{props.navbar}</span>
                             </div>
         </section>
     </Fragment>
