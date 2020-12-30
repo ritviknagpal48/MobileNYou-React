@@ -904,6 +904,10 @@ ul.menu {
     margin-left:-7.5rem !important;
     margin-right:7.5rem !important;
   }
+
+  .referimg {
+    top: 12rem !important;
+  }
 }
 
 .transparent-btn {

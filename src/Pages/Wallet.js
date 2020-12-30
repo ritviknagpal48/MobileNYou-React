@@ -26,7 +26,7 @@ export const Wallet = () => {
                           </p>
                           <p style={{color: 'gray'}}>
                             Used for product purchase
-                            <span className='text-right' style={{ float: 'right', color: '#c2172e', fontSize: '18px' }}>&minus; &#8377; 599</span>
+                            <span className='text-right' style={{ float: 'right', color: '#c2172e', fontSize: '18px' }}>&minus;&#8377;599</span>
                           </p>
                         </div>
                         <hr style={{ margin: '1% 0' }} />
@@ -53,7 +53,7 @@ export const Wallet = () => {
                         </div>
                       </div>
                       <div  style={{ marginBottom: '50%', paddingBottom: '10px' }}>
-                        <img src="/image/header/banner_buttom.png" style={{margin: '0 4%',  display:"flex", justifyContent:"center",alignItems:"center",flexDirection:"column", position: 'relative', top: '10rem', width: '92%'}} />
+                        <img src="/image/header/banner_buttom.png" class="referimg" style={{margin: '0 4%',  display:"flex", justifyContent:"center",alignItems:"center",flexDirection:"column", position: 'relative', top: '18rem', width: '92%'}} />
                       </div>
                     </section>
                 </div>
