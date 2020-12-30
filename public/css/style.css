@@ -905,3 +905,18 @@ ul.menu {
     margin-right:7.5rem !important;
   }
 }
+
+.transparent-btn {
+  display: block;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  outline:none;
+  padding: 2% 1%;
+  width: 100%;
+}
+
+.transparent-btn:focus {
+  outline-style: none;
+}
