@@ -17,20 +17,23 @@ export const OrdersCard = (props) => {
             </div>
             <div className="row">
               <div className="col-6" style={{textAlign: 'left', color: 'gray', fontSize: '12px'}}>
-                {
+                {(() => {
                   if(props.orderStatus === 'Order Placed' || props.orderStatus === 'Dispatched' || props.orderStatus === 'Out For Delivery') {
-                    <span>Placed Date: 15 March 2020</span>
+                    return (
+                      <span>Placed Date: 15 March 2020</span>
+                    )
                   }
                   else if(props.orderStatus === 'Refund Successful') {
-                    <span>Refund Initiated: 15 March 2020</span>
-                  }
-                  else if(props.orderStatus === 'Delivered') {
-                    <span>Deliver Date: 15 March 2020</span>
+                    return (
+                      <span>Refund Initiated: 15 March 2020</span>
+                    )
                   }
                   else {
-                    null
+                    return (
+                      <span>Deliver Date: 15 March 2020</span>
+                    )
                   }
-                }
+                })()}
               </div>
               <div className="col-6"></div>
             </div>
