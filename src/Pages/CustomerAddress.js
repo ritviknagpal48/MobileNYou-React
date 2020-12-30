@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import { Navbar } from '../Components/Navbar';
 import {SingleCustomerAddress} from '../Components/CustomerAddress/SingleCustomerAddress';
+import {RedNavbar} from "../Components/RedNavbar";
 
 export const CustomerAddress = () => {
   return (
@@ -8,13 +8,7 @@ export const CustomerAddress = () => {
         <div class='badydiv'>
             <div class='universalDiv' style={{backgroundColor: '#f5f5f5', height: '100vh'}}>
             <section className="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px' }}>
-                <div style={{width:"100%",height:"3rem",backgroundColor:"#c2172e",color:"white"}}>
-                    <i class='bx bx-arrow-back' style={{fontSize: "1.3rem",
-                                                        margin: "0.7rem 0.3rem",
-                                                        position: "relative",
-                                                        top: "0.1rem"}}></i>                    
-                    <span style={{fontSize:"1.3rem"}}>Addresses</span>
-                </div>
+                <RedNavbar></RedNavbar>
                 <SingleCustomerAddress></SingleCustomerAddress>
                 <SingleCustomerAddress></SingleCustomerAddress>
                 <SingleCustomerAddress></SingleCustomerAddress>
