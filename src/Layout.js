@@ -27,8 +27,10 @@ import { CustomerAddress } from "./Pages/CustomerAddress";
 import { Account } from "./Pages/Account";
 import { Password } from "./Pages/Password";
 import { Wallet } from "./Pages/Wallet";
-import {Profile} from "./Pages/Profile";
-import {Wishlist} from "./Pages/Wishlist"
+import { Profile } from "./Pages/Profile";
+import { Wishlist } from "./Pages/Wishlist"
+import { EmptyWishlist } from "./Pages/EmptyWishlist"
+import { OrdersList } from "./Pages/OrdersList"
 
 
 export const Layout = () => {
@@ -72,6 +74,8 @@ export const Layout = () => {
         <Route exact path='/wallet' component={Wallet}></Route>
         <Route exact path='/profile' component={Profile}></Route>
         <Route exact path='/wishlist' component={Wishlist}></Route>
+        <Route exact path='/emptywishlist' component={EmptyWishlist}></Route>
+        <Route exact path='/orderslist' component={OrdersList}></Route>
 
 
 
