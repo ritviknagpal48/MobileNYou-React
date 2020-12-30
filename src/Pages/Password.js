@@ -22,7 +22,7 @@ import {
           borderColor: 'gray',
         },
         '&:hover fieldset': {
-          borderColor: 'gray',
+          borderColor: 'gainsboro',
         },
         '&.Mui-focused fieldset': {
           borderColor: '#c2172e',
@@ -77,7 +77,7 @@ export const Password = () => {
                                         <CssTextField
                                             className={classes.margin}
                                             required="true"
-                                            label="Confirm Password"
+                                            label="Conferm Password"
                                             variant="outlined"
                                             id="custom-css-outlined-input"
                                         />                                                        
