@@ -820,6 +820,19 @@ ul.menu {
   transform: scale(1, 1);
 }
 
+.customer-account-image{
+  background-color:#c2172e;
+  border-radius:50%;
+  height:4rem;
+  width:4rem;
+  margin:auto 0.4rem;
+  position:relative;
+  top:-0.1rem;
+  color:white;
+  padding:1rem 1.5rem;
+  font-size:24px;
+}
+
 @media screen and (min-width: 640px) {
   .overlay {
     padding: 0 19%;
@@ -884,4 +897,11 @@ ul.menu {
 
 .sortType {
   float: right;
+}
+
+@media screen and (min-width:500px){
+  .customer-account-details{
+    margin-left:-7.5rem !important;
+    margin-right:7.5rem !important;
+  }
 }
