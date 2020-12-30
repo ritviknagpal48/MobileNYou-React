@@ -6,9 +6,9 @@ export const Account = () => {
     return (
         <Fragment>
             <div class="badydiv">
-                <div class="universalDiv" >
+                <div class="universalDiv" style={{height: '100vh'}}>
                     <RedNavbar navbar="Account"></RedNavbar>
-                    <section className="bodypanelmian aboutseller text-left" >
+                    <section className="bodypanelmian aboutseller text-left">
                         <div style={{height:"5rem"}}>
                             <div class="row" style={{height:"100%"}}>
                                 <div class="col-4" style={{display:"flex",padding:"none"}}>
@@ -111,6 +111,16 @@ export const Account = () => {
                                     </div>
                                 </div>
                             </button>
+                        </div>
+                        <div style={{top: '50%'}}></div>
+                        <div style={{ display:"flex", justifyContent:"center",alignItems:"center",flexDirection:"column", position: 'relative', top: '10rem', width: '100%'}}>
+                            <div>
+                                <span style={{color:'#c2172e', cursor: 'pointer'}}><a> FAQ </a></span>
+                                <i class='bx bxs-circle' style={{color:'#c2172e', fontSize: '5px', position: 'relative', top: '-0.2rem'}} ></i>
+                                <span style={{color:'#c2172e', cursor: 'pointer'}}><a> Terms and Condition </a></span>
+                                <i class='bx bxs-circle' style={{color:'#c2172e', fontSize: '5px', position: 'relative', top: '-0.2rem'}} ></i>
+                                <span style={{color:'#c2172e', cursor: 'pointer'}}><a> About Us </a></span>
+                            </div>
                         </div>
                     </section>
                 </div>
