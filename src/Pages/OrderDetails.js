@@ -6,7 +6,7 @@ export const OrderDetails = () => {
     return (
         <Fragment>
             <div class="badydiv">
-                <div class="universalDiv" style={{height: '100vh', backgroundColor: '#f5f5f5'}}>
+                <div class="universalDiv" style={{height: '110vh', backgroundColor: '#f5f5f5'}}>
                     <RedNavbar navbar="Order"></RedNavbar>
                     <section class="bodypanelmian aboutseller">
                         <div class="sellerlocation" style={{backgroundColor:"white"}}>
@@ -23,7 +23,34 @@ export const OrderDetails = () => {
                             </div>
                         </div>
                     </section>
-                    <section class="bodypanelmian aboutseller text-left">
+                    <section class="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px' }}>
+                        <div className="sellerlocation" style={{backgroundColor: '#fff'}}>
+                            <div class='progress' style={{height:"8rem", backgroundColor: '#fff'}}>
+                                <div class='progress_inner'>
+                                <div class='progress_inner__step'>
+                                    <label for='step-1'>Order Placed</label>
+                                </div>
+                                <div class='progress_inner__step'>
+                                    <label for='step-2'>Shipped</label>
+                                </div>
+                                <div class='progress_inner__step'>
+                                    <label for='step-3'>Out for Delivery</label>
+                                </div>
+                                <div class='progress_inner__step'>
+                                    <label for='step-4'>Delivered</label>
+                                </div>
+                                
+                                <input checked='checked' id='step-1' name='step' type='radio'/>
+                                <input id='step-2' name='step' type='radio'/>
+                                <input id='step-3' name='step' type='radio'/>
+                                <input id='step-4' name='step' type='radio'/>
+                                <input id='step-5' name='step' type='radio'/>
+                                <div class='progress_inner__bar' style={{top:"0.7rem"}}></div>
+                                <div class='progress_inner__bar--set' style={{top:"0.3rem"}}></div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="sellerlocation" style={{backgroundColor:"white",height:"2.8rem"}}>
                             <p><span style={{float:"left"}}>Cancel Order</span><span style={{float:"right"}}><i class='bx bxs-chevron-right'></i></span></p>
                         </div>
@@ -81,33 +108,6 @@ export const OrderDetails = () => {
                             Total
                                 <span className='text-right' style={{ float: 'right' }}> &#8377; 4500</span>
                             </p>
-                        </div>
-                        <div className="sellerlocation" style={{backgroundColor: '#fff'}}>
-                        <div class='progress' style={{height:"8rem", backgroundColor: '#fff'}}>
-                            <div class='progress_inner'>
-                            <div class='progress_inner__step'>
-                                <label for='step-1'>Order Placed</label>
-                            </div>
-                            <div class='progress_inner__step'>
-                                <label for='step-2'>Shipped</label>
-                            </div>
-                            <div class='progress_inner__step'>
-                                <label for='step-3'>Out for Delivery</label>
-                            </div>
-                            <div class='progress_inner__step'>
-                                <label for='step-4'>Delivered</label>
-                            </div>
-                            
-                            <input checked='checked' id='step-1' name='step' type='radio'/>
-                            <input id='step-2' name='step' type='radio'/>
-                            <input id='step-3' name='step' type='radio'/>
-                            <input id='step-4' name='step' type='radio'/>
-                            <input id='step-5' name='step' type='radio'/>
-                            <div class='progress_inner__bar' style={{top:"0.7rem"}}></div>
-                            <div class='progress_inner__bar--set' style={{top:"0.3rem"}}></div>
-                            </div>
-                        </div>
-                      
                         </div>
                     </section>
                 </div>
