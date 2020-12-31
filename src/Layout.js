@@ -31,7 +31,7 @@ import { Profile } from "./Pages/Profile";
 import { Wishlist } from "./Pages/Wishlist"
 import { EmptyWishlist } from "./Pages/EmptyWishlist"
 import { OrdersList } from "./Pages/OrdersList"
-
+import {OrderDetails} from "./Pages/OrderDetails";
 
 export const Layout = () => {
   return (
@@ -76,6 +76,7 @@ export const Layout = () => {
         <Route exact path='/wishlist' component={Wishlist}></Route>
         <Route exact path='/emptywishlist' component={EmptyWishlist}></Route>
         <Route exact path='/orderslist' component={OrdersList}></Route>
+        <Route exact path='/orderdetails' component={OrderDetails}></Route>
 
 
 
