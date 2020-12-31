@@ -82,20 +82,20 @@ export const OrderDetails = () => {
                                 <span className='text-right' style={{ float: 'right' }}> &#8377; 4500</span>
                             </p>
                         </div>
-                        <div className="sellerlocation">
-                        <div class='progress' style={{height:"6rem"}}>
+                        <div className="sellerlocation" style={{backgroundColor: '#fff'}}>
+                        <div class='progress' style={{height:"8rem", backgroundColor: '#fff'}}>
                             <div class='progress_inner'>
                             <div class='progress_inner__step'>
-                                <label for='step-1'>Start order</label>
+                                <label for='step-1'>Order Placed</label>
                             </div>
                             <div class='progress_inner__step'>
-                                <label for='step-2'>Prepare gift</label>
+                                <label for='step-2'>Shipped</label>
                             </div>
                             <div class='progress_inner__step'>
-                                <label for='step-3'>Pack gift</label>
+                                <label for='step-3'>Out for Delivery</label>
                             </div>
                             <div class='progress_inner__step'>
-                                <label for='step-4'>Decorate box</label>
+                                <label for='step-4'>Delivered</label>
                             </div>
                             
                             <input checked='checked' id='step-1' name='step' type='radio'/>
