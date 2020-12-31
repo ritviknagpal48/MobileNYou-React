@@ -22,6 +22,12 @@ export const OrderDetails = () => {
                                 </div>
                             </div>
                         </div>
+                        <div class="sellerlocation" style={{backgroundColor:"white",height:"2.8rem"}}>
+                            <p><span style={{float:"left"}}>Cancel Order</span><span style={{float:"right"}}><i class='bx bxs-chevron-right'></i></span></p>
+                        </div>
+                        <div class="sellerlocation" style={{backgroundColor:"white",height:"2.8rem"}}>
+                            <p><span style={{float:"left"}}>Support Center</span><span style={{float:"right"}}><i class='bx bxs-chevron-right'></i></span></p>
+                        </div>
                     </section>
                 </div>
             </div>
