@@ -83,7 +83,7 @@ export const OrderDetails = () => {
                             </p>
                         </div>
                         <div className="sellerlocation">
-                        <div class='progress'>
+                        <div class='progress' style={{height:"6rem"}}>
                             <div class='progress_inner'>
                             <div class='progress_inner__step'>
                                 <label for='step-1'>Start order</label>
@@ -103,8 +103,8 @@ export const OrderDetails = () => {
                             <input id='step-3' name='step' type='radio'/>
                             <input id='step-4' name='step' type='radio'/>
                             <input id='step-5' name='step' type='radio'/>
-                            <div class='progress_inner__bar'></div>
-                            <div class='progress_inner__bar--set'></div>
+                            <div class='progress_inner__bar' style={{top:"0.7rem"}}></div>
+                            <div class='progress_inner__bar--set' style={{top:"0.3rem"}}></div>
                             </div>
                         </div>
                       
