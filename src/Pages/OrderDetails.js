@@ -33,11 +33,29 @@ export const OrderDetails = () => {
             document.getElementsByClassName("sellerlocation")[1].classList.add("progress-bar-div-height")
             e.target.className = "bx bxs-chevron-down"
             document.getElementById("progress-bar-div").classList.add("progress-bar-transition")
+            document.getElementById("order-placed").classList.add("order-placed-move")
+            document.getElementById("order-shipped").classList.add("order-shipped-move")
+            document.getElementById("out-for-delivery").classList.add("out-for-delivery-move")
+            document.getElementById("delivered").classList.add("delivered-move")
+            var x = document.getElementsByClassName("order-status-details")
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "block";
+            }
         }
         else{
             document.getElementsByClassName("sellerlocation")[1].classList.remove("progress-bar-div-height")
             e.target.className = "bx bxs-chevron-right"
             document.getElementById("progress-bar-div").classList.remove("progress-bar-transition")
+            document.getElementById("order-placed").classList.remove("order-placed-move")
+            document.getElementById("order-shipped").classList.remove("order-shipped-move")
+            document.getElementById("out-for-delivery").classList.remove("out-for-delivery-move")
+            document.getElementById("delivered").classList.remove("delivered-move")
+            var x = document.getElementsByClassName("order-status-details")
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
         }
     }
     return (
@@ -82,7 +100,12 @@ export const OrderDetails = () => {
                             <p>
                                     <div className="container">
                                         <div className="row">
-                                            <div className="col-3" id="order-placed" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Order Placed</div>
+                                            <div className="col-3" id="order-placed" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Order Placed
+                                                <div className="order-status-details">
+                                                    <p>Your Order has been placed</p>
+                                                    <p>Thu, 26th Nov' 20 - 02:07pm</p>
+                                                </div>
+                                            </div>
                                             <div className="col-3" id="order-shipped" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Shipped</div>
                                             <div className="col-3" id="out-for-delivery" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Out for Delivery</div>
                                             <div className="col-3" id="delivered" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Delivered</div>

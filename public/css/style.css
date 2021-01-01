@@ -1014,5 +1014,29 @@ input:checked + .slider:before {
 }
 
 .progress-bar-div-height{
-  height:50vh !important;
+  height:55vh !important;
+}
+
+.order-placed-move {
+  transform: translate(2rem, -2rem);
+  transition: transform 1s ease-in-out;
+}
+
+.order-shipped-move {
+  transform: translate(-6.5rem, 6.8rem);
+  transition: transform 1s ease-in-out;
+}
+
+.out-for-delivery-move {
+  transform: translate(-15rem, 15.8rem);
+  transition: transform 1s ease-in-out;
+}
+
+.delivered-move {
+  transform: translate(-24rem, 25rem);
+  transition: transform 1s ease-in-out;
+}
+
+.order-status-details {
+  display: none;
 }
