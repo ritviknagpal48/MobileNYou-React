@@ -1,8 +1,31 @@
 import React, { Fragment } from 'react';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import {RedNavbar} from "../Components/RedNavbar";
+import LinearProgress from '@material-ui/core/LinearProgress';
 
+var useStyles = makeStyles({
+    root: {
+      width: '90%',
+      transformOrigin: "0 1%",
+      transition:"2s"
+    },
+  });
+  
 
 export const OrderDetails = () => {
+    var classes = useStyles();
+    function vertical(e){
+        var pos = e.target.className;
+        if(pos=="bx bxs-chevron-right"){
+            e.target.className = "bx bxs-chevron-down"
+            document.getElementById("progress-bar-div").classList.add("progress-bar-transition")
+        }
+        else{
+            e.target.className = "bx bxs-chevron-right"
+            document.getElementById("progress-bar-div").classList.remove("progress-bar-transition")
+
+        }
+    }
     return (
         <Fragment>
             <div class="badydiv">
@@ -24,31 +47,11 @@ export const OrderDetails = () => {
                         </div>
                     </section>
                     <section class="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px' }}>
-                        <div className="sellerlocation" style={{backgroundColor: '#fff'}}>
-                            <div class='progress' style={{height:"8rem", backgroundColor: '#fff'}}>
-                                <div class='progress_inner'>
-                                <div class='progress_inner__step'>
-                                    <label for='step-1'>Order Placed</label>
-                                </div>
-                                <div class='progress_inner__step'>
-                                    <label for='step-2'>Shipped</label>
-                                </div>
-                                <div class='progress_inner__step'>
-                                    <label for='step-3'>Out for Delivery</label>
-                                </div>
-                                <div class='progress_inner__step'>
-                                    <label for='step-4'>Delivered</label>
-                                </div>
-                                
-                                <input checked='checked' id='step-1' name='step' type='radio'/>
-                                <input id='step-2' name='step' type='radio'/>
-                                <input id='step-3' name='step' type='radio'/>
-                                <input id='step-4' name='step' type='radio'/>
-                                <input id='step-5' name='step' type='radio'/>
-                                <div class='progress_inner__bar' style={{top:"0.7rem"}}></div>
-                                <div class='progress_inner__bar--set' style={{top:"0.3rem"}}></div>
-                                </div>
+                        <div className="sellerlocation" style={{backgroundColor: '#fff',height:"fit-content"}}>
+                            <div id="progress-bar-div" className={`${classes.root}`}>
+                                <LinearProgress variant="determinate" value={70} />
                             </div>
+                            <span onClick={vertical} style={{float:"right",position: "relative",top: "-0.6rem",fontSize: "12px",cursor:"pointer"}}><i className='bx bxs-chevron-right'></i></span>
                         </div>
 
                         <div class="sellerlocation" style={{backgroundColor:"white",height:"2.8rem"}}>
