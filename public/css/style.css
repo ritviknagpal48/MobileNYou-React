@@ -1025,4 +1025,5 @@ input:checked + .slider:before {
 .progress-bar-div-height{
   height:51vh !important;
   overflow-y: auto;
+  overflow-x: hidden;
 }
