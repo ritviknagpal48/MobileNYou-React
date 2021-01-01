@@ -7,8 +7,8 @@ var useStyles = makeStyles({
     root: {
       transformOrigin: "0 1%",
       transition:"2s",
-      margin: '0 1rem',
-      width: '85%',
+      margin: '0 3.5rem',
+      width: '65%',
     }
   });
 
@@ -104,7 +104,7 @@ export const OrderDetails = () => {
                                         <div id="order-placed-circle" onClick={() => {Progress(0);setProgress(0); }} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"green"}}></div>
                                     </div>
                                     <div class="col-3">
-                                        <div id="order-shipped-circle" onClick={() => {Progress(35); setProgress(35);}} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"gainsboro"}}></div>
+                                        <div id="order-shipped-circle" onClick={() => {Progress(30); setProgress(30);}} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"gainsboro"}}></div>
                                     </div>
                                     <div class="col-3">
                                         <div id="out-for-delivery-circle" onClick={() => {Progress(68);setProgress(68); }} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"gainsboro"}}></div>
@@ -116,7 +116,7 @@ export const OrderDetails = () => {
                             </div>
                             <p>
                                 <div className="container" id="collapse-content">
-                                    <div className="row">
+                                    <div className="row" style={{padding: '0 10%'}}>
                                         <div className="col-3" id="order-placed" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Order Placed</div>
                                         <div className="col-3" id="order-shipped" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Shipped</div>
                                         <div className="col-3" id="out-for-delivery" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Out for Delivery</div>
@@ -129,36 +129,36 @@ export const OrderDetails = () => {
                                         <div className="col-4"></div>
                                     </div>
                                 </div>
-                                <div className="container" id="expand-content" style={{display: 'none', margin: '-2rem 2rem'}}>
+                                <div className="container" id="expand-content" style={{display: 'none', margin: '-2rem 4.5rem'}}>
                                     <div className="row" style={{marginBottom: '0.8rem'}}>
                                         <div className="col-8">
-                                            <p style={{fontSize: '18px'}}>Order Placed</p>
-                                            <p style={{fontSize: '12px'}}>Your Order has been placed</p>
-                                            <p style={{fontSize: '11px', color: 'gray'}}>Thu, 26th Nov'20 - 2:07pm</p>
+                                            <p style={{fontSize: '12px'}}>Order Placed</p>
+                                            <p style={{fontSize: '11px'}}>Your Order has been placed</p>
+                                            <p style={{fontSize: '10px', color: 'gray'}}>Thu, 26th Nov'20 - 2:07pm</p>
                                         </div>
                                     </div>
                                     <div className="row" style={{marginBottom: '0.8rem'}}>
                                         <div className="col-8">
-                                            <p style={{fontSize: '18px'}}>Shipped</p>
-                                            <p style={{fontSize: '12px'}}>Seller has processed your order</p>
-                                            <p style={{fontSize: '11px', color: 'gray', marginBottom: '0.5rem'}}>Thu, 26th Nov'20 - 2:07pm</p>
+                                            <p style={{fontSize: '12px'}}>Shipped</p>
+                                            <p style={{fontSize: '11px'}}>Seller has processed your order</p>
+                                            <p style={{fontSize: '10px', color: 'gray', marginBottom: '0.5rem'}}>Thu, 26th Nov'20 - 2:07pm</p>
                                             
-                                            <p style={{fontSize: '12px'}}>Your item has been picked by the courier partner</p>
-                                            <p style={{fontSize: '11px', color: 'gray'}}>Thu, 26th Nov'20 - 2:07pm</p>
+                                            <p style={{fontSize: '11px'}}>Your item has been picked by the courier partner</p>
+                                            <p style={{fontSize: '10px', color: 'gray'}}>Thu, 26th Nov'20 - 2:07pm</p>
                                         </div>
                                     </div>
                                     <div className="row" style={{marginBottom: '0.8rem'}}>
                                         <div className="col-8">
-                                            <p style={{fontSize: '18px'}}>Out For Delivery</p>
-                                            <p style={{fontSize: '12px'}}>E-kart Logistics</p>
-                                            <p style={{fontSize: '11px', color: 'gray'}}>Thu, 26th Nov'20 - 2:07pm</p>
+                                            <p style={{fontSize: '12px'}}>Out For Delivery</p>
+                                            <p style={{fontSize: '11px'}}>E-kart Logistics</p>
+                                            <p style={{fontSize: '10px', color: 'gray'}}>Thu, 26th Nov'20 - 2:07pm</p>
                                         </div>
                                     </div>
                                     <div className="row" style={{marginBottom: '0.8rem'}}>
                                         <div className="col-8">
-                                            <p style={{fontSize: '18px'}}>Delivered</p>
-                                            <p style={{fontSize: '12px'}}>Your Order has been delivered</p>
-                                            <p style={{fontSize: '11px', color: 'gray'}}>Thu, 26th Nov'20 - 2:07pm</p>
+                                            <p style={{fontSize: '12px'}}>Delivered</p>
+                                            <p style={{fontSize: '11px'}}>Your Order has been delivered</p>
+                                            <p style={{fontSize: '10px', color: 'gray'}}>Thu, 26th Nov'20 - 2:07pm</p>
                                         </div>
                                     </div>
                                 </div>

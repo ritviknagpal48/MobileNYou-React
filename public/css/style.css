@@ -1014,5 +1014,6 @@ input:checked + .slider:before {
 }
 
 .progress-bar-div-height{
-  height:55vh !important;
+  height:51vh !important;
+  overflow-y: auto;
 }
