@@ -934,12 +934,6 @@ ul.menu {
 
 }
 
-@media screen and (max-width:500px){
-  .progress-bar-transition{
-    width:100% !important;
-  }
-}
-
 .transparent-btn {
   display: block;
   background-color: Transparent;
@@ -1020,6 +1014,12 @@ input:checked + .slider:before {
   width: 60% !important;
   margin: 0 3.5rem !important
   
+}
+
+@media screen and (max-width:500px){
+  .progress-bar-transition{
+    width:100% !important;
+  }
 }
 
 .progress-bar-div-height{

@@ -119,7 +119,7 @@ export const OrderDetails = () => {
                                     <div className="row" style={{padding: '0 0%'}}>
                                         <div className="col-3" id="order-placed" style={{marginTop: '0.3rem', lineHeight: '0.8rem',  padding: '0rem 0.5rem', marginLeft: '0.5rem'}}>Order Placed</div>
                                         <div className="col-2" id="order-shipped" style={{marginTop: '0.3rem', lineHeight: '0.8rem',  padding: '0rem', textAlign: 'center'}}>Shipped</div>
-                                        <div className="col-4" id="out-for-delivery" style={{marginTop: '0.3rem', lineHeight: '0.8rem',  padding: '0rem', textAlign: 'right'}}>Out for Delivery</div>
+                                        <div className="col-4" id="out-for-delivery" style={{marginTop: '0.3rem', lineHeight: '0.8rem',  padding: '0rem', textAlign: 'center'}}>Out for Delivery</div>
                                         <div className="col-2" id="delivered" style={{marginTop: '0.3rem', lineHeight: '0.8rem',  padding: '0rem', textAlign: 'right'}}>Delivered</div>
                                     </div>
                                     <div className="row" style={{marginTop: '0.3rem'}}>
