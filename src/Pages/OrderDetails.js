@@ -7,8 +7,8 @@ var useStyles = makeStyles({
     root: {
       transformOrigin: "0 1%",
       transition:"2s",
-      margin: '0 4rem',
-      width: '70%',
+      margin: '0 1rem',
+      width: '85%',
     }
   });
 
@@ -30,12 +30,12 @@ export const OrderDetails = () => {
     function vertical(e){
         var pos = e.target.className;
         if(pos=="bx bxs-chevron-right"){
-            document.getElementsByClassName("sellerlocation")[1].style.height = '50vh'
+            document.getElementsByClassName("sellerlocation")[1].classList.add("progress-bar-div-height")
             e.target.className = "bx bxs-chevron-down"
             document.getElementById("progress-bar-div").classList.add("progress-bar-transition")
         }
         else{
-            document.getElementsByClassName("sellerlocation")[1].style.height = ''
+            document.getElementsByClassName("sellerlocation")[1].classList.remove("progress-bar-div-height")
             e.target.className = "bx bxs-chevron-right"
             document.getElementById("progress-bar-div").classList.remove("progress-bar-transition")
         }
@@ -64,7 +64,38 @@ export const OrderDetails = () => {
                         <div className="sellerlocation" style={{backgroundColor: '#fff',height:"fit-content"}}>
                             <div id="progress-bar-div" className={classes.root}>
                                 <BorderLinearProgress variant="determinate" value={70} color='secondary' />
+                                <div class="row" style={{position:"relative",top:"-1rem",width:"127%"}}>
+                                    <div class="col-3">
+                                        <div style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"green"}}></div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"green"}}></div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"green"}}></div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"green"}}></div>
+                                    </div>
+                                </div>
                             </div>
+                            <p>
+                                    <div className="container">
+                                        <div className="row">
+                                            <div className="col-3" id="order-placed" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Order Placed</div>
+                                            <div className="col-3" id="order-shipped" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Shipped</div>
+                                            <div className="col-3" id="out-for-delivery" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Out for Delivery</div>
+                                            <div className="col-3" id="delivered" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Delivered</div>
+                                        </div>
+                                        <div className="row" style={{marginTop: '0.3rem'}}>
+                                            <div className="col-8">
+                                                <span style={{color: 'lightgray'}}>Expected Delivery : 20 March 2020</span>
+                                            </div>
+                                            <div className="col-4"></div>
+                                        </div>
+                                    </div>
+
+                                </p>
                             <span onClick={vertical} style={{float:"right",position: "relative",top: "-0.6rem",fontSize: "12px",cursor:"pointer"}}><i className='bx bxs-chevron-right'></i></span>
                         </div>
 
