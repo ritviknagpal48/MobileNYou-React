@@ -35,29 +35,15 @@ export const OrderDetails = () => {
             document.getElementsByClassName("sellerlocation")[1].classList.add("progress-bar-div-height")
             e.target.className = "bx bxs-chevron-down"
             document.getElementById("progress-bar-div").classList.add("progress-bar-transition")
-            document.getElementById("order-placed").classList.add("order-placed-move")
-            document.getElementById("order-shipped").classList.add("order-shipped-move")
-            document.getElementById("out-for-delivery").classList.add("out-for-delivery-move")
-            document.getElementById("delivered").classList.add("delivered-move")
-            var x = document.getElementsByClassName("order-status-details")
-            var i;
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "block";
-            }
+            document.getElementById("collapse-content").style.display = "none"
+            document.getElementById("expand-content").style.display = "block"
         }
         else{
             document.getElementsByClassName("sellerlocation")[1].classList.remove("progress-bar-div-height")
             e.target.className = "bx bxs-chevron-right"
             document.getElementById("progress-bar-div").classList.remove("progress-bar-transition")
-            document.getElementById("order-placed").classList.remove("order-placed-move")
-            document.getElementById("order-shipped").classList.remove("order-shipped-move")
-            document.getElementById("out-for-delivery").classList.remove("out-for-delivery-move")
-            document.getElementById("delivered").classList.remove("delivered-move")
-            var x = document.getElementsByClassName("order-status-details")
-            var i;
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
+            document.getElementById("collapse-content").style.display = "block"
+            document.getElementById("expand-content").style.display = "none"
         }
     }
 
@@ -92,7 +78,7 @@ export const OrderDetails = () => {
     return (
         <Fragment>
             <div class="badydiv">
-                <div class="universalDiv" style={{height: '110vh', backgroundColor: '#f5f5f5'}}>
+                <div class="universalDiv" style={{backgroundColor: '#f5f5f5'}}>
                     <RedNavbar navbar="Order"></RedNavbar>
                     <section class="bodypanelmian aboutseller">
                         <div class="sellerlocation" style={{backgroundColor:"white"}}>
@@ -109,7 +95,7 @@ export const OrderDetails = () => {
                             </div>
                         </div>
                     </section>
-                    <section class="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px' }}>
+                    <section class="bodypanelmian aboutseller text-left" style={{ marginBottom: '0%', paddingBottom: '10px' }}>
                         <div className="sellerlocation" style={{backgroundColor: '#fff',height:"fit-content"}}>
                             <div id="progress-bar-div" className={classes.root}>
                                 <BorderLinearProgress variant="determinate" value={progress} color='secondary' />
@@ -129,27 +115,54 @@ export const OrderDetails = () => {
                                 </div>
                             </div>
                             <p>
-                                    <div className="container">
-                                        <div className="row">
-                                            <div className="col-3" id="order-placed" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Order Placed
-                                                <div className="order-status-details">
-                                                    <p>Your Order has been placed</p>
-                                                    <p>Thu, 26th Nov' 20 - 02:07pm</p>
-                                                </div>
-                                            </div>
-                                            <div className="col-3" id="order-shipped" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Shipped</div>
-                                            <div className="col-3" id="out-for-delivery" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Out for Delivery</div>
-                                            <div className="col-3" id="delivered" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Delivered</div>
+                                <div className="container" id="collapse-content">
+                                    <div className="row">
+                                        <div className="col-3" id="order-placed" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Order Placed</div>
+                                        <div className="col-3" id="order-shipped" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Shipped</div>
+                                        <div className="col-3" id="out-for-delivery" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Out for Delivery</div>
+                                        <div className="col-3" id="delivered" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Delivered</div>
+                                    </div>
+                                    <div className="row" style={{marginTop: '0.3rem'}}>
+                                        <div className="col-8">
+                                            <span style={{color: 'lightgray'}}>Expected Delivery : 20 March 2020</span>
                                         </div>
-                                        <div className="row" style={{marginTop: '0.3rem'}}>
-                                            <div className="col-8">
-                                                <span style={{color: 'lightgray'}}>Expected Delivery : 20 March 2020</span>
-                                            </div>
-                                            <div className="col-4"></div>
+                                        <div className="col-4"></div>
+                                    </div>
+                                </div>
+                                <div className="container" id="expand-content" style={{display: 'none', margin: '-2rem 2rem'}}>
+                                    <div className="row" style={{marginBottom: '0.8rem'}}>
+                                        <div className="col-8">
+                                            <p style={{fontSize: '18px'}}>Order Placed</p>
+                                            <p style={{fontSize: '12px'}}>Your Order has been placed</p>
+                                            <p style={{fontSize: '11px', color: 'gray'}}>Thu, 26th Nov'20 - 2:07pm</p>
                                         </div>
                                     </div>
-
-                                </p>
+                                    <div className="row" style={{marginBottom: '0.8rem'}}>
+                                        <div className="col-8">
+                                            <p style={{fontSize: '18px'}}>Shipped</p>
+                                            <p style={{fontSize: '12px'}}>Seller has processed your order</p>
+                                            <p style={{fontSize: '11px', color: 'gray', marginBottom: '0.5rem'}}>Thu, 26th Nov'20 - 2:07pm</p>
+                                            
+                                            <p style={{fontSize: '12px'}}>Your item has been picked by the courier partner</p>
+                                            <p style={{fontSize: '11px', color: 'gray'}}>Thu, 26th Nov'20 - 2:07pm</p>
+                                        </div>
+                                    </div>
+                                    <div className="row" style={{marginBottom: '0.8rem'}}>
+                                        <div className="col-8">
+                                            <p style={{fontSize: '18px'}}>Out For Delivery</p>
+                                            <p style={{fontSize: '12px'}}>E-kart Logistics</p>
+                                            <p style={{fontSize: '11px', color: 'gray'}}>Thu, 26th Nov'20 - 2:07pm</p>
+                                        </div>
+                                    </div>
+                                    <div className="row" style={{marginBottom: '0.8rem'}}>
+                                        <div className="col-8">
+                                            <p style={{fontSize: '18px'}}>Delivered</p>
+                                            <p style={{fontSize: '12px'}}>Your Order has been delivered</p>
+                                            <p style={{fontSize: '11px', color: 'gray'}}>Thu, 26th Nov'20 - 2:07pm</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </p>
                             <span onClick={vertical} style={{float:"right",position: "relative",top: "-0.6rem",fontSize: "12px",cursor:"pointer"}}><i className='bx bxs-chevron-right'></i></span>
                         </div>
 
