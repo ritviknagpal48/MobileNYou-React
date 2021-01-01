@@ -6,7 +6,7 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 var useStyles = makeStyles({
     root: {
       transformOrigin: "0 1%",
-      transition:"2s",
+      transition:"1s",
       margin: '0 3.5rem',
       width: '65%',
     }
@@ -96,7 +96,7 @@ export const OrderDetails = () => {
                         </div>
                     </section>
                     <section class="bodypanelmian aboutseller text-left" style={{ marginBottom: '0%', paddingBottom: '10px' }}>
-                        <div className="sellerlocation" style={{backgroundColor: '#fff',height:"fit-content",height:"7rem",transition:"height 2s"}}>
+                        <div className="sellerlocation" style={{backgroundColor: '#fff',height:"fit-content",height:"7rem",transition:"height 1s"}}>
                             <div id="progress-bar-div" className={classes.root}>
                                 <BorderLinearProgress variant="determinate" value={progress} color='secondary' />
                                 <div class="row" style={{position:"relative",top:"-1rem",width:"127%"}}>
