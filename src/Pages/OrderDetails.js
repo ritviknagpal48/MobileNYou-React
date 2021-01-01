@@ -166,6 +166,24 @@ export const OrderDetails = () => {
                             <span onClick={vertical} style={{float:"right",position: "relative",top: "-0.6rem",fontSize: "12px",cursor:"pointer"}}><i className='bx bxs-chevron-right'></i></span>
                         </div>
 
+                        <div class="sellerlocation" style={{backgroundColor:"white"}}>
+                            <div className="row" >
+                                <div className="col-6" style={{textAlign: 'left'}}>
+                                <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
+                                <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
+                                <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
+                                <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
+                                <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
+                                </div>
+                                <div className="col-6" style={{textAlign: 'right'}}>
+                                <span style={{color: '#c2172e', cursor: 'pointer', fontSize: '12px'}}><b>Write a Review</b></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sellerlocation" style={{backgroundColor:"white",height:"2.8rem"}}>
+                            <p><span style={{float:"left",fontSize:"12px"}}><i style={{color:"#c2172e"}} class='bx bxs-file'></i> Download Invoice</span><span style={{float:"right"}}><i class='bx bxs-chevron-right'></i></span></p>
+                        </div>
+
                         <div class="sellerlocation" style={{backgroundColor:"white",height:"2.8rem"}}>
                             <p><span style={{float:"left"}}>Cancel Order</span><span style={{float:"right"}}><i class='bx bxs-chevron-right'></i></span></p>
                         </div>
