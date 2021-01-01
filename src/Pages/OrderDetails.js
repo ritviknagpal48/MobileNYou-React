@@ -5,11 +5,24 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 
 var useStyles = makeStyles({
     root: {
-      width: '90%',
       transformOrigin: "0 1%",
-      transition:"2s"
-    },
+      transition:"2s",
+      margin: '0 4rem',
+      width: '70%',
+    }
   });
+
+const BorderLinearProgress = withStyles((theme) => ({
+    root: {
+      height: 10,
+      borderRadius: 5,
+      backgroundColor:"gainsboro",
+    },
+    bar: {
+      borderRadius: 5,
+      backgroundColor: 'green'
+    },
+  }))(LinearProgress);
   
 
 export const OrderDetails = () => {
@@ -17,13 +30,14 @@ export const OrderDetails = () => {
     function vertical(e){
         var pos = e.target.className;
         if(pos=="bx bxs-chevron-right"){
+            document.getElementsByClassName("sellerlocation")[1].style.height = '50vh'
             e.target.className = "bx bxs-chevron-down"
             document.getElementById("progress-bar-div").classList.add("progress-bar-transition")
         }
         else{
+            document.getElementsByClassName("sellerlocation")[1].style.height = ''
             e.target.className = "bx bxs-chevron-right"
             document.getElementById("progress-bar-div").classList.remove("progress-bar-transition")
-
         }
     }
     return (
@@ -48,8 +62,8 @@ export const OrderDetails = () => {
                     </section>
                     <section class="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px' }}>
                         <div className="sellerlocation" style={{backgroundColor: '#fff',height:"fit-content"}}>
-                            <div id="progress-bar-div" className={`${classes.root}`}>
-                                <LinearProgress variant="determinate" value={70} />
+                            <div id="progress-bar-div" className={classes.root}>
+                                <BorderLinearProgress variant="determinate" value={70} color='secondary' />
                             </div>
                             <span onClick={vertical} style={{float:"right",position: "relative",top: "-0.6rem",fontSize: "12px",cursor:"pointer"}}><i className='bx bxs-chevron-right'></i></span>
                         </div>
