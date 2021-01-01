@@ -1017,6 +1017,8 @@ input:checked + .slider:before {
 
 .progress-bar-transition{
   transform: rotate(90deg);
+  width: 60% !important;
+  margin: 0 3.5rem !important
   
 }
 

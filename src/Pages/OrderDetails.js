@@ -7,8 +7,8 @@ var useStyles = makeStyles({
     root: {
       transformOrigin: "0 1%",
       transition:"1s",
-      margin: '0 3.5rem',
-      width: '65%',
+      margin: '0 1rem',
+      width: '90%',
     }
   });
 
@@ -33,7 +33,7 @@ export const OrderDetails = () => {
         var pos = e.target.className;
         if(pos=="bx bxs-chevron-right"){
             document.getElementsByClassName("sellerlocation")[1].classList.add("progress-bar-div-height")
-            e.target.className = "bx bxs-chevron-down"
+            e.target.className = "bx bxs-chevron-up"
             document.getElementById("progress-bar-div").classList.add("progress-bar-transition")
             document.getElementById("collapse-content").style.display = "none"
             document.getElementById("expand-content").style.display = "block"
@@ -104,7 +104,7 @@ export const OrderDetails = () => {
                                         <div id="order-placed-circle" onClick={() => {Progress(0);setProgress(0); }} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"green"}}></div>
                                     </div>
                                     <div class="col-3">
-                                        <div id="order-shipped-circle" onClick={() => {Progress(30); setProgress(30);}} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"gainsboro"}}></div>
+                                        <div id="order-shipped-circle" onClick={() => {Progress(35); setProgress(35);}} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"gainsboro"}}></div>
                                     </div>
                                     <div class="col-3">
                                         <div id="out-for-delivery-circle" onClick={() => {Progress(68);setProgress(68); }} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"gainsboro"}}></div>
@@ -116,11 +116,11 @@ export const OrderDetails = () => {
                             </div>
                             <p>
                                 <div className="container" id="collapse-content">
-                                    <div className="row" style={{padding: '0 10%'}}>
-                                        <div className="col-3" id="order-placed" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Order Placed</div>
-                                        <div className="col-3" id="order-shipped" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Shipped</div>
-                                        <div className="col-3" id="out-for-delivery" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Out for Delivery</div>
-                                        <div className="col-3" id="delivered" style={{marginTop: '0.3rem', lineHeight: '0.8rem'}}>Delivered</div>
+                                    <div className="row" style={{padding: '0 0%'}}>
+                                        <div className="col-3" id="order-placed" style={{marginTop: '0.3rem', lineHeight: '0.8rem',  padding: '0rem 0.5rem', marginLeft: '0.5rem'}}>Order Placed</div>
+                                        <div className="col-2" id="order-shipped" style={{marginTop: '0.3rem', lineHeight: '0.8rem',  padding: '0rem', textAlign: 'center'}}>Shipped</div>
+                                        <div className="col-4" id="out-for-delivery" style={{marginTop: '0.3rem', lineHeight: '0.8rem',  padding: '0rem', textAlign: 'right'}}>Out for Delivery</div>
+                                        <div className="col-2" id="delivered" style={{marginTop: '0.3rem', lineHeight: '0.8rem',  padding: '0rem', textAlign: 'right'}}>Delivered</div>
                                     </div>
                                     <div className="row" style={{marginTop: '0.3rem'}}>
                                         <div className="col-8">
