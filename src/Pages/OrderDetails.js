@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import {RedNavbar} from "../Components/RedNavbar";
 import LinearProgress from '@material-ui/core/LinearProgress';
@@ -26,6 +26,8 @@ const BorderLinearProgress = withStyles((theme) => ({
   
 
 export const OrderDetails = () => {
+    const [progress, setProgress] = useState(0);
+
     var classes = useStyles();
     function vertical(e){
         var pos = e.target.className;
@@ -58,6 +60,35 @@ export const OrderDetails = () => {
             }
         }
     }
+
+    function Progress(prog){
+        if(prog==0){
+            document.getElementById("order-placed-circle").style.backgroundColor = "green";
+            document.getElementById("order-shipped-circle").style.backgroundColor = "grey";
+            document.getElementById("out-for-delivery-circle").style.backgroundColor = "grey";
+            document.getElementById("delivered-circle").style.backgroundColor = "grey";
+        }
+        else if(prog>=33 && prog<40){
+            document.getElementById("order-placed-circle").style.backgroundColor = "green";
+            document.getElementById("order-shipped-circle").style.backgroundColor = "green";
+            document.getElementById("out-for-delivery-circle").style.backgroundColor = "grey";
+            document.getElementById("delivered-circle").style.backgroundColor = "grey";
+        }
+        else if(prog>=65 &&prog<72){
+            document.getElementById("order-placed-circle").style.backgroundColor = "green";
+            document.getElementById("order-shipped-circle").style.backgroundColor = "green";
+            document.getElementById("out-for-delivery-circle").style.backgroundColor = "green";
+            document.getElementById("delivered-circle").style.backgroundColor = "grey";
+        }
+        else if(prog==100){
+            document.getElementById("order-placed-circle").style.backgroundColor = "green";
+            document.getElementById("order-shipped-circle").style.backgroundColor = "green";
+            document.getElementById("out-for-delivery-circle").style.backgroundColor = "green";
+            document.getElementById("delivered-circle").style.backgroundColor = "green";
+        }
+    }
+
+
     return (
         <Fragment>
             <div class="badydiv">
@@ -81,19 +112,19 @@ export const OrderDetails = () => {
                     <section class="bodypanelmian aboutseller text-left" style={{ marginBottom: '20%', paddingBottom: '10px' }}>
                         <div className="sellerlocation" style={{backgroundColor: '#fff',height:"fit-content"}}>
                             <div id="progress-bar-div" className={classes.root}>
-                                <BorderLinearProgress variant="determinate" value={70} color='secondary' />
+                                <BorderLinearProgress variant="determinate" value={progress} color='secondary' />
                                 <div class="row" style={{position:"relative",top:"-1rem",width:"127%"}}>
                                     <div class="col-3">
-                                        <div style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"green"}}></div>
+                                        <div id="order-placed-circle" onClick={() => {Progress(0);setProgress(0); }} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"green"}}></div>
                                     </div>
                                     <div class="col-3">
-                                        <div style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"green"}}></div>
+                                        <div id="order-shipped-circle" onClick={() => {Progress(35); setProgress(35);}} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"gainsboro"}}></div>
                                     </div>
                                     <div class="col-3">
-                                        <div style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"green"}}></div>
+                                        <div id="out-for-delivery-circle" onClick={() => {Progress(68);setProgress(68); }} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"gainsboro"}}></div>
                                     </div>
                                     <div class="col-3">
-                                        <div style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"green"}}></div>
+                                        <div id="delivered-circle" onClick={() => {Progress(100);setProgress(100);}} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"gainsboro"}}></div>
                                     </div>
                                 </div>
                             </div>
