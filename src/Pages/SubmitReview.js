@@ -30,7 +30,7 @@ export const SubmitReview = () => {
                                 </div>
                             </div>
                         </div>
-                        <div style={{margin:"5%"}}>
+                        <div style={{margin:"5%", boxShadow:"0px 0px 4px 1px gainsboro"}}>
                             <textarea style={{width:"100%", border:"none", height:"9rem", padding:"9px", boxSizing:"border-box"}} placeholder="Your opinion matters to us. Write your review"></textarea>
                         </div>
                             <div className="container">
