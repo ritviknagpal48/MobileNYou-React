@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import {RedNavbar} from "../Components/RedNavbar";
 
 
-export const SubmitReview = () => {
+export const CancellationRequest = () => {
     return (
         <Fragment>
             <div class="badydiv">
