@@ -35,6 +35,7 @@ import { OrderDetails } from "./Pages/OrderDetails";
 import { SubmitReview } from "./Pages/SubmitReview";
 import { CancellationRequest } from "./Pages/CancellationRequest";
 import {CancellationConfirmed } from "./Pages/CancellationConfirmed";
+import {SupportCenter} from "./Pages/SupportCenter";
 
 
 export const Layout = () => {
@@ -76,7 +77,7 @@ export const Layout = () => {
         <Route exact path='/Submitreview' component={SubmitReview}></Route>
         <Route exact path='/CancellationRequest' component={CancellationRequest}></Route>
         <Route exact path='/CancellationConfirmed' component={CancellationConfirmed}></Route>
-
+        <Route exact path='/SupportCenter' component={SupportCenter}></Route>
       </Switch>
     </Router>
   );
