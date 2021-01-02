@@ -32,8 +32,10 @@ import { Wishlist } from "./Pages/Wishlist"
 import { EmptyWishlist } from "./Pages/EmptyWishlist"
 import { OrdersList } from "./Pages/OrdersList"
 import { OrderDetails } from "./Pages/OrderDetails";
-import { SubmitReview } from "./Pages/Submitreview";
+import { SubmitReview } from "./Pages/SubmitReview";
 import { CancellationRequest } from "./Pages/CancellationRequest";
+import {CancellationConfirmed } from "./Pages/CancellationConfirmed";
+
 
 export const Layout = () => {
   return (
@@ -73,6 +75,8 @@ export const Layout = () => {
         <Route exact path='/orderdetails' component={OrderDetails}></Route>
         <Route exact path='/Submitreview' component={SubmitReview}></Route>
         <Route exact path='/CancellationRequest' component={CancellationRequest}></Route>
+        <Route exact path='/CancellationConfirmed' component={CancellationConfirmed}></Route>
+
       </Switch>
     </Router>
   );
