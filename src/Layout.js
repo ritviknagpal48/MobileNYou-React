@@ -32,7 +32,7 @@ import { Wishlist } from "./Pages/Wishlist"
 import { EmptyWishlist } from "./Pages/EmptyWishlist"
 import { OrdersList } from "./Pages/OrdersList"
 import { OrderDetails } from "./Pages/OrderDetails";
-import { Submitreview } from "./Pages/Submitreview";
+import { SubmitReview } from "./Pages/Submitreview";
 import { CancellationRequest } from "./Pages/CancellationRequest";
 
 export const Layout = () => {
