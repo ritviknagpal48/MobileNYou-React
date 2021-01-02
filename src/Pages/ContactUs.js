@@ -4,11 +4,6 @@ import {RedNavbar} from "../Components/RedNavbar";
 
 export const ContactUs = () => {
 
-    function Expand(e){
-        e.target.style.display="none";
-        document.getElementById("expand-issue-list").style.display="block"
-    }
-
     return (
         <Fragment>
             <div class="badydiv">
