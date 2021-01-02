@@ -34,8 +34,10 @@ import { OrdersList } from "./Pages/OrdersList"
 import { OrderDetails } from "./Pages/OrderDetails";
 import { SubmitReview } from "./Pages/SubmitReview";
 import { CancellationRequest } from "./Pages/CancellationRequest";
-import {CancellationConfirmed } from "./Pages/CancellationConfirmed";
-import {SupportCenter} from "./Pages/SupportCenter";
+import { CancellationConfirmed } from "./Pages/CancellationConfirmed";
+import { SupportCenter } from "./Pages/SupportCenter";
+import { ReturnRequest } from "./Pages/ReturnRequest";
+
 
 
 export const Layout = () => {
@@ -74,10 +76,11 @@ export const Layout = () => {
         <Route exact path='/emptywishlist' component={EmptyWishlist}></Route>
         <Route exact path='/orderslist' component={OrdersList}></Route>
         <Route exact path='/orderdetails' component={OrderDetails}></Route>
-        <Route exact path='/Submitreview' component={SubmitReview}></Route>
-        <Route exact path='/CancellationRequest' component={CancellationRequest}></Route>
-        <Route exact path='/CancellationConfirmed' component={CancellationConfirmed}></Route>
-        <Route exact path='/SupportCenter' component={SupportCenter}></Route>
+        <Route exact path='/submitreview' component={SubmitReview}></Route>
+        <Route exact path='/cancellationrequest' component={CancellationRequest}></Route>
+        <Route exact path='/cancellationconfirmed' component={CancellationConfirmed}></Route>
+        <Route exact path='/supportcenter' component={SupportCenter}></Route>
+        <Route exact path='/returnrequest' component={ReturnRequest}></Route>
       </Switch>
     </Router>
   );

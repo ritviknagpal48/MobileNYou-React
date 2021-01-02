@@ -2,12 +2,12 @@ import React, { Fragment } from 'react';
 import {RedNavbar} from "../Components/RedNavbar";
 
 
-export const CancellationRequest = () => {
+export const ReturnRequest = () => {
     return (
         <Fragment>
             <div class="badydiv">
                 <div class="universalDiv">
-                    <RedNavbar navbar="Request Cancellation"></RedNavbar>
+                    <RedNavbar navbar="Request Return"></RedNavbar>
                     <section className="bodypanelmian aboutseller text-left">
                       <div class="sellerlocation" style={{backgroundColor:"white"}}>
                         <div class="row">
@@ -22,7 +22,7 @@ export const CancellationRequest = () => {
                       </div>
                       <div className='sellerlocation' style={{backgroundColor: '#fff'}}>
                             <p style={{ color: 'grey'}}>
-                              PLEASE CHOOSE REASON FOR CANCELLATION
+                              PLEASE CHOOSE REASON FOR RETURN
                             </p>
                             <hr style={{ margin: '1% 0' }} />
                             <input type="radio" id="cancel-reason-1" name="cancel-reason" value="cancel-reason-1" style = {{margin: '0rem 0.5rem', transform: 'scale(0.8)', backgroundColor: 'red'}} />
