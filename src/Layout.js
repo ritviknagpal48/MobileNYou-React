@@ -35,6 +35,7 @@ import { OrderDetails } from "./Pages/OrderDetails";
 import { SubmitReview } from "./Pages/SubmitReview";
 import { CancellationRequest } from "./Pages/CancellationRequest";
 import { CancellationConfirmed } from "./Pages/CancellationConfirmed";
+import { SupportCenterIssues } from "./Pages/SupportCenterIssues";
 import { SupportCenter } from "./Pages/SupportCenter";
 import { ReturnRequest } from "./Pages/ReturnRequest";
 import { ContactUs } from "./Pages/ContactUs";
@@ -79,6 +80,7 @@ export const Layout = () => {
         <Route exact path='/submitreview' component={SubmitReview}></Route>
         <Route exact path='/cancellationrequest' component={CancellationRequest}></Route>
         <Route exact path='/cancellationconfirmed' component={CancellationConfirmed}></Route>
+        <Route exact path='/supportcenter-issues' component={SupportCenterIssues}></Route>
         <Route exact path='/supportcenter' component={SupportCenter}></Route>
         <Route exact path='/returnrequest' component={ReturnRequest}></Route>
         <Route exact path='/contactus' component={ContactUs}></Route>

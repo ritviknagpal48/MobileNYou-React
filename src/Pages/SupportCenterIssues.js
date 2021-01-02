@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import {RedNavbar} from "../Components/RedNavbar";
 
 
-export const SupportCenter = () => {
+export const SupportCenterIssues = () => {
 
     function Expand(e){
         e.target.style.display="none";
@@ -17,12 +17,13 @@ export const SupportCenter = () => {
                     <section className="bodypanelmian aboutseller text-left">
                      <div class="sellerlocation" style={{backgroundColor:"white"}}>
                             <div class="row">
-                                <div className="col-6" style={{textAlign: 'left'}}>
-                                  Manage Your Order
-                                  <p>To track, cancel, return/exchange or more options, go to</p>
-                                  <p style={{color: '#c2172e'}}>Go to My Order <i class='bx bxs-chevron-right' style={{position: 'relative', top: '0.07rem'}}></i></p>
+                                <div className="col-3">
+                                    <img src='/image/RealmeX50Pro.jpg' className='img-fluid' alt='img1' />
                                 </div>
-                                <div className="col-6" style={{textAlign: 'right'}}><img src="/icons/Fail.png" /></div>
+                                <div className="col-9" style={{textAlign: 'left'}}>
+                                    <p style={{lineHeight:"1rem",marginBottom:"0.4rem"}}>Realme X50 Pro 5G (Rust Red, 256GB)<br></br> (12GB RAM)</p>
+                                    <p><span style={{float:"left"}}><i className='fas fa-rupee-sign' /> 599</span></p>
+                                </div>
                             </div>
                         </div>
                     <div class="sellerlocation" style={{backgroundColor:"white"}}>
