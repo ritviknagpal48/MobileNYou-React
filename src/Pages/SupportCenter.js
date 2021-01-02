@@ -12,7 +12,7 @@ export const SupportCenter = () => {
     return (
         <Fragment>
             <div class="badydiv">
-                <div class="universalDiv" style={{height: '100vh',backgroundColor:"#F5F5F5"}}>
+                <div class="universalDiv" style={{backgroundColor:"#F5F5F5"}}>
                     <RedNavbar navbar="Support Center"></RedNavbar>
                     <section className="bodypanelmian aboutseller text-left">
                       <div class="sellerlocation" style={{backgroundColor:"white"}}>
