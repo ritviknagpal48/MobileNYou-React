@@ -31,7 +31,9 @@ import { Profile } from "./Pages/Profile";
 import { Wishlist } from "./Pages/Wishlist"
 import { EmptyWishlist } from "./Pages/EmptyWishlist"
 import { OrdersList } from "./Pages/OrdersList"
-import {OrderDetails} from "./Pages/OrderDetails";
+import { OrderDetails } from "./Pages/OrderDetails";
+import { Submitreview } from "./Pages/Submitreview";
+import { CancellationRequest } from "./Pages/CancellationRequest";
 
 export const Layout = () => {
   return (
@@ -40,18 +42,10 @@ export const Layout = () => {
         <Route exact path='/' component={Home}></Route>
         <Route exact path='/category' component={Category}></Route>
         <Route exact path='/allproducts' component={AllProducts}></Route>
-        <Route
-          exact
-          path='/productdescription'
-          component={ProductDescription}
-        ></Route>
+        <Route exact path='/productdescription' component={ProductDescription}></Route>
         <Route exact path='/aboutseller' component={AboutSeller}></Route>
         <Route exact path='/productvariants' component={Variants}></Route>
-        <Route
-          exact
-          path='/productspecifications'
-          component={Specifications}
-        ></Route>
+        <Route exact path='/productspecifications' component={Specifications}></Route>
         <Route exact path='/ordersummary' component={OrderSummary}></Route>
         <Route exact path='/emioptions' component={EmiOptions}></Route>
         <Route exact path='/onepagecheckout' component={OnePageCheckout}></Route>
@@ -77,9 +71,8 @@ export const Layout = () => {
         <Route exact path='/emptywishlist' component={EmptyWishlist}></Route>
         <Route exact path='/orderslist' component={OrdersList}></Route>
         <Route exact path='/orderdetails' component={OrderDetails}></Route>
-
-
-
+        <Route exact path='/Submitreview' component={SubmitReview}></Route>
+        <Route exact path='/CancellationRequest' component={CancellationRequest}></Route>
       </Switch>
     </Router>
   );
