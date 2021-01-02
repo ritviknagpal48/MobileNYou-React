@@ -3,6 +3,12 @@ import {RedNavbar} from "../Components/RedNavbar";
 
 
 export const SupportCenter = () => {
+
+    function Expand(e){
+        e.target.style.display="none";
+        document.getElementById("expand-issue-list").style.display="block"
+    }
+
     return (
         <Fragment>
             <div class="badydiv">
@@ -29,8 +35,16 @@ export const SupportCenter = () => {
                             <p style={{margin:"1rem 0",fontSize:"13px"}}>My order is delayed</p>
                             <p style={{margin:"1rem 0",fontSize:"13px"}}>I want my order to be delivered at a specific date/time</p>
                             <p style={{margin:"1rem 0",fontSize:"13px"}}>I paid for my order but my order status shows payment not recieved</p>
-                            <span sty><b>View All</b></span>
-                    </div>
+                            <p onClick={Expand} style={{color:"#c2172e",textAlign:"center",fontSize:"16px"}}>View All</p>
+                            <div id="expand-issue-list" style={{display:"none"}}>
+                                <p style={{margin:"1rem 0",fontSize:"13px"}}>I paid for my order but my order status shows payment not recieved</p>
+                                <p style={{margin:"1rem 0",fontSize:"13px"}}>I paid for my order but my order status shows payment not recieved</p>
+                                <p style={{margin:"1rem 0 0 0",fontSize:"13px"}}>Other</p>
+                            </div>
+                        </div>
+                        <div className="submit-button" style={{position:"relative", display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column", top: '0rem !important'}}>
+                            <button type="button" class="btn btn-danger" style={{backgroundColor:" #c2172e",width:"92%", marginBottom: '2rem'}}>Save Changes</button>
+                        </div>
                     </section>
                 </div>
             </div>
