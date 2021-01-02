@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import {RedNavbar} from "../Components/RedNavbar";
-
+import { OrdersCard } from "../Components/OrdersCard";
 
 export const SupportCenter = () => {
 
@@ -23,6 +23,18 @@ export const SupportCenter = () => {
                                   <p style={{color: '#c2172e'}}>Go to My Order <i class='bx bxs-chevron-right' style={{position: 'relative', top: '0.07rem'}}></i></p>
                                 </div>
                                 <div className="col-4" style={{textAlign: 'right'}}><img src="/icons/Fail.png" /></div>
+                            </div>
+                        </div>
+                        <div class="sellerlocation" style={{backgroundColor:"white"}}>
+                            <OrdersCard orderStatus="Order Placed" card={false}></OrdersCard>
+                            <OrdersCard orderStatus="Order Placed" card={false}></OrdersCard>
+                            <OrdersCard orderStatus="Order Placed" card={false}></OrdersCard>
+                            <OrdersCard orderStatus="Order Placed" card={false}></OrdersCard>
+                            <p onClick={Expand} style={{color:"#c2172e",textAlign:"center",fontSize:"16px",cursor:"pointer"}}>View All</p>
+                            <div id="expand-issue-list" style={{display:"none"}}>
+                                <OrdersCard orderStatus="Order Placed" card={false}></OrdersCard>
+                                <OrdersCard orderStatus="Order Placed" card={false}></OrdersCard>
+                                <OrdersCard orderStatus="Order Placed" card={false}></OrdersCard>
                             </div>
                         </div>
                       <div class="sellerlocation" style={{backgroundColor:"white"}}>

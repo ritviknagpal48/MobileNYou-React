@@ -4,7 +4,7 @@ export const OrdersCard = (props) => {
     return (
       <Fragment>
       <section className="bodypanelmian aboutseller">
-        <div className='sellerlocation' style={{ marginTop: '15px', backgroundColor: '#fff'}}>
+        <div className={props.card? "sellerlocation": null} style={props.card? { marginTop: '15px', backgroundColor: '#fff'}:{marginBottom:"1rem"}}>
           <div className="container">
             <div className="row">
               <div className="col-3">
@@ -21,7 +21,7 @@ export const OrdersCard = (props) => {
             </div>
             <div className="row">
               <div className="col-8" style={{textAlign: 'left', color: 'gray', fontSize: '12px'}}>
-                {(() => {
+                {props.card?(() => {
                   if(props.orderStatus === 'Order Placed' || props.orderStatus === 'Dispatched' || props.orderStatus === 'Out For Delivery') {
                     return (
                       <span>Placed Date: 15 March 2020</span>
@@ -42,7 +42,7 @@ export const OrdersCard = (props) => {
                       <span>Deliver Date: 15 March 2020</span>
                     )
                   }
-                })()}
+                })():null}
               </div>
               <div className="col-6"></div>
             </div>
