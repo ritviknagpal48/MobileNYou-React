@@ -84,6 +84,7 @@ export const Layout = () => {
         <Route exact path='/supportcenter-issues' component={SupportCenterIssues}></Route>
         <Route exact path='/supportcenter' component={SupportCenter}></Route>
         <Route exact path='/returnrequest' component={ReturnRequest}></Route>
+        <Route exact path='/contactus' component={ContactUs}></Route>
         <Route exact path='/supportcenterqueries' component={SupportCenterQueries}></Route>
       </Switch>
     </Router>
