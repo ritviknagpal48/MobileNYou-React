@@ -6,7 +6,7 @@ export const CancellationRequest = () => {
     return (
         <Fragment>
             <div class="badydiv">
-                <div class="universalDiv">
+                <div class="universalDiv" style={{backgroundColor: '#f5f5f5'}}>
                     <RedNavbar navbar="Request Cancellation"></RedNavbar>
                     <section className="bodypanelmian aboutseller text-left">
                       <div class="sellerlocation" style={{backgroundColor:"white"}}>
@@ -58,7 +58,7 @@ export const CancellationRequest = () => {
                             <input type="radio" id="cancel-reason-7" name="cancel-reason" value="cancel-reason-7" style = {{margin: '0rem 0.5rem', transform: 'scale(0.8)'}} />
                             <label for="cancel-reason-7"><p style={{fontSize: '12px'}}>Expected delivery time is very long</p></label>
                         </div>
-                        <div style={{fontFamily: 'Open Sans, sans-serif !important', margin:"1em .9em", boxShadow: '0px 0px 4px 1px gainsboro', padding: '.7em .7em'}}>
+                        <div style={{backgroundColor: '#fff', fontFamily: 'Open Sans, sans-serif !important', margin:"1em .9em", boxShadow: '0px 0px 4px 1px gainsboro', padding: '.7em .7em'}}>
                             <textarea style={{width:"100%", border:"none", height:"9rem", padding:"9px", boxSizing:"border-box"}} placeholder="Comment (Optional)"></textarea>
                         </div>
                         <div className="submit-button" style={{position:"relative", display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column", top: '0rem !important'}}>
