@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { Fragment } from 'react';
 import {RedNavbar} from "../Components/RedNavbar";
 

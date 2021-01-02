@@ -655,7 +655,7 @@ z-index: 1;
 }
 ::-webkit-scrollbar {
   width: 1px;
-  height: 2px;
+  height: 0px;
 }
 
 /* Track */
@@ -674,14 +674,19 @@ z-index: 1;
 }
 ::placeholder {
   color: gainsboro;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 15px;
   opacity: 1; /* Firefox */
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color: gainsboro;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif !important;
  }
  
  ::-ms-input-placeholder { /* Microsoft Edge */
   color: gainsboro;
+  font-size: 15px;
  }
 
  .full-display-image{
