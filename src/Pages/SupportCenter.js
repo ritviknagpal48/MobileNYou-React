@@ -8,7 +8,7 @@ export const SupportCenter = () => {
         e.target.style.display="none";
         document.getElementById("expand-issue-list").style.display="block"
     }
-
+    
     return (
         <Fragment>
             <div class="badydiv">
@@ -30,12 +30,7 @@ export const SupportCenter = () => {
                             <OrdersCard orderStatus="Order Placed" card={false}></OrdersCard>
                             <OrdersCard orderStatus="Order Placed" card={false}></OrdersCard>
                             <OrdersCard orderStatus="Order Placed" card={false}></OrdersCard>
-                            <p onClick={Expand} style={{color:"#c2172e",textAlign:"center",fontSize:"16px",cursor:"pointer"}}>View All</p>
-                            <div id="expand-issue-list" style={{display:"none"}}>
-                                <OrdersCard orderStatus="Order Placed" card={false}></OrdersCard>
-                                <OrdersCard orderStatus="Order Placed" card={false}></OrdersCard>
-                                <OrdersCard orderStatus="Order Placed" card={false}></OrdersCard>
-                            </div>
+                            <p style={{color:"#c2172e",textAlign:"center",fontSize:"16px",cursor:"pointer"}}>View All</p>
                         </div>
                       <div class="sellerlocation" style={{backgroundColor:"white"}}>
                             <p style={{ color: 'grey',fontSize:"13px"}}>
