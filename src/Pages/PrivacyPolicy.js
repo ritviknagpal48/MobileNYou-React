@@ -17,22 +17,22 @@ export const PrivacyPolicy = () => {
                         <div style={{margin:"2rem 1rem"}}>
                             <p style={{textAlign:"left"}}>i. ACCEPTANCE</p>
                             <ol style={{margin:"0 0.8rem"}}>
-                                <li style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-                                <li style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-                                <li style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-                                <li style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-                                <li style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                                <li style={{fontSize:"12px",marginTop:"0.4rem",width:"100%"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                                <li style={{fontSize:"12px",marginTop:"0.4rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                                <li style={{fontSize:"12px",marginTop:"0.4rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                                <li style={{fontSize:"12px",marginTop:"0.4rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                                <li style={{fontSize:"12px",marginTop:"0.4rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
                             </ol>
                         </div>
                         <div style={{margin:"2rem 1rem"}}>
                             <p>ii. DESCRIPTION OF SERVICE AND CONTENT POLICY</p>
                             <p style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <ul style={{margin:"0 0.8rem"}}>
-                                <li style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-                                <li style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-                                <li style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-                                <li style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-                                <li style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                                <li style={{fontSize:"12px",marginTop:"0.4rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                                <li style={{fontSize:"12px",marginTop:"0.4rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                                <li style={{fontSize:"12px",marginTop:"0.4rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                                <li style={{fontSize:"12px",marginTop:"0.4rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                                <li style={{fontSize:"12px",marginTop:"0.4rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
                             </ul>
                         </div>
                         <div style={{margin:"2rem 1rem"}}>
@@ -43,11 +43,11 @@ export const PrivacyPolicy = () => {
                             <p>iv. PAID SERVIES</p>
                             <p style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <ul style={{margin:"0 0.8rem"}}>
-                                <li style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-                                <li style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-                                <li style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-                                <li style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-                                <li style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                                <li style={{fontSize:"12px",marginTop:"0.4rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                                <li style={{fontSize:"12px",marginTop:"0.4rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                                <li style={{fontSize:"12px",marginTop:"0.4rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                                <li style={{fontSize:"12px",marginTop:"0.4rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
+                                <li style={{fontSize:"12px",marginTop:"0.4rem"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
                             </ul>
                         </div>
                     </section>
