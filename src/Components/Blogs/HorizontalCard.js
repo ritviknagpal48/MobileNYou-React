@@ -7,7 +7,7 @@ export const HorizontalCard = () => {
             <div class="card mb-3" style={{ maxWidth: "540px" }}>
                 <div class="row no-gutters">
                     <div class="col-4">
-                        <img src="/image/m-product/iphone.jpg" class="card-img" alt="" style={{ height: "100%" }} />
+                        <img src="/image/m-product/iphone.jpg" class="card-img" alt="" style={{ height: "100%", borderRadius:"5px"}} />
                     </div>
                     <div class="col-8">
                         <div class="card-body" style={{ fontSize: "12px" }}>

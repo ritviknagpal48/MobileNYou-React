@@ -23,7 +23,7 @@ export const Blog = () => {
                         <div>
                             <h5 className="text-muted" style={{ margin: "10px 25px" }}><b>More Blogs</b></h5>
                         </div>
-                        <div style={{paddingBottom:"10px"}}>
+                        <div style={{paddingBottom:"10px", margin:"12px 12px 12px 12px"}}>
                             <HorizontalCard></HorizontalCard>
                             <HorizontalCard></HorizontalCard>
                             <HorizontalCard></HorizontalCard>
