@@ -58,7 +58,7 @@ export const BlogName = () => {
                         <div>
                             <p style={{ color: "gray", margin: "10px 10px 10px 20px" }}><b>Related Blogs</b></p>
                         </div>
-                        <div style={{margin:"12px 12px 12px 12px", whiteSpace:"nowrap", overflowX:"scroll"}}>
+                        <div style={{margin:"12px 12px 12px 12px", whiteSpace:"nowrap", overflowX:"scroll", paddingBottom:"20px"}}>
                             <Card></Card>
                             <Card></Card>
                             <Card></Card>
