@@ -6,7 +6,7 @@ export const ReturnRequest = () => {
     return (
         <Fragment>
             <div class="badydiv">
-                <div class="universalDiv">
+                <div class="universalDiv" style={{height: '100vh'}}>
                     <RedNavbar navbar="Request Return"></RedNavbar>
                     <section className="bodypanelmian aboutseller text-left">
                       <div class="sellerlocation" style={{backgroundColor:"white"}}>
@@ -59,7 +59,7 @@ export const ReturnRequest = () => {
                             <label for="cancel-reason-7"><p style={{fontSize: '12px'}}>Expected delivery time is very long</p></label>
                         </div>
                         <div style={{fontFamily: 'Open Sans, sans-serif !important', margin:"1em .9em", boxShadow: '0px 0px 4px 1px gainsboro', padding: '.7em .7em'}}>
-                            <textarea style={{width:"100%", border:"none", height:"9rem", padding:"9px", boxSizing:"border-box"}} placeholder="Comment (Optional)"></textarea>
+                            <textarea style={{width:"100%", border:"none", height:"4rem", padding:"9px", boxSizing:"border-box"}} placeholder="Comment (Optional)"></textarea>
                         </div>
                         <div className="submit-button" style={{position:"relative", display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column", top: '0rem !important'}}>
                             <button type="button" class="btn btn-danger" style={{backgroundColor:" #c2172e",width:"92%", marginBottom: '2rem'}}>SUBMIT</button>
