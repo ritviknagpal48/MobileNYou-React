@@ -43,6 +43,8 @@ import { Blog } from "./Pages/Blog";
 import { BlogName } from "./Pages/BlogName";
 import { PrivacyPolicy } from "./Pages/PrivacyPolicy";
 import { SupportCenterQueries } from "./Pages/SupportCenterQueries";
+import { Career } from "./Pages/Career";
+
 
 export const Layout = () => {
   return (
@@ -91,6 +93,7 @@ export const Layout = () => {
         <Route exact path='/blogname' component={BlogName}></Route>
         <Route exact path='/blog' component={Blog}></Route>
         <Route exact path='/privacypolicy' component={PrivacyPolicy}></Route>
+        <Route exact path='/career' component={Career}></Route>
       </Switch>
     </Router>
   );
