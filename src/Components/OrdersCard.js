@@ -4,11 +4,11 @@ export const OrdersCard = (props) => {
     return (
       <Fragment>
       <section className="bodypanelmian aboutseller">
-        <div className={props.card? "sellerlocation": null} style={props.card? { marginTop: '15px', backgroundColor: '#fff'}:{marginBottom:"1rem"}}>
+        <div className={props.card? "sellerlocation": null} style={props.orderStatus=="Cancelled"? { marginTop: '15px', backgroundColor: '#e6e6e6'}:{ marginTop: '15px', backgroundColor: '#fff'}}>
           <div className="container">
             <div className="row">
               <div className="col-3">
-                <img src='/image/RealmeX50Pro.jpg' className='img-fluid' alt='img1' />
+                <img src='/image/RealmeX50Pro.jpg' className='img-fluid' alt='img1' style={props.orderStatus=="Cancelled"?{opacity:"0.5"}:null} />
               </div>
               <div className="col-8" style={{textAlign: 'left'}}>
                 <p>Realme X50 Pro 5G (Rust Red, 256GB) (12GB RAM)</p>
