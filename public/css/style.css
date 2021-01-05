@@ -1072,3 +1072,13 @@ input:checked + .slider:before {
   overflow-y: auto;
   overflow-x: hidden;
 }
+
+@media screen and (min-width: 640px) {
+  .universalDiv {
+    max-width: 400px;
+  }
+
+  .universalDiv .container {
+    max-width: 400px;
+  }
+}
