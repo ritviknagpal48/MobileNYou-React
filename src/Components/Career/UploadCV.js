@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export const UploadCV = () => {
+export const UploadCV = (props) => {
   const classes = useStyles();
   const [jobPos, setJobPos] = useState("");
 
@@ -79,17 +79,19 @@ export const UploadCV = () => {
                       id="custom-css-outlined-input"
                       size="small"
                   />
-                  <CssTextField
-                      className={classes.margin}
-                      required="true"
-                      label="--Select-Job Position"
-                      variant="outlined"
-                      id="custom-css-outlined-input"
-                      data-toggle="modal" 
-                      data-target="#exampleModal"
-                      size="small"
-                      value = {jobPos}
-                  />
+                  {props.btn ? 
+                    <CssTextField
+                        className={classes.margin}
+                        required="true"
+                        label="--Select-Job Position"
+                        variant="outlined"
+                        id="custom-css-outlined-input"
+                        data-toggle="modal" 
+                        data-target="#exampleModal"
+                        size="small"
+                        value = {jobPos}
+                    />
+                    :null}
 
                   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog jobs-modal" role="document" style={{width: '80%', left:'2rem'}}>

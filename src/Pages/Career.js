@@ -37,7 +37,7 @@ export const Career = () => {
                         <JobDesc></JobDesc>
                         <JobDesc></JobDesc>
 
-                        <UploadCV />
+                        <UploadCV btn={true} />
                     </section>
                     <Footer></Footer>
                 </div>
