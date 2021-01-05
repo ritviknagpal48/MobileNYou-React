@@ -45,7 +45,7 @@ import { PrivacyPolicy } from "./Pages/PrivacyPolicy";
 import { SupportCenterQueries } from "./Pages/SupportCenterQueries";
 import { Career } from "./Pages/Career";
 import { BusinessIntelligence } from "./Pages/BusinessIntelligence";
-
+import { ReferAFriend } from "./Pages/ReferAFriend";
 
 export const Layout = () => {
   return (
@@ -96,6 +96,7 @@ export const Layout = () => {
         <Route exact path='/privacypolicy' component={PrivacyPolicy}></Route>
         <Route exact path='/career' component={Career}></Route>
         <Route exact path='/businessintelligence' component={BusinessIntelligence}></Route>
+        <Route exact path='/referafriend' component={ReferAFriend}></Route>
       </Switch>
     </Router>
   );
