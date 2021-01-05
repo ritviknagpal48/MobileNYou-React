@@ -1087,6 +1087,11 @@ input:checked + .slider:before {
     width: 20% !important;
     left: 4rem !important;
   }
+
+  .modal-upload-success {
+    width: 25% !important;
+    left: 4rem !important;
+  }
 }
 
 .star-rating {

@@ -168,8 +168,19 @@ export const UploadCV = (props) => {
 
                   <button className="btn btn-outline-danger">Upload Your CV</button>
                   <div className="submit-button" style={{position:"relative", display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column", top: '0rem !important'}}>
-                      <button type="button" class="btn btn-danger" style={{backgroundColor:" #c2172e",width:"30%", marginBottom: '2rem'}}>Send</button>
+                      <button type="button" data-toggle="modal" data-target="#exampleModal2" class="btn btn-danger" style={{backgroundColor:" #c2172e",width:"30%", marginBottom: '2rem'}}>Send</button>
                   </div>
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-upload-success" role="document" style={{top: '30%', left: '0.35rem'}}>
+                        <div class="modal-content">
+                            <div class="modal-body" style={{position:"relative", display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column", top: '0rem !important'}}>
+                                <i class='bx bx-check-circle' style={{color:'green', fontSize: '8rem'}}></i>
+                                <h3>Application Submitted</h3>
+                                <p>Good Luck For Your Future</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
               </form>
 
           </div>
