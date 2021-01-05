@@ -56,6 +56,7 @@ export const UploadCV = () => {
                       label="Full Name"
                       variant="outlined"
                       id="custom-css-outlined-input"
+                      size="small"
                   />   
                   <CssTextField
                       className={classes.margin}
@@ -63,6 +64,7 @@ export const UploadCV = () => {
                       label="Email ID"
                       variant="outlined"
                       id="custom-css-outlined-input"
+                      size="small"
                   />  
                   <CssTextField
                       className={classes.margin}
@@ -70,6 +72,7 @@ export const UploadCV = () => {
                       label="Contact No"
                       variant="outlined"
                       id="custom-css-outlined-input"
+                      size="small"
                   />
                   <CssTextField
                       className={classes.margin}
@@ -79,6 +82,7 @@ export const UploadCV = () => {
                       id="custom-css-outlined-input"
                       data-toggle="modal" 
                       data-target="#exampleModal"
+                      size="small"
                   />
 
                   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
