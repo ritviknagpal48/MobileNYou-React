@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-export const SingleCustomerAddress = () => {
+export const SingleCustomerAddress = (props) => {
 
   return (
     <Fragment>
@@ -8,7 +8,7 @@ export const SingleCustomerAddress = () => {
                 <div className='sellerlocation' style={{backgroundColor: '#ffffff'}}>
                     <h3>
                     <b>Neeraj Sharma <span className='text-right' style={{ backgroundColor: 'lightgray', padding: '2px 10px', fontSize: '10px' }}>Office</span></b>
-                    
+                    {props.default?<span style={{fontSize:"12px",color:"grey"}}> Default</span>:null}
                     
                     <span class="dropdown-container" tabindex="-1">
                       <span class="three-dots" style={{float: 'right', cursor: 'pointer'}}></span>
