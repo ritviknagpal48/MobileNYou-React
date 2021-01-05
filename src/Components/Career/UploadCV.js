@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { TextField } from '@material-ui/core';
 import {
@@ -41,7 +41,12 @@ const useStyles = makeStyles((theme) => ({
 
 export const UploadCV = () => {
   const classes = useStyles();
+  const [jobPos, setJobPos] = useState("");
 
+  function JobField(e){
+    setJobPos(e.target.children[0].innerHTML);
+    console.log(e.target.children[0].innerHTML)
+  }
 
   return (
     <Fragment>
@@ -77,12 +82,13 @@ export const UploadCV = () => {
                   <CssTextField
                       className={classes.margin}
                       required="true"
-                      label="--Select Job Position--"
+                      label="--Select-Job Position"
                       variant="outlined"
                       id="custom-css-outlined-input"
                       data-toggle="modal" 
                       data-target="#exampleModal"
                       size="small"
+                      value = {jobPos}
                   />
 
                   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -90,57 +96,57 @@ export const UploadCV = () => {
                           <div class="modal-content">
                               <div class="modal-body">
                                   <div class="container">
-                                  <button class="transparent-btn">
+                                  <button class="transparent-btn" data-dismiss="modal" onFocus={JobField}>
                                       <div class="row">
                                           UI/UX Designer
                                       </div>
                                   </button>
-                                  <button class="transparent-btn">
+                                  <button class="transparent-btn" data-dismiss="modal" onFocus={JobField}>
                                       <div class="row">
                                           UX Designer
                                       </div>
                                   </button>
-                                  <button class="transparent-btn">
+                                  <button class="transparent-btn" data-dismiss="modal" onFocus={JobField}>
                                       <div class="row">
                                           UI Developer
                                       </div>
                                   </button>
-                                  <button class="transparent-btn">
+                                  <button class="transparent-btn" data-dismiss="modal" onFocus={JobField}>
                                       <div class="row">
                                           Automation Tester
                                       </div>
                                   </button>
-                                  <button class="transparent-btn">
+                                  <button class="transparent-btn" data-dismiss="modal" onFocus={JobField}>
                                       <div class="row">
                                           Dev-Ops
                                       </div>
                                   </button>
-                                  <button class="transparent-btn">
+                                  <button class="transparent-btn" data-dismiss="modal" onFocus={JobField}>
                                       <div class="row">
                                           React Developer
                                       </div>
                                   </button>
-                                  <button class="transparent-btn">
+                                  <button class="transparent-btn" data-dismiss="modal" onFocus={JobField}>
                                       <div class="row">
                                           Node.js
                                       </div>
                                   </button>
-                                  <button class="transparent-btn">
+                                  <button class="transparent-btn" data-dismiss="modal" onFocus={JobField}>
                                       <div class="row">
                                           PHP Developer
                                       </div>
                                   </button>
-                                  <button class="transparent-btn">
+                                  <button class="transparent-btn" data-dismiss="modal" onFocus={JobField}>
                                       <div class="row">
                                           Graphic Designer
                                       </div>
                                   </button>
-                                  <button class="transparent-btn">
+                                  <button class="transparent-btn" data-dismiss="modal" onFocus={JobField}>
                                       <div class="row">
                                           UI/UX Designer
                                       </div>
                                   </button>
-                                  <button class="transparent-btn">
+                                  <button class="transparent-btn" data-dismiss="modal" onFocus={JobField}>
                                       <div class="row">
                                           UX Designer
                                       </div>
