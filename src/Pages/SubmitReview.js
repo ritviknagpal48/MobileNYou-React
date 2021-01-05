@@ -22,7 +22,7 @@ export const SubmitReview = () => {
                         </div>
                         <div class="sellerlocation" style={{backgroundColor:"white"}}>
                             <div className="row" >
-                                <div className="col-6" style={{textAlign: 'left'}}>
+                                <div className="col-6 star-rating" style={{textAlign: 'left'}}>
                                 <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
                                 <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
                                 <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>

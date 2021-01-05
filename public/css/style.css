@@ -1083,3 +1083,12 @@ input:checked + .slider:before {
     max-width: 400px;
   }
 }
+
+.star-rating {
+  direction: rtl;
+}
+
+.star-rating > i:hover:before,
+.star-rating > i:hover ~ i:before {
+   color: gold;
+}
