@@ -48,19 +48,19 @@ export const SubmitReview = () => {
                             <textarea style={{width:"100%", border:"none", height:"9rem", padding:"9px", boxSizing:"border-box"}} placeholder="Your opinion matters to us. Write your review"></textarea>
                         </div>
                             <div className="container" style={{overflowX:"scroll"}}>
-                                <div className="row">
+                                <div className="row" style={{marginLeft: '0.2em'}}>
                                     <div className="col-4">
-                                        <img src="/image/m-product/img5.png" style={{height:"50%"}}></img>
+                                        <img src="/image/m-product/img5.png" style={{height:"20%"}}></img>
                                         <i class='bx bxs-x-circle' style={{position:"absolute", top:"0rem", right:"0px", color:"#c2172e"}}></i>
                                     </div>
                                     <div className="col-4">
-                                        <img src="/image/m-product/img5.png" style={{height:"50%"}}></img>
+                                        <img src="/image/m-product/img5.png" style={{height:"20%"}}></img>
                                         <i class='bx bxs-x-circle' style={{position:"absolute", top:"0rem", right:"0px", color:"#c2172e"}}></i>
                                     </div>
                                     <div className="col-4">
-                                        <img src="/image/m-product/img5.png" style={{height:"50%"}}></img>
-                                        <i class='bx bxs-x-circle' style={{position:"absolute", top:"0rem", right:"0px",  color:"#c2172e"}}></i>
+                                        <img src="/image/add-image.png" style={{height:"20%", opacity: '0.4', cursor: 'pointer'}}></img>
                                     </div>
+
                                 </div>
                             </div>
                         <div className="save-changes-button" style={{position:"relative",top:"6rem",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
