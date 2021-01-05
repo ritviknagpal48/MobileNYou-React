@@ -938,8 +938,8 @@ ul.menu {
 
 @media screen and (min-width:500px){
   .customer-account-details{
-    margin-left:-7.5rem !important;
-    margin-right:7.5rem !important;
+    margin-left:-7rem !important;
+    margin-right:7rem !important;
   }
 
   .referimg {
@@ -985,6 +985,11 @@ ul.menu {
 
 .transparent-btn:focus {
   outline-style: none;
+}
+
+.transparent-btn .row{
+  width:100%;
+  margin:0;
 }
 
 .switch {
