@@ -39,10 +39,10 @@ import { SupportCenterIssues } from "./Pages/SupportCenterIssues";
 import { SupportCenter } from "./Pages/SupportCenter";
 import { ReturnRequest } from "./Pages/ReturnRequest";
 import { ContactUs } from "./Pages/ContactUs";
-import {Blog} from "./Pages/Blog";
-import {BlogName} from "./Pages/BlogName";
-import {PrivacyPolicy} from "./Pages/PrivacyPolicy";
-import {SupportCenterQueries} from "./Pages/SupportCenterQueries";
+import { Blog } from "./Pages/Blog";
+import { BlogName } from "./Pages/BlogName";
+import { PrivacyPolicy } from "./Pages/PrivacyPolicy";
+import { SupportCenterQueries } from "./Pages/SupportCenterQueries";
 
 export const Layout = () => {
   return (
@@ -83,7 +83,7 @@ export const Layout = () => {
         <Route exact path='/submitreview' component={SubmitReview}></Route>
         <Route exact path='/cancellationrequest' component={CancellationRequest}></Route>
         <Route exact path='/cancellationconfirmed' component={CancellationConfirmed}></Route>
-        <Route exact path='/supportcenter-issues' component={SupportCenterIssues}></Route>
+        <Route exact path='/supportcenterissues' component={SupportCenterIssues}></Route>
         <Route exact path='/supportcenter' component={SupportCenter}></Route>
         <Route exact path='/returnrequest' component={ReturnRequest}></Route>
         <Route exact path='/contactus' component={ContactUs}></Route>
