@@ -44,6 +44,7 @@ import { BlogName } from "./Pages/BlogName";
 import { PrivacyPolicy } from "./Pages/PrivacyPolicy";
 import { SupportCenterQueries } from "./Pages/SupportCenterQueries";
 import { Career } from "./Pages/Career";
+import { BusinessIntelligence } from "./Pages/BusinessIntelligence";
 
 
 export const Layout = () => {
@@ -94,6 +95,7 @@ export const Layout = () => {
         <Route exact path='/blog' component={Blog}></Route>
         <Route exact path='/privacypolicy' component={PrivacyPolicy}></Route>
         <Route exact path='/career' component={Career}></Route>
+        <Route exact path='/businessintelligence' component={BusinessIntelligence}></Route>
       </Switch>
     </Router>
   );
