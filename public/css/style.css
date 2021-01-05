@@ -1082,6 +1082,11 @@ input:checked + .slider:before {
   .universalDiv .container {
     max-width: 400px;
   }
+  
+  .jobs-modal {
+    width: 20% !important;
+    left: 4rem !important;
+  }
 }
 
 .star-rating {

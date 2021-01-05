@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { Navbar } from '../Components/Navbar';
+import { UploadCV } from '../Components/Career/UploadCV';
 import { Footer } from '../Components/Footer';
 import {JobDesc} from "../Components/Career/JobDesc"
 
@@ -24,6 +25,8 @@ export const Career = () => {
                         <JobDesc></JobDesc>
                         <JobDesc></JobDesc>
                         <JobDesc></JobDesc>
+
+                        <UploadCV />
                     </section>
                     <Footer></Footer>
                 </div>
