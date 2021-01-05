@@ -4,6 +4,19 @@ import {RedNavbar} from "../Components/RedNavbar";
 
 
 export const SubmitReview = () => {
+
+    function colorChange(e){
+        var id = e.target.id.split("-")[1];
+        for(var i=4;i>=0;i--){
+            if(i>=id){
+                e.target.parentElement.childNodes[i].style.color="gold";
+            }
+            else{
+                e.target.parentElement.childNodes[i].style.color="gainsboro";
+            }
+        }
+        
+    }
     return (
         <Fragment>
             <div class="badydiv">
@@ -23,11 +36,11 @@ export const SubmitReview = () => {
                         <div class="sellerlocation" style={{backgroundColor:"white"}}>
                             <div className="row" >
                                 <div className="col-6 star-rating" style={{textAlign: 'left'}}>
-                                <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
-                                <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
-                                <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
-                                <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
-                                <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
+                                <i class='bx bxs-star' id="gold-0" onClick={colorChange} style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
+                                <i class='bx bxs-star' id="gold-1" onClick={colorChange} style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
+                                <i class='bx bxs-star' id="gold-2" onClick={colorChange} style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
+                                <i class='bx bxs-star' id="gold-3" onClick={colorChange} style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
+                                <i class='bx bxs-star' id="gold-4" onClick={colorChange} style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
                                 </div>
                             </div>
                         </div>
