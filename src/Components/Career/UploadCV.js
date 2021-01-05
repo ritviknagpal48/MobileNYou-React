@@ -52,8 +52,15 @@ export const UploadCV = (props) => {
     <Fragment>
       <section class="bodypanelmian aboutseller text-left">
           <div className="sellerlocation" style={{backgroundColor:"#fff"}}>
-              <h3>DIDN'T FIND ANY JOB</h3>
-              <p>Don't worry send us your CV we will contact you when we have any position matching your profile</p>
+              { props.btn ? 
+                    <span>
+                        <h3>DIDN'T FIND ANY JOB</h3>
+                        <p>Don't worry send us your CV we will contact you when we have any position matching your profile</p>
+                    </span>
+                :
+                    <h3>APPLY FOR THIS POSITION</h3>
+                
+                }
               <form className={classes.root} noValidate autoComplete="off">
                   <CssTextField
                       className={classes.margin}
