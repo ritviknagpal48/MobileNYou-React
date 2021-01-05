@@ -13,7 +13,7 @@ export const Blog = () => {
                     <Navbar></Navbar>
                     <section className="bodypanelmian aboutseller text-left">
                         <div className="strike-color" style={{ textAlign: "center", marginTop: "10px", marginBottom: "24px" }}>
-                            <h6 className="strike-through-text"><span style={{ margin: '0 0.2rem' }}>Blogs</span></h6>
+                            <h6 className="strike-through-heading"><span style={{ margin: '0 0.2rem' }}>Blogs</span></h6>
                         </div>
                         <div style={{ margin: "12px 12px 12px 12px", whiteSpace: "nowrap", overflowX: "scroll", paddingBottom: "20px" }}>
                             <Card></Card>
