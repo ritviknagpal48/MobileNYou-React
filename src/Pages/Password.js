@@ -54,14 +54,14 @@ export const Password = () => {
                     <section className="bodypanelmian aboutseller text-left">
                       <div style={{height:"5rem"}}>
                         <div class="row" style={{height:"100%", width: '100%'}}>
-                            <div class="col-3" style={{display:"flex",padding:"none"}}>
-                              <div class="customer-account-image">N</div>                              
-                            </div>
-                            <div class="col-4 customer-account-details" style={{marginRight:"3.5rem"}}>
-                                <p style={{fontSize:"18px",marginTop:"0.3rem"}}>NEERAJ</p>
-                                <p style={{fontSize:"14px"}}>nesh.28feb@gmail.com</p>
-                                <p style={{fontSize:"14px"}}>+91-9123-4101-01</p>
-                            </div>
+                            <div class="col-2" style={{display:"flex",padding:"none"}}>
+                            <div class="customer-account-image">N</div>                          
+                        </div>
+                        <div class="col-6 customer-account-details" style={{marginLeft:"1.4rem"}}>
+                            <p style={{fontSize:"18px",marginTop:"0.3rem"}}>NEERAJ</p>
+                            <p style={{fontSize:"14px"}}>nesh.28feb@gmail.com</p>
+                            <p style={{fontSize:"13px"}}>+91-9123410101</p>
+                        </div>
                             
                         </div>
                       </div>

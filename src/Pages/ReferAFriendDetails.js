@@ -19,7 +19,7 @@ export const ReferAFriendDetails = () => {
                               </div>
                               <div className="col-9">
                                 <p style={{fontSize:'14px'}}>Step 1</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                               </div>
                             </div>
                             <div className="row">
@@ -28,7 +28,7 @@ export const ReferAFriendDetails = () => {
                               </div>
                               <div className="col-9">
                                 <p style={{fontSize:'14px'}}>Step 2</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                               </div>
                             </div>
                             <div className="row">
@@ -37,7 +37,7 @@ export const ReferAFriendDetails = () => {
                               </div>
                               <div className="col-9">
                                 <p style={{fontSize:'14px'}}>Step 3</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                               </div>
                             </div>
                           </div>
