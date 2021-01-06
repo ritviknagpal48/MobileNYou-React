@@ -412,7 +412,7 @@ export const OnePageCheckout = () => {
                             zIndex: "100",
                             position: 'fixed',
                             bottom: '0',
-                            width: '400px',
+                            width: '576px',
                             backgroundColor: '#ffffff',
                             height: '4.5rem',
                             display: 'flex',

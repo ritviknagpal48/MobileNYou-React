@@ -209,7 +209,7 @@ export const OrderSummary = () => {
               <div class="footer" style={{
                 position: 'fixed',
                 bottom: '0',
-                width: '400px',
+                width: '576px',
                 backgroundColor: '#ffffff',
                 height: '4.5rem',
                 display: 'flex',
@@ -229,8 +229,8 @@ export const OrderSummary = () => {
                       </div>
                     </div>
                     <div class="col-6">
-                      <button type="button" class="btn btn-danger right-foot" style={{
-                        float: 'right', width: '70%'
+                      <button type="button" class="btn btn-danger right-foot proceed-to-payment" style={{
+                        float: 'right', width: '60%'
                       }}>
                         Proceed to Payment
                     </button>

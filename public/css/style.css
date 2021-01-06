@@ -1085,6 +1085,14 @@ input:checked + .slider:before {
     left: 4rem !important;
   }
 
+  .footer {
+    width: 400px !important;
+  }
+
+  .proceed-to-payment {
+    width: 90% !important;
+  }
+
   header .humburgermenu .rights ul li span img { width: 1em;}
   header .humburgermenu .head .hambur { width: 1.3em;}
   header .humburgermenu .lefts{padding: 0em;}
