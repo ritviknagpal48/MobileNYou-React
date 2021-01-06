@@ -9,7 +9,7 @@ export const CancellationConfirmed = () => {
             <div class="badydiv">
                 <div class="universalDiv">
                     <RedNavbar navbar="Request Cancellation"></RedNavbar>
-                    <section className="bodypanelmian aboutseller text-left">
+                    <section className="bodypanelmian aboutseller text-left" style={{ paddingBottom: '10px' }}>
                         <div class="sellerlocation" style={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column",marginTop:"1rem",backgroundColor:"white",boxShadow: "0px 0px 4px 1px gainsboro"}}>
                             <img src="/icons/tick.png" style={{width:"45%",height:"auto",marginTop:"1rem"}}></img>
                             <p style={{fontSize:"23px",fontWeight:"bolder",marginTop:"1rem"}}>Cancellation Confirmed</p>

@@ -14,7 +14,7 @@ export const SupportCenter = () => {
             <div class="badydiv">
                 <div class="universalDiv" style={{backgroundColor:"#F5F5F5"}}>
                     <RedNavbar navbar="Support Center"></RedNavbar>
-                    <section className="bodypanelmian aboutseller text-left">
+                    <section className="bodypanelmian aboutseller text-left" style={{ paddingBottom: '10px' }}>
                       <div class="sellerlocation" style={{backgroundColor:"white"}}>
                             <div class="row">
                                 <div className="col-8" style={{textAlign: 'left'}}>

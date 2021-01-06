@@ -47,23 +47,25 @@ export const SubmitReview = () => {
                         <div style={{fontFamily: 'Open Sans, sans-serif !important', margin:"1em .9em", boxShadow: '0px 0px 4px 1px gainsboro', padding: '.7em .7em', backgroundColor:"white"}}>
                             <textarea style={{width:"100%", border:"none", height:"9rem", padding:"9px", boxSizing:"border-box"}} placeholder="Your opinion matters to us. Write your review"></textarea>
                         </div>
-                            <div className="container" style={{overflowX:"scroll"}}>
-                                <div className="row" style={{marginLeft: '0.2em'}}>
-                                    <div className="col-4">
-                                        <img src="/image/m-product/img5.png" style={{height:"20%"}}></img>
-                                        <i class='bx bxs-x-circle' style={{position:"absolute", top:"0rem", right:"0px", color:"#c2172e"}}></i>
-                                    </div>
-                                    <div className="col-4">
-                                        <img src="/image/m-product/img5.png" style={{height:"20%"}}></img>
-                                        <i class='bx bxs-x-circle' style={{position:"absolute", top:"0rem", right:"0px", color:"#c2172e"}}></i>
-                                    </div>
-                                    <div className="col-4">
-                                        <img src="/image/add-image.png" style={{height:"20%", opacity: '0.4', cursor: 'pointer'}}></img>
-                                    </div>
-
-                                </div>
-                            </div>
-                        <div className="save-changes-button" style={{position:"relative",top:"6rem",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
+                        <div style={{ margin: "12px 12px 12px 12px", whiteSpace: "nowrap", overflowX: "scroll", paddingBottom: "20px" }}>
+                            <span style={{margin: '0.5rem', position: 'relative'}}>
+                                <img src="/image/m-product/img5.png" width="40%"></img>
+                                <i class='bx bxs-x-circle' style={{position:"absolute", top:"-4rem", right:"0px", color:"#c2172e", cursor: 'pointer', zIndex: '2'}}></i>
+                            </span>
+                            <span style={{margin: '0.5rem', position: 'relative'}}>
+                                <img src="/image/m-product/img5.png" width="40%"></img>
+                                <i class='bx bxs-x-circle' style={{position:"absolute", top:"-4rem", right:"0px", color:"#c2172e", cursor: 'pointer', zIndex: '2'}}></i>
+                            </span>
+                            <span style={{margin: '0.5rem', position: 'relative'}}>
+                                <img src="/image/m-product/img5.png" width="40%"></img>
+                                <i class='bx bxs-x-circle' style={{position:"absolute", top:"-4rem", right:"0px", color:"#c2172e", cursor: 'pointer', zIndex: '2'}}></i>
+                            </span>
+                            <span style={{margin: '0.5rem'}}>
+                                <img src="/image/add-image.png" width="40%" style={{opacity: '0.4', cursor: 'pointer'}}></img>
+                            </span>
+                        </div>
+                            
+                        <div className="save-changes-button" style={{position:"relative",top:"8rem",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
                             <button type="button" class="btn btn-danger" style={{backgroundColor:" #c2172e",width:"90%"}}>Save Changes</button>
                         </div>
                     </section>
