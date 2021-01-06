@@ -6,7 +6,7 @@ export const EmiOptions = () => {
   return (
     <Fragment>
       <div class='badydiv'>
-        <div class='universalDiv'>
+        <div class='universalDiv' style={{height:"100vh"}}>
           <div class='container'>
             <Navbar></Navbar>
             <section

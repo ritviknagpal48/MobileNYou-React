@@ -4,7 +4,7 @@ export const Otp = () => {
     return (
         <Fragment>
             <div class="badydiv">
-                <div class="universalDiv" style={{textAlign:"unset"}}>
+                <div class="universalDiv" style={{textAlign:"unset",height:"100vh"}}>
                 <i class='bx bx-arrow-back' style={{ fontSize: "27px", margin: "5%" }}></i>
                 <div class="container" style={{
                     textAlign: "center",
