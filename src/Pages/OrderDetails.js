@@ -74,6 +74,19 @@ export const OrderDetails = () => {
         }
     }
 
+    function colorChange(e){
+        var id = e.target.id.split("-")[1];
+        for(var i=4;i>=0;i--){
+            if(i>=id){
+                e.target.parentElement.childNodes[i].style.color="gold";
+            }
+            else{
+                e.target.parentElement.childNodes[i].style.color="gainsboro";
+            }
+        }
+        
+    }
+
 
     return (
         <Fragment>
@@ -168,12 +181,12 @@ export const OrderDetails = () => {
 
                         <div class="sellerlocation" style={{backgroundColor:"white"}}>
                             <div className="row" >
-                                <div className="col-6" style={{textAlign: 'left'}}>
-                                <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
-                                <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
-                                <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
-                                <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
-                                <i class='bx bxs-star' style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
+                                <div class Name="col-6" style={{textAlign: 'left'}}>
+                                <i class='bx bxs-star' id="gold-0" onClick={colorChange} style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
+                                <i class='bx bxs-star' id="gold-1" onClick={colorChange} style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
+                                <i class='bx bxs-star' id="gold-2" onClick={colorChange} style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
+                                <i class='bx bxs-star' id="gold-3" onClick={colorChange} style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
+                                <i class='bx bxs-star' id="gold-3" onClick={colorChange} style={{fontSize: '1.5rem',color:"gainsboro"}}></i>
                                 </div>
                                 <div className="col-6" style={{textAlign: 'right'}}>
                                 <span style={{color: '#c2172e', cursor: 'pointer', fontSize: '12px'}}><b>Write a Review</b></span>
