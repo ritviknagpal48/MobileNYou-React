@@ -16,9 +16,9 @@ export const BlogName = () => {
                         <div className="sellerlocation" style={{ backgroundColor: "white", width: "100%", marginLeft: "0px" }}>
                             <img src="/image/m-product/s10plus.jpg" style={{ width: "100%" }}></img>
                             <div className="container" style={{ margin: "10px 0 10px 12px" }}>
-                                <div className="row">
-                                    <div className="col-8"><h6><b>Business of Mobiles</b></h6></div>
-                                    <div className="col-4" style={{ color: "gainsboro" }}><p>5 min read</p></div>
+                                <div className="row" style={{width: '100%'}}>
+                                    <div className="col-9"><h6><b>Business of Mobiles</b></h6></div>
+                                    <div className="col-3" style={{ color: "gainsboro" }}><p style={{textAlign: 'right'}}>5 min read</p></div>
                                 </div>
                             </div>
                             <div style={{ margin: "5px 10px 5px 10px" }}>
