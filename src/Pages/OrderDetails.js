@@ -99,18 +99,18 @@ export const OrderDetails = () => {
                         <div className="sellerlocation" style={{backgroundColor: '#fff',height:"fit-content",height:"7rem",transition:"height 1s"}}>
                             <div id="progress-bar-div" className={classes.root} >
                                 <BorderLinearProgress variant="determinate" value={progress} color='secondary' />
-                                <div class="row" style={{position:"relative",top:"-1rem",width:"127%"}}>
+                                <div class="row" style={{position:"relative",top:"-1rem",width:"110%"}}>
                                     <div class="col-3">
                                         <div id="order-placed-circle" onClick={() => {Progress(0);setProgress(0); }} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"green"}}></div>
                                     </div>
                                     <div class="col-3">
-                                        <div id="order-shipped-circle" onClick={() => {Progress(35); setProgress(35);}} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"gainsboro"}}></div>
+                                        <div id="order-shipped-circle" onClick={() => {Progress(35); setProgress(35);}} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"gainsboro",marginLeft:"0.5rem"}}></div>
                                     </div>
                                     <div class="col-3">
-                                        <div id="out-for-delivery-circle" onClick={() => {Progress(68);setProgress(68); }} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"gainsboro"}}></div>
+                                        <div id="out-for-delivery-circle" onClick={() => {Progress(68);setProgress(68); }} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"gainsboro",margin:"auto"}}></div>
                                     </div>
                                     <div class="col-3">
-                                        <div id="delivered-circle" onClick={() => {Progress(100);setProgress(100);}} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"gainsboro"}}></div>
+                                        <div id="delivered-circle" onClick={() => {Progress(100);setProgress(100);}} style={{height:"1.4rem",width:"1.4rem",borderRadius:"50%",backgroundColor:"gainsboro",float:"right"}}></div>
                                     </div>
                                 </div>
                             </div>
