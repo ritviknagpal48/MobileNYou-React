@@ -97,7 +97,7 @@ export const OrderDetails = () => {
                     </section>
                     <section class="bodypanelmian aboutseller text-left" style={{ marginBottom: '0%', paddingBottom: '10px' }}>
                         <div className="sellerlocation" style={{backgroundColor: '#fff',height:"fit-content",height:"7rem",transition:"height 1s"}}>
-                            <div id="progress-bar-div" className={classes.root}>
+                            <div id="progress-bar-div" className={classes.root} >
                                 <BorderLinearProgress variant="determinate" value={progress} color='secondary' />
                                 <div class="row" style={{position:"relative",top:"-1rem",width:"127%"}}>
                                     <div class="col-3">
@@ -129,7 +129,7 @@ export const OrderDetails = () => {
                                         <div className="col-4"></div>
                                     </div>
                                 </div>
-                                <div className="container" id="expand-content" style={{display: 'none', margin: '-2rem 4.5rem'}}>
+                                <div className="container" id="expand-content" style={{display: 'none', margin: '-2rem 2.5rem'}}>
                                     <div className="row" style={{marginBottom: '0.8rem'}}>
                                         <div className="col-8">
                                             <p style={{fontSize: '12px'}}>Order Placed</p>

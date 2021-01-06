@@ -1058,11 +1058,11 @@ input:checked + .slider:before {
 .progress-bar-transition{
   transform: rotate(90deg);
   width: 60% !important;
-  margin: 0 3.5rem !important
+  margin: 0rem 0 0 1.5rem !important;
   
 }
 
-@media screen and (max-width:500px){
+@media screen and (min-width:600px){
   .progress-bar-transition{
     width:100% !important;
   }
