@@ -46,6 +46,7 @@ import { SupportCenterQueries } from "./Pages/SupportCenterQueries";
 import { Career } from "./Pages/Career";
 import { BusinessIntelligence } from "./Pages/BusinessIntelligence";
 import { ReferAFriend } from "./Pages/ReferAFriend";
+import { ReferAFriendDetails } from "./Pages/ReferAFriendDetails";
 
 export const Layout = () => {
   return (
@@ -97,6 +98,7 @@ export const Layout = () => {
         <Route exact path='/career' component={Career}></Route>
         <Route exact path='/businessintelligence' component={BusinessIntelligence}></Route>
         <Route exact path='/referafriend' component={ReferAFriend}></Route>
+        <Route exact path='/referafrienddetails' component={ReferAFriendDetails}></Route>
       </Switch>
     </Router>
   );

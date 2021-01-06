@@ -7,7 +7,7 @@ export const ReferAFriend = () => {
             <div class="badydiv">
                 <div class="universalDiv" style={{ backgroundColor: "#F5F5F5" }}>
                     <Navbar />
-                    <section class="bodypanelmian aboutseller">
+                    <section class="bodypanelmian aboutseller" style={{height: '105vh'}}>
                         <img src="/image/Refer/ReferAFriend.png" style={{height:"auto",width:"100%",zIndex:"1"}}></img>
                         <div className="sellerlocation" style={{backgroundColor:"white",display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column",zIndex:"5",position:"relative",top:"-10rem"}}>
                             <p style={{fontSize:"11px"}}>Share Your Referal Link and Invite Your Friends and Get</p>
