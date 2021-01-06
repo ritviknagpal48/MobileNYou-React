@@ -61,7 +61,7 @@ export const UploadCV = (props) => {
                     <h3>APPLY FOR THIS POSITION</h3>
                 
                 }
-              <form className={classes.root} noValidate autoComplete="off">
+              <form className={classes.root} noValidate autoComplete="off" type="">
                   <CssTextField
                       className={classes.margin}
                       required="true"
