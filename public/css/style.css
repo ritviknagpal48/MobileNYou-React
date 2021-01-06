@@ -1092,6 +1092,13 @@ input:checked + .slider:before {
     width: 25% !important;
     left: 4rem !important;
   }
+
+  header .humburgermenu .rights ul li span img { width: 1em;}
+  header .humburgermenu .head .hambur { width: 1.3em;}
+  header .humburgermenu .lefts{padding: 0em;}
+  header .humburgermenu .head a{padding: 9px 0px; margin: 1px 0px;}
+  header .humburgermenu .head{padding: 5px;}
+  header .humburgermenu .lefts .logo img{width: 6em; padding: .75em 0em;}
 }
 
 .star-rating {

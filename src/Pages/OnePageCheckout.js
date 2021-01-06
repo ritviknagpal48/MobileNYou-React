@@ -350,18 +350,20 @@ export const OnePageCheckout = () => {
                                         <div class="col-8">
                                         <CssTextField
                                             className={classes.margin}
-                                            label="Enter Coupen Code"
+                                            label="Enter Coupon Code"
                                             variant="outlined"
                                             id="custom-css-outlined-input"
-                                            style={{width:"15rem"}}
+                                            style={{width:"16rem", margin: '0.6rem 0rem'}}
+                                            size="small"
                                         />                                            
                                         </div>
                                         <div class="col-4">
                                             <button class="btn btn-outline-danger" style={{
-                                                margin: "8% 2%",
+                                                margin: "11% 2%",
                                                 float: 'right',
-                                                padding: "10px",
-                                                width: '80%'
+                                                padding: "5px",
+                                                width: '80%',
+                                                height: '65%'
                                             }}>
                                                 Apply
                                             </button>
@@ -410,7 +412,7 @@ export const OnePageCheckout = () => {
                             zIndex: "100",
                             position: 'fixed',
                             bottom: '0',
-                            width: '576px',
+                            width: '400px',
                             backgroundColor: '#ffffff',
                             height: '4.5rem',
                             display: 'flex',
