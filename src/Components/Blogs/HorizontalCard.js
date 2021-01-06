@@ -10,8 +10,8 @@ export const HorizontalCard = () => {
                         <img src="/image/m-product/iphone.jpg" class="card-img" alt="" style={{ height: "100%", borderRadius:"5px"}} />
                     </div>
                     <div class="col-8">
-                        <div class="card-body" style={{ fontSize: "12px" }}>
-                            <h6 class="card-title"><b>Business of Mobiles</b></h6>
+                        <div class="card-body" style={{ fontSize: "12px",padding:"0.7rem 1.25rem" }}>
+                            <h6 class="card-title" style={{marginBottom:"0.2rem"}}><b>Business of Mobiles</b></h6>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida aliquam porttitor.</p>
                             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                         </div>
