@@ -21,6 +21,7 @@ export const Career = () => {
             <div class="badydiv">
                 <div class="universalDiv" style={{ backgroundColor: "#F5F5F5" }}>
                     <Navbar />
+                    <img src="/image/Career.png" width="380px" />
                     <div className="strike-color" style={{ textAlign: "center", marginTop: "10px" }}>
                         <h6 className="strike-through-heading"><span style={{ margin: '0 0.2rem',fontSize:"18px" }}>Opening Position</span></h6>
                     </div>
