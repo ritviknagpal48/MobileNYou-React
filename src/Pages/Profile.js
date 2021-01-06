@@ -46,7 +46,7 @@ export const Profile = () => {
                             </div>
                         </div>
 
-                        <div className="save-changes-button" style={{position:"relative",top:"5rem",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
+                        <div style={{position:"relative",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
                             <button type="button" class="btn btn-danger" style={{backgroundColor:" #c2172e",width:"90%"}}>Save Changes</button>
                         </div>
                     </section>

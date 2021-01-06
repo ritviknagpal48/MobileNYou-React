@@ -81,7 +81,7 @@ export const Password = () => {
                                             id="custom-css-outlined-input"
                                         />                                                        
                                     </form>
-                        <div style={{position:"relative",top:"28rem",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
+                        <div style={{position:"relative",top:"24rem",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
                         <button type="button" class="btn btn-danger" style={{backgroundColor:" #c2172e",width:"90%"}}>Save Changes</button>
 
                         </div>

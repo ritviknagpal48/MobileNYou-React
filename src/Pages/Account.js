@@ -21,7 +21,7 @@ export const Account = () => {
                                     <p style={{fontSize:"13px"}}>+91-9123410101</p>
                                 </div>
                                 <div class="col-2" style={{marginLeft:"0.8rem"}}>
-                                    <button type="button" class="btn btn-outline-danger" style={{margin:"1rem 0",borderColor:"#c2172e",color:"#c2172e",padding:"0.4rem 1rem"}}>Edit</button>
+                                    <button type="button" class="btn btn-outline-danger" style={{margin:"1rem 0",borderColor:"#c2172e",padding:"0.4rem 1rem"}}>Edit</button>
                                 </div>
                             </div>
                         </div>
