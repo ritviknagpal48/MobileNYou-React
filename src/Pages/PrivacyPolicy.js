@@ -9,7 +9,7 @@ export const PrivacyPolicy = () => {
             <div class="badydiv">
                 <div class="universalDiv" style={{backgroundColor:"white"}}>
                     <Navbar></Navbar>
-                    <section className="bodypanelmian aboutseller text-left" style={{marginBottom:"1rem"}}>
+                    <section className="bodypanelmian aboutseller text-left">
                         <div className="strike-color" style={{ textAlign: "center", marginTop: "10px", marginBottom: "24px" }}>
                             <h6 className="strike-through-heading"><span style={{margin:'0 0.2rem'}}>Privacy Policy</span></h6>
                         </div>
@@ -39,7 +39,7 @@ export const PrivacyPolicy = () => {
                             <p>iii. CONDUCT</p>
                             <p style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
-                        <div style={{margin:"2rem 1rem"}}>
+                        <div style={{margin:"0rem 1rem",paddingBottom:"1rem"}}>
                             <p>iv. PAID SERVIES</p>
                             <p style={{fontSize:"12px"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             <ul style={{margin:"0 0.8rem"}}>

@@ -5,7 +5,7 @@ export const AboutSeller = () => {
   return (
     <Fragment>
       <div class='badydiv'>
-        <div class='universalDiv'>
+        <div class='universalDiv' style={{height:"100vh"}}>
           <div className='container'>
             <Navbar></Navbar>
           </div>

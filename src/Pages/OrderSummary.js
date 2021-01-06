@@ -209,7 +209,7 @@ export const OrderSummary = () => {
               <div class="footer" style={{
                 position: 'fixed',
                 bottom: '0',
-                width: '576px',
+                width: '400px',
                 backgroundColor: '#ffffff',
                 height: '4.5rem',
                 display: 'flex',
